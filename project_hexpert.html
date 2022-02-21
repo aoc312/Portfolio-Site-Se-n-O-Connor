@@ -1,86 +1,92 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-  <head>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
-    <meta charset="utf-8">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="img/favicons/site.webmanifest">
-    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#ff901f">
-    <meta name="msapplication-TileColor" content="#ff901f">
-    <meta name="theme-color" content="#ff901f">
-    <title>Sean O Connor UX Designer Dublin</title>
-  </head>
+<head>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="img/favicons/site.webmanifest">
+  <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#ff901f">
+  <meta name="msapplication-TileColor" content="#ff901f">
+  <meta name="theme-color" content="#ff901f">
+  <title>Sean O Connor UX Designer Dublin</title>
+</head>
 
-  <body>
-    <!-- For the navigation -->
-    <header>
-      <div>
-        <a href="index.html"><img src="img/hexpert/logos/soc_logo_icon.svg" alt="Sean O Connor">Seán O Connor</a>
-        <nav>
-          <ul>
-            <li><a href="index.html">Projects</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <!-- For my projects -->
+<body>
+  <!-- For the navigation -->
+  <header>
     <div>
+      <a href="index.html"><img src="img/hexpert/logos/soc_logo_icon.svg" alt="Sean O Connor">Seán O Connor</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- For my projects -->
+  <div>
+    <div>
+      <!--For the project title-->
+      <h1>Hexpert</h1>
+    </div>
+    <div>
+      <!--For the hero image-->
+      <picture>
+        <source srcset="img/hexpert/hero_image/portfolio_hero@0.5x.jpg" media="(max-width:600px)">
+        <source srcset="img/hexpert/hero_image/portfolio_hero@0.75x.jpg" media="(max-width:767px)">
+        <source srcset="img/hexpert/hero_image/portfolio_hero@1x.jpg" media="(max-width:1139px)">
+        <source srcset="img/hexpert/hero_image/portfolio_hero@1.5x.jpg" media="(max-width:1900px)">
+        <img src="img/hexpert/hero_image/portfolio_hero@1x.png" alt="Hexpert">
+      </picture>
       <div>
-            <!--For the project title-->
-        <h1>Hexpert</h1>
-      </div>
-      <div>
-            <!--For the hero image-->
-        <picture>
-          <source srcset="img/hexpert/hero_image/portfolio_hero@0.5x.jpg" media="(max-width:600px)">
-          <source srcset="img/hexpert/hero_image/portfolio_hero@0.75x.jpg" media="(max-width:767px)">
-          <source srcset="img/hexpert/hero_image/portfolio_hero@1x.jpg" media="(max-width:1139px)">
-          <source srcset="img/hexpert/hero_image/portfolio_hero@1.5x.jpg" media="(max-width:1900px)">
-          <img src="img/hexpert/hero_image/portfolio_hero@1x.png" alt="Hexpert">
-        </picture>
         <div>
-          <div>
-            <h3>The Project</h3>
-            <p>Hexpert is a responsive web application that allows users to contact experts in computer building, and other areas related to computers. I chose this project, as part of my CareerFoundry course, because I was researching computer building and noticed how difficult it was to find answers to specific questions.</p>
-          </div>
-          <div>
-            <h3>Key objectives and goals for this project were:</h3>
-            <ul>
-              <li>Give people a simple, intuitive way to connect with an expert in nearly any field within seconds, so they can feel more informed and more prepared to face their everyday (and not-so-everyday) problems.</li>
-              <li>The app will be free to use, but will require payment for any video calls done over the platform. </li>
-            </ul>
-          </div>
+          <h3>The Project</h3>
+          <p>Hexpert is a responsive web application that allows users to contact experts in computer building, and other areas related to computers. I chose this project, as part of my CareerFoundry course, because I was researching computer
+            building and noticed how difficult it was to find answers to specific questions.</p>
         </div>
-      </div>
-      <div>
         <div>
-          <h3>Background Information</h3>
-        </div>
-        <div>
-          <div>
-            <p>As business and social interactions have moved further towards online spaces, and advances in technology increase exponentially, more people are purchasing personal computers than ever before. Some people also choose to “build” their own computer, that is take computer parts and assemble them to make a complete computer that suits their specific needs (leading to this process often being called “adult legos”). </p>
-          </div>
-          <div>
-            <p>“Building” computers is very popular in the gaming community, and has proponents in other areas, such as developers, but the process can be expensive and slightly risky as mistakes can damage, or destroy, parts worth hundreds or sometimes thousands of euro. Despite this price-tag, it can also be a budget alternative as a hawk-eyed individual can use bargains, sales and other methods to build a computer worth a fraction of the cost to buy the equivalent pre-made from a major retailer. </p>
-          </div>
-          <div>
-            <p>Due to the current pandemic both encouraging people to Do-It-Yourself, and electronics manufacturing taking a hit, more people outside the existing community are interested in building computers. The problem is that there is so much varying and contradictory information on the topic, due to the scope of different brands, hardware generations, software specifications and even what box to put it all in, that it can be overwhelming at first. </p>
-          </div>
+          <h3>Key objectives and goals for this project were:</h3>
+          <ul>
+            <li>Give people a simple, intuitive way to connect with an expert in nearly any field within seconds, so they can feel more informed and more prepared to face their everyday (and not-so-everyday) problems.</li>
+            <li>The app will be free to use, but will require payment for any video calls done over the platform. </li>
+          </ul>
         </div>
       </div>
     </div>
-    <!--For the project process-->
-    <!--Block template
+    <div>
+      <div>
+        <h3>Background Information</h3>
+      </div>
+      <div>
+        <div>
+          <p>As business and social interactions have moved further towards online spaces, and advances in technology increase exponentially, more people are purchasing personal computers than ever before. Some people also choose to “build” their own
+            computer, that is take computer parts and assemble them to make a complete computer that suits their specific needs (leading to this process often being called “adult legos”). </p>
+        </div>
+        <div>
+          <p>“Building” computers is very popular in the gaming community, and has proponents in other areas, such as developers, but the process can be expensive and slightly risky as mistakes can damage, or destroy, parts worth hundreds or
+            sometimes thousands of euro. Despite this price-tag, it can also be a budget alternative as a hawk-eyed individual can use bargains, sales and other methods to build a computer worth a fraction of the cost to buy the equivalent pre-made
+            from a major retailer. </p>
+        </div>
+        <div>
+          <p>Due to the current pandemic both encouraging people to Do-It-Yourself, and electronics manufacturing taking a hit, more people outside the existing community are interested in building computers. The problem is that there is so much
+            varying and contradictory information on the topic, due to the scope of different brands, hardware generations, software specifications and even what box to put it all in, that it can be overwhelming at first. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--For the project process-->
+  <!--Block template
     <div>
       <picture>
         <source srcset="img/hexpert/" media="(max-width:600px)">
