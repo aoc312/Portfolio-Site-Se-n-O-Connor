@@ -19,13 +19,38 @@ color: #FF901F;
 }
 
 header {
+  position: fixed;
+  width: 100%;
   background-color: #FF901F;
   font-family: "Roboto Mono", monospace;
   font-size: 20px;
   font-weight: 400;
+  text-align: center;
   padding: 16px
+  -webkit-box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.7);
+  -moz-box-shadow:    0px 4px 6px 0px rgba(50, 50, 50, 0.7);
+  box-shadow:         0px 4px 6px 0px rgba(50, 50, 50, 0.7);
 }
-
+main {
+  padding-top: 144px;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #241200;
+}
+nav {
+  display: inline-block;
+  width: 100%
+}
 h1, h2, h3, h4 {
   font-family: "Roboto Mono", monospace;
   line-height: 1.4;
@@ -49,9 +74,29 @@ h4 {
   font-weight: 400;
 }
 
+#hero {
+  background-color: #FF901F;
+  color: #241200;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+#hero h1, #hero p {
+  text-align: center; /* Centers text */
+}
+
+#contact h2, #contact p {
+  text-align: center; /* Centers text */
+
+}
 /*Images*/
 img {
   width: 100%;
+}
+svg {
+  color: #FF901F;
+  stroke: #FF901F;
+  fill: #FF901F;
 }
 
 /*Links*/
@@ -77,8 +122,8 @@ a:active { /* selected link */
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #FFECD8; /* width of the border, type, color */
+  border-radius: 8px;
+  /*border-bottom: 2px solid #241200; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 .button:hover {
@@ -105,13 +150,35 @@ a:active { /* selected link */
   padding: 10px;
   border-radius: 3px;
   transition: 0.2s opacity;
-}
+}*/
 
 .navigation.project {
   color: #241200;
-}*/
+}
 
 /*Layout styling*/
 .container {
   padding: 0 16px;
+}
+
+.row {
+  margin: 24px 0; /* 25px top and bottom, 0 left and right */
+}
+
+.logo {
+  max-width: 64px;
+}
+.icon {
+  stroke: #FF901F;
+}
+
+.social {
+  display: inline-block;
+  padding-top: 16px;
+}
+.outline {
+  display: inline-block;
+  padding: 16px;
+  border-radius: 8px;
+  border: 2px solid #FF901F;
 }
