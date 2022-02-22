@@ -23,7 +23,7 @@
   <!-- For the navigation -->
   <header>
     <div class= "container">
-      <a href="index.html"><img src="img/hexpert/logos/soc_logo_icon.svg" alt="Sean O Connor">Seán O Connor</a>
+      <a href="index.html"><img src="img/hexpert/logos/soc_logo_icon.svg" alt="Sean O Connor" class="logo">Seán O Connor</a>
       <nav>
         <ul>
           <li><a href="index.html" class= "navigation project">Projects</a></li>
@@ -33,775 +33,805 @@
       </nav>
     </div>
   </header>
+  <main>
+    <!-- For my projects -->
+    <div #ProjectHexpert id= "Project Hexpert">
+      <div class= "container">
+        <!--For the project title-->
+        <h1>Hexpert</h1>
+      </div>
+      <div class= "container">
+        <!--For the hero image-->
+        <picture>
+          <source srcset="img/hexpert/hero_image/portfolio_hero@0.5x.jpg" media="(max-width:600px)">
+          <source srcset="img/hexpert/hero_image/portfolio_hero@0.75x.jpg" media="(max-width:767px)">
+          <source srcset="img/hexpert/hero_image/portfolio_hero@1x.jpg" media="(max-width:1139px)">
+          <source srcset="img/hexpert/hero_image/portfolio_hero@1.5x.jpg" media="(max-width:1900px)">
+          <img src="img/hexpert/hero_image/portfolio_hero@1x.png" alt="Hexpert">
+        </picture>
+        <div>
+          <div>
+            <h3>The Project</h3>
+            <p>Hexpert is a responsive web application that allows users to contact experts in computer building, and other areas related to computers. I chose this project, as part of my CareerFoundry course, because I was researching computer
+              building and noticed how difficult it was to find answers to specific questions.</p>
+          </div>
+          <div>
+            <h3>Key objectives and goals for this project were:</h3>
+            <ul>
+              <li>Give people a simple, intuitive way to connect with an expert in nearly any field within seconds, so they can feel more informed and more prepared to face their everyday (and not-so-everyday) problems.</li>
+              <li>The app will be free to use, but will require payment for any video calls done over the platform. </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class= "container">
+        <div>
+          <h3>Background Information</h3>
+        </div>
+        <div>
+          <div>
+            <p>As business and social interactions have moved further towards online spaces, and advances in technology increase exponentially, more people are purchasing personal computers than ever before. Some people also choose to “build” their own
+              computer, that is take computer parts and assemble them to make a complete computer that suits their specific needs (leading to this process often being called “adult legos”). </p>
+          </div>
+          <div>
+            <p>“Building” computers is very popular in the gaming community, and has proponents in other areas, such as developers, but the process can be expensive and slightly risky as mistakes can damage, or destroy, parts worth hundreds or
+              sometimes thousands of euro. Despite this price-tag, it can also be a budget alternative as a hawk-eyed individual can use bargains, sales and other methods to build a computer worth a fraction of the cost to buy the equivalent pre-made
+              from a major retailer. </p>
+          </div>
+          <div>
+            <p>Due to the current pandemic both encouraging people to Do-It-Yourself, and electronics manufacturing taking a hit, more people outside the existing community are interested in building computers. The problem is that there is so much
+              varying and contradictory information on the topic, due to the scope of different brands, hardware generations, software specifications and even what box to put it all in, that it can be overwhelming at first. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--For the project process-->
+    <!--Block template
+      <div>
+        <picture>
+          <source srcset="img/hexpert/" media="(max-width:600px)">
+          <source srcset="img/hexpert/" media="(max-width:767px)">
+          <source srcset="img/hexpert/" media="(max-width:1139px)">
+          <source srcset="img/hexpert/" media="(max-width:1900px)">
+          <img src="img/hexpert/" alt="Hexpert">
+        </picture>
+        <div>
+          <h3>Title</h3>
+          <p>Body</p>
+        </div>
+      </div>
+      -->
+    <div #MyProcess id= "process">
+      <div class= "container">
+        <div>
+          <h2>My Process</h2>
+        </div>
+        <!--Research-->
+        <div>
+          <div>
+            <picture>
+              <source srcset="img/hexpert/" media="(max-width:600px)">
+              <source srcset="img/hexpert/" media="(max-width:767px)">
+              <source srcset="img/hexpert/" media="(max-width:1139px)">
+              <source srcset="img/hexpert/" media="(max-width:1900px)">
+              <img src="img/hexpert/" alt="Hexpert">
+            </picture>
+            <div>
+              <h3>Problem Statement</h3>
+              <p>Users inexperienced in building or upgrading computers need a way to get accurate information about computer parts and their compatibility and quality because they want to build/upgrade their own computer but hardware is diverse and
+                resources online can be contradictory or inaccurate. </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h3>Competitive Analysis</h3>
+            <p>I conducted an in-depth analysis of two web applications:</p>
+          </div>
+          <div>
+            <div>
+              <h4>TheOne</h4>
+              <p>I chose this app because it was closest to the initial premise for this project, it is an app for conecting “experts” with users who want to learn a variety of skills or information from them, with a focus on health and wellness but
+                including mathematics and other other types of skills.</p>
+              <p>I noticed that the app had multiple pain points, from inconsistent UI patterns to the overall theme of the web app version which felt like a magazine website rather than an app.</p>
+              <p>One stand out frustration was being unable to search a term directly, instead being forced to choose a generated result in the drop down of the search bar.</p>
+            </div>
+            <div>
+              <h4>PCPartpicker</h4>
+              <p>I chose this app because it is a popular tool for cross-checking computer parts prices across a variety of platforms, as well as incorporating some features to check compatibility of parts. It relates to my project in its results, as it
+                provides a service that allows people who build computer to find information on parts across a variety of factors, is highly regarded and has a dedicated community surrounding it.</p>
+              <p>This app is well designed, with a robust search engine and algorithm, supplementary materials which add to the core feature of the app, and a community forum well-moderated to foster professional discussions.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h3>User Research</h3>
+            <p>I conducted surveys and user interviews to test my hypothesis, which highlighted key insights that shaped the project:</p>
+          </div>
+          <div>
+            <div>
+              <h4>Trust</h4>
+              <p>People are less inclined, especially online, to use video chat features when there are text based alternatives available, unless they feel comfortable or confident with another person. Then, people generally prefer a video or audio chat to
+                communicate important or detailed explanations.</p>
+            </div>
+            <div>
+              <h4>Value</h4>
+              <p>People who want to build their own computer are looking for value, whether that is from getting the best they can with a specific budget or from creating an alternative to a marked up pre-made retail product. People also want value from
+                their time. They do not want to waste their own, or an expert’s, time on simple questions that are easily searchable online.</p>
+            </div>
+            <div>
+              <h4>Learning</h4>
+              <p>People prefer doing their own research, via websites and forums, before turning to others humans for direct advice.</p>
+            </div>
+            <div>
+              <h4>Skill</h4>
+              <p>Computer building can seem complex at first. There is lots of terminology used and costly mistakes that can be made that can deter people or create a stressful experience.</p>
+            </div>
+          </div>
+        </div>
+        <!--Research Analysis-->
+        <div>
+          <div>
+            <h3>User Personas</h3>
+            <p>Using the information generated by the surveys and user interviews, I created two user personas:</p>
+          </div>
+          <div>
+            <div>
+              <p>The primary persona, Nathan, represents the intended audience. Younger skewing, budget oriented, and interested in gaming with their computer.</p>
+              <picture>
+                <source srcset="img/hexpert/user_personas/nathan_persona@0.125x.png" media="(max-width:600px)">
+                <source srcset="img/hexpert/user_personas/nathan_persona@0.1875x.png" media="(max-width:767px)">
+                <source srcset="img/hexpert/user_personas/nathan_persona@0.25x.png" media="(max-width:1139px)">
+                <img src="img/hexpert/user_personas/nathan_persona@0.25x.png" alt="Hexpert">
+              </picture>
+            </div>
+            <div>
+              <p>The secondary persona, Rachel, represents the other audiences who may be a little older and affluent, or looking for a specific use case such as a workstation. </p>
+              <picture>
+                <source srcset="img/hexpert/user_personas/rachael_persona@0.125x.png" media="(max-width:600px)">
+                <source srcset="img/hexpert/user_personas/rachael_persona@0.1875x.png" media="(max-width:767px)">
+                <source srcset="img/hexpert/user_personas/rachael_persona@0.25x.png" media="(max-width:1139px)">
+                <img src="img/hexpert/user_personas/rachael_persona@0.25x.png" alt="Hexpert">
+              </picture>
+            </div>
+          </div>
+          <div>
+            <p>Meeting the needs of the primary persona while incorporating those from the secondary persona maintains a focus on their common needs as well as avoiding a product that would be too polarising.</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h3>User Flows</h3>
+            <p>User flows illustrate the intended journey the user takes to completing a task or goal. Using the persona’s needs to develop intuitive user flows that show their progress from the first point of contact when completing a task to the
+              completion of their goal was essential in highlighting potential stumbling blocks and a starting point for the structure of the app.</p>
+          </div>
+          <div>
+            <div>
+              <picture>
+                <source srcset="img/hexpert/user_flows/finding_expert_flow@0.5x.png" media="(max-width:600px)">
+                <source srcset="img/hexpert/user_flows/finding_expert_flow@0.75x.png" media="(max-width:767px)">
+                <source srcset="img/hexpert/user_flows/finding_expert_flow@1x.png" media="(max-width:1139px)">
+                <img src="img/hexpert/user_flows/finding_expert_flow@1x.png" alt="Hexpert">
+              </picture>
+            </div>
+            <div>
+              <picture>
+                <source srcset="img/hexpert/user_flows/paying_expert_flow@0.5x.png" media="(max-width:600px)">
+                <source srcset="img/hexpert/user_flows/paying_expert_flow@0.75x.png" media="(max-width:767px)">
+                <source srcset="img/hexpert/user_flows/paying_expert_flow@1x.png" media="(max-width:1139px)">
+                <img src="img/hexpert/user_flows/paying_expert_flow@1x.png" alt="Hexpert">
+              </picture>
+            </div>
+            <div>
+              <p>By focusing on the core features of the app, and generating an efficient user flow for these features, I was able to create a plan for essential steps in the user journey and begin wireframing ideas to visualise them.</p>
+            </div>
+          </div>
+        </div>
+        <!--Wireframes-->
+        <div>
+          <div>
+            <h3>Wireframes</h3>
+            <p>Initial screens and wireframes focused on basic components necessary to the features being rendered, such as filters, a search bar and cards, to display results, for the search feature.</p>
+            <p>From mid-fidelity to high-fidelity I began iterating on these basic components and flows, chopping and changing steps until their structure within the layout and user flow became more intuitive.</p>
+          </div>
+        </div>
 
-  <!-- For my projects -->
-  <div #ProjectHexpert id= "Project Hexpert">
-    <div class= "container">
-      <!--For the project title-->
-      <h1>Hexpert</h1>
-    </div>
-    <div class= "container">
-      <!--For the hero image-->
-      <picture>
-        <source srcset="img/hexpert/hero_image/portfolio_hero@0.5x.jpg" media="(max-width:600px)">
-        <source srcset="img/hexpert/hero_image/portfolio_hero@0.75x.jpg" media="(max-width:767px)">
-        <source srcset="img/hexpert/hero_image/portfolio_hero@1x.jpg" media="(max-width:1139px)">
-        <source srcset="img/hexpert/hero_image/portfolio_hero@1.5x.jpg" media="(max-width:1900px)">
-        <img src="img/hexpert/hero_image/portfolio_hero@1x.png" alt="Hexpert">
-      </picture>
-      <div>
-        <div>
-          <h3>The Project</h3>
-          <p>Hexpert is a responsive web application that allows users to contact experts in computer building, and other areas related to computers. I chose this project, as part of my CareerFoundry course, because I was researching computer
-            building and noticed how difficult it was to find answers to specific questions.</p>
-        </div>
-        <div>
-          <h3>Key objectives and goals for this project were:</h3>
-          <ul>
-            <li>Give people a simple, intuitive way to connect with an expert in nearly any field within seconds, so they can feel more informed and more prepared to face their everyday (and not-so-everyday) problems.</li>
-            <li>The app will be free to use, but will require payment for any video calls done over the platform. </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class= "container">
-      <div>
-        <h3>Background Information</h3>
-      </div>
-      <div>
-        <div>
-          <p>As business and social interactions have moved further towards online spaces, and advances in technology increase exponentially, more people are purchasing personal computers than ever before. Some people also choose to “build” their own
-            computer, that is take computer parts and assemble them to make a complete computer that suits their specific needs (leading to this process often being called “adult legos”). </p>
-        </div>
-        <div>
-          <p>“Building” computers is very popular in the gaming community, and has proponents in other areas, such as developers, but the process can be expensive and slightly risky as mistakes can damage, or destroy, parts worth hundreds or
-            sometimes thousands of euro. Despite this price-tag, it can also be a budget alternative as a hawk-eyed individual can use bargains, sales and other methods to build a computer worth a fraction of the cost to buy the equivalent pre-made
-            from a major retailer. </p>
-        </div>
-        <div>
-          <p>Due to the current pandemic both encouraging people to Do-It-Yourself, and electronics manufacturing taking a hit, more people outside the existing community are interested in building computers. The problem is that there is so much
-            varying and contradictory information on the topic, due to the scope of different brands, hardware generations, software specifications and even what box to put it all in, that it can be overwhelming at first. </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--For the project process-->
-  <!--Block template
-    <div>
-      <picture>
-        <source srcset="img/hexpert/" media="(max-width:600px)">
-        <source srcset="img/hexpert/" media="(max-width:767px)">
-        <source srcset="img/hexpert/" media="(max-width:1139px)">
-        <source srcset="img/hexpert/" media="(max-width:1900px)">
-        <img src="img/hexpert/" alt="Hexpert">
-      </picture>
-      <div>
-        <h3>Title</h3>
-        <p>Body</p>
-      </div>
-    </div>
-    -->
-  <div #MyProcess id= "process">
-    <div class= "container">
-      <div>
-        <h2>My Process</h2>
-      </div>
-      <!--Research-->
-      <div>
-        <div>
-          <picture>
-            <source srcset="img/hexpert/" media="(max-width:600px)">
-            <source srcset="img/hexpert/" media="(max-width:767px)">
-            <source srcset="img/hexpert/" media="(max-width:1139px)">
-            <source srcset="img/hexpert/" media="(max-width:1900px)">
-            <img src="img/hexpert/" alt="Hexpert">
-          </picture>
-          <div>
-            <h3>Problem Statement</h3>
-            <p>Users inexperienced in building or upgrading computers need a way to get accurate information about computer parts and their compatibility and quality because they want to build/upgrade their own computer but hardware is diverse and
-              resources online can be contradictory or inaccurate. </p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div>
-          <h3>Competitive Analysis</h3>
-          <p>I conducted an in-depth analysis of two web applications:</p>
-        </div>
         <div>
           <div>
-            <h4>TheOne</h4>
-            <p>I chose this app because it was closest to the initial premise for this project, it is an app for conecting “experts” with users who want to learn a variety of skills or information from them, with a focus on health and wellness but
-              including mathematics and other other types of skills.</p>
-            <p>I noticed that the app had multiple pain points, from inconsistent UI patterns to the overall theme of the web app version which felt like a magazine website rather than an app.</p>
-            <p>One stand out frustration was being unable to search a term directly, instead being forced to choose a generated result in the drop down of the search bar.</p>
+            <h4>Low-Fidelity Wireframes</h4>
+            <p>I used Invision to sketch low fidelity wireframes, as the hand drawn style kept me from over designing the aesthetics while also allowing me to rapidly iterate on the same screen without spending too much time redrawing the same elements. I
+              could also easily export screens, to share them with my tutor and get feedback.</p>
+            <p>During this early stage, I was not familiar with common behavioural patterns and so included some unintuitive design choices, such as a drop-down menu for sort filters that opens directly in the layout, shifting other elements downwards to
+              accommodate it.</p>
           </div>
           <div>
-            <h4>PCPartpicker</h4>
-            <p>I chose this app because it is a popular tool for cross-checking computer parts prices across a variety of platforms, as well as incorporating some features to check compatibility of parts. It relates to my project in its results, as it
-              provides a service that allows people who build computer to find information on parts across a variety of factors, is highly regarded and has a dedicated community surrounding it.</p>
-            <p>This app is well designed, with a robust search engine and algorithm, supplementary materials which add to the core feature of the app, and a community forum well-moderated to foster professional discussions.</p>
+            <div>
+              <picture>
+                <source srcset="img/hexpert/low_fid/search_low_fid@0.5x.png" media="(max-width:600px)">
+                <source srcset="img/hexpert/low_fid/search_low_fid@0.75x.png" media="(max-width:767px)">
+                <source srcset="img/hexpert/low_fid/search_low_fid@1x.png" media="(max-width:1139px)">
+                <img src="img/hexpert/low_fid/search_low_fid@1x.png" alt="Search Feature">
+              </picture>
+            </div>
+            <div>
+              <picture>
+                <source srcset="img/hexpert/low_fid/message_low_fid@0.5x.png" media="(max-width:600px)">
+                <source srcset="img/hexpert/low_fid/message_low_fid@0.75x.png" media="(max-width:767px)">
+                <source srcset="img/hexpert/low_fid/message_low_fid@1x.png" media="(max-width:1139px)">
+                <img src="img/hexpert/low_fid/message_low_fid@1x.png" alt="Messaging Feature">
+              </picture>
+            </div>
+            <div>
+              <picture>
+                <source srcset="img/hexpert/low_fid/video_low_fid@0.5x.png" media="(max-width:600px)">
+                <source srcset="img/hexpert/low_fid/video_low_fid@0.75x.png" media="(max-width:767px)">
+                <source srcset="img/hexpert/low_fid/video_low_fid@1x.png" media="(max-width:1139px)">
+                <img src="img/hexpert/low_fid/video_low_fid@1x.png" alt="Video Chat Feature">
+              </picture>
+            </div>
           </div>
         </div>
-      </div>
-      <div>
-        <div>
-          <h3>User Research</h3>
-          <p>I conducted surveys and user interviews to test my hypothesis, which highlighted key insights that shaped the project:</p>
-        </div>
-        <div>
-          <div>
-            <h4>Trust</h4>
-            <p>People are less inclined, especially online, to use video chat features when there are text based alternatives available, unless they feel comfortable or confident with another person. Then, people generally prefer a video or audio chat to
-              communicate important or detailed explanations.</p>
-          </div>
-          <div>
-            <h4>Value</h4>
-            <p>People who want to build their own computer are looking for value, whether that is from getting the best they can with a specific budget or from creating an alternative to a marked up pre-made retail product. People also want value from
-              their time. They do not want to waste their own, or an expert’s, time on simple questions that are easily searchable online.</p>
-          </div>
-          <div>
-            <h4>Learning</h4>
-            <p>People prefer doing their own research, via websites and forums, before turning to others humans for direct advice.</p>
-          </div>
-          <div>
-            <h4>Skill</h4>
-            <p>Computer building can seem complex at first. There is lots of terminology used and costly mistakes that can be made that can deter people or create a stressful experience.</p>
-          </div>
-        </div>
-      </div>
-      <!--Research Analysis-->
-      <div>
-        <div>
-          <h3>User Personas</h3>
-          <p>Using the information generated by the surveys and user interviews, I created two user personas:</p>
-        </div>
-        <div>
-          <div>
-            <p>The primary persona, Nathan, represents the intended audience. Younger skewing, budget oriented, and interested in gaming with their computer.</p>
-            <picture>
-              <source srcset="img/hexpert/user_personas/nathan_persona@0.125x.png" media="(max-width:600px)">
-              <source srcset="img/hexpert/user_personas/nathan_persona@0.1875x.png" media="(max-width:767px)">
-              <source srcset="img/hexpert/user_personas/nathan_persona@0.25x.png" media="(max-width:1139px)">
-              <img src="img/hexpert/user_personas/nathan_persona@0.25x.png" alt="Hexpert">
-            </picture>
-          </div>
-          <div>
-            <p>The secondary persona, Rachel, represents the other audiences who may be a little older and affluent, or looking for a specific use case such as a workstation. </p>
-            <picture>
-              <source srcset="img/hexpert/user_personas/rachael_persona@0.125x.png" media="(max-width:600px)">
-              <source srcset="img/hexpert/user_personas/rachael_persona@0.1875x.png" media="(max-width:767px)">
-              <source srcset="img/hexpert/user_personas/rachael_persona@0.25x.png" media="(max-width:1139px)">
-              <img src="img/hexpert/user_personas/rachael_persona@0.25x.png" alt="Hexpert">
-            </picture>
-          </div>
-        </div>
-        <div>
-          <p>Meeting the needs of the primary persona while incorporating those from the secondary persona maintains a focus on their common needs as well as avoiding a product that would be too polarising.</p>
-        </div>
-      </div>
-      <div>
-        <div>
-          <h3>User Flows</h3>
-          <p>User flows illustrate the intended journey the user takes to completing a task or goal. Using the persona’s needs to develop intuitive user flows that show their progress from the first point of contact when completing a task to the
-            completion of their goal was essential in highlighting potential stumbling blocks and a starting point for the structure of the app.</p>
-        </div>
-        <div>
-          <div>
-            <picture>
-              <source srcset="img/hexpert/user_flows/finding_expert_flow@0.5x.png" media="(max-width:600px)">
-              <source srcset="img/hexpert/user_flows/finding_expert_flow@0.75x.png" media="(max-width:767px)">
-              <source srcset="img/hexpert/user_flows/finding_expert_flow@1x.png" media="(max-width:1139px)">
-              <img src="img/hexpert/user_flows/finding_expert_flow@1x.png" alt="Hexpert">
-            </picture>
-          </div>
-          <div>
-            <picture>
-              <source srcset="img/hexpert/user_flows/paying_expert_flow@0.5x.png" media="(max-width:600px)">
-              <source srcset="img/hexpert/user_flows/paying_expert_flow@0.75x.png" media="(max-width:767px)">
-              <source srcset="img/hexpert/user_flows/paying_expert_flow@1x.png" media="(max-width:1139px)">
-              <img src="img/hexpert/user_flows/paying_expert_flow@1x.png" alt="Hexpert">
-            </picture>
-          </div>
-          <div>
-            <p>By focusing on the core features of the app, and generating an efficient user flow for these features, I was able to create a plan for essential steps in the user journey and begin wireframing ideas to visualise them.</p>
-          </div>
-        </div>
-      </div>
-      <!--Wireframes-->
-      <div>
-        <div>
-          <h3>Wireframes</h3>
-          <p>Initial screens and wireframes focused on basic components necessary to the features being rendered, such as filters, a search bar and cards, to display results, for the search feature.</p>
-          <p>From mid-fidelity to high-fidelity I began iterating on these basic components and flows, chopping and changing steps until their structure within the layout and user flow became more intuitive.</p>
-        </div>
-      </div>
 
-      <div>
-        <div>
-          <h4>Low-Fidelity Wireframes</h4>
-          <p>I used Invision to sketch low fidelity wireframes, as the hand drawn style kept me from over designing the aesthetics while also allowing me to rapidly iterate on the same screen without spending too much time redrawing the same elements. I
-            could also easily export screens, to share them with my tutor and get feedback.</p>
-          <p>During this early stage, I was not familiar with common behavioural patterns and so included some unintuitive design choices, such as a drop-down menu for sort filters that opens directly in the layout, shifting other elements downwards to
-            accommodate it.</p>
-        </div>
         <div>
           <div>
-            <picture>
-              <source srcset="img/hexpert/low_fid/search_low_fid@0.5x.png" media="(max-width:600px)">
-              <source srcset="img/hexpert/low_fid/search_low_fid@0.75x.png" media="(max-width:767px)">
-              <source srcset="img/hexpert/low_fid/search_low_fid@1x.png" media="(max-width:1139px)">
-              <img src="img/hexpert/low_fid/search_low_fid@1x.png" alt="Search Feature">
-            </picture>
+            <h4>Mid-Fidelity Wireframes</h4>
+            <p>I used Figma to generate mid-fidelity wireframes, as their community has a large selection of premade assets which save time translating the initial ideas of the low-fidelity frames.</p>
+            <p>At this stage, I had more research into common patterns and mental models and began reassessing previous design choices. While many changes were made across the course of this project, the basic structure I generated from my research and
+              evaluating my personas at this stage was the foundation of the final design.</p>
+            <p>Mid-fidelity wireframes focus on structure and layout, not necessarily copy or content. I used only icons and copy necessary to communicate functionality, as this helps keep the focus on where things should go, and why they should go there.
+            </p>
           </div>
           <div>
-            <picture>
-              <source srcset="img/hexpert/low_fid/message_low_fid@0.5x.png" media="(max-width:600px)">
-              <source srcset="img/hexpert/low_fid/message_low_fid@0.75x.png" media="(max-width:767px)">
-              <source srcset="img/hexpert/low_fid/message_low_fid@1x.png" media="(max-width:1139px)">
-              <img src="img/hexpert/low_fid/message_low_fid@1x.png" alt="Messaging Feature">
-            </picture>
-          </div>
-          <div>
-            <picture>
-              <source srcset="img/hexpert/low_fid/video_low_fid@0.5x.png" media="(max-width:600px)">
-              <source srcset="img/hexpert/low_fid/video_low_fid@0.75x.png" media="(max-width:767px)">
-              <source srcset="img/hexpert/low_fid/video_low_fid@1x.png" media="(max-width:1139px)">
-              <img src="img/hexpert/low_fid/video_low_fid@1x.png" alt="Video Chat Feature">
-            </picture>
+            <div>
+              <div>
+                <h4>Landing Page</h4>
+                <picture>
+                  <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_landing_page_image@0.5x.png" media="(max-width:600px)">
+                  <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_landing_page_image@0.5x.png" media="(max-width:767px)">
+                  <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_landing_page_image@1x.png" media="(max-width:1139px)">
+                  <img src="img/hexpert/mid_fid/mid-fi_wireframes_landing_page_image@1x.png" alt="Landing Page">
+                </picture>
+              </div>
+              <div>
+                <h4>Search Results</h4>
+                <picture>
+                  <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_search_results_image@0.5x.png" media="(max-width:600px)">
+                  <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_search_results_image@0.5x.png" media="(max-width:767px)">
+                  <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_search_results_image@1x.png" media="(max-width:1139px)">
+                  <img src="img/hexpert/mid_fid/mid-fi_wireframes_search_results_image@1x.png" alt="Search Results">
+                </picture>
+              </div>
+            </div>
+            <div>
+              <div>
+                <h4>Expert Profile Page</h4>
+                <picture>
+                  <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_expert_image@0.5x.png" media="(max-width:600px)">
+                  <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_expert_image@0.5x.png" media="(max-width:767px)">
+                  <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_expert_image@1x.png" media="(max-width:1139px)">
+                  <img src="img/hexpert/mid_fid/mid-fi_wireframes_expert_image@1x.png" alt="Expert Profile Page">
+                </picture>
+              </div>
+              <div>
+                <h4>Question Form</h4>
+                <picture>
+                  <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_question_image@0.5x.png" media="(max-width:600px)">
+                  <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_question_image@0.5x.png" media="(max-width:767px)">
+                  <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_question_image@1x.png" media="(max-width:1139px)">
+                  <img src="img/hexpert/mid_fid/mid-fi_wireframes_question_image@1x.png" alt="Question Form">
+                </picture>
+              </div>
+            </div>
+            <div>
+              <div>
+                <h4>Message</h4>
+                <picture>
+                  <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_messaging_image@0.5x.png" media="(max-width:600px)">
+                  <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_messaging_image@0.5x.png" media="(max-width:767px)">
+                  <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_messaging_image@1x.png" media="(max-width:1139px)">
+                  <img src="img/hexpert/mid_fid/mid-fi_wireframes_messaging_image@1x.png" alt="Message">
+                </picture>
+              </div>
+              <div>
+                <h4>Scheduling</h4>
+                <picture>
+                  <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_scheduling_image@0.5x.png" media="(max-width:600px)">
+                  <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_scheduling_image@0.5x.png" media="(max-width:767px)">
+                  <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_scheduling_image@1x.png" media="(max-width:1139px)">
+                  <img src="img/hexpert/mid_fid/mid-fi_wireframes_scheduling_image@1x.png" alt="Scheduling">
+                </picture>
+              </div>
+            </div>
+            <div>
+              <div>
+                <h4>Payment</h4>
+                <picture>
+                  <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_payment_gateway_image@0.5x.png" media="(max-width:600px)">
+                  <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_payment_gateway_image@0.5x.png" media="(max-width:767px)">
+                  <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_payment_gateway_image@1x.png" media="(max-width:1139px)">
+                  <img src="img/hexpert/mid_fid/mid-fi_wireframes_payment_gateway_image@1x.png" alt="Payment">
+                </picture>
+              </div>
+              <div>
+                <h4>Video Chat</h4>
+                <picture>
+                  <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_video_call_image@0.5x.png" media="(max-width:600px)">
+                  <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_video_call_image@0.5x.png" media="(max-width:767px)">
+                  <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_video_call_image@1x.png" media="(max-width:1139px)">
+                  <img src="img/hexpert/mid_fid/mid-fi_wireframes_video_call_image@1x.png" alt="Video Chat">
+                </picture>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div>
         <div>
-          <h4>Mid-Fidelity Wireframes</h4>
-          <p>I used Figma to generate mid-fidelity wireframes, as their community has a large selection of premade assets which save time translating the initial ideas of the low-fidelity frames.</p>
-          <p>At this stage, I had more research into common patterns and mental models and began reassessing previous design choices. While many changes were made across the course of this project, the basic structure I generated from my research and
-            evaluating my personas at this stage was the foundation of the final design.</p>
-          <p>Mid-fidelity wireframes focus on structure and layout, not necessarily copy or content. I used only icons and copy necessary to communicate functionality, as this helps keep the focus on where things should go, and why they should go there.
-          </p>
-        </div>
-        <div>
+          <div>
+            <h4>High-Fidelity Wireframes</h4>
+            <p>High-fidelity wireframes refine the design further by adding copy and spacing to give screens context. With copy added, issues with spacing and element sizing become more noticeable. </p>
+            <p>While content added context to the structure and layout, I noticed myself fitting content to the existing structure rather than shaping the structure around the needs of the content, and the needs of the user.</p>
+            <p>High-fidelity wireframes remain greyscale (no colouring) as this can help to focus feedback on the features and user journey instead of polished visuals.</p>
+          </div>
           <div>
             <div>
               <h4>Landing Page</h4>
               <picture>
-                <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_landing_page_image@0.5x.png" media="(max-width:600px)">
-                <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_landing_page_image@0.5x.png" media="(max-width:767px)">
-                <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_landing_page_image@1x.png" media="(max-width:1139px)">
-                <img src="img/hexpert/mid_fid/mid-fi_wireframes_landing_page_image@1x.png" alt="Landing Page">
+                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_landing_page_image@0.5x.png" media="(max-width:600px)">
+                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_landing_page_image@0.5x.png" media="(max-width:767px)">
+                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_landing_page_image@1x.png" media="(max-width:1139px)">
+                <img src="img/hexpert/high_fid/Hi-fid_wireframes_landing_page_image@1x.png" alt="Landing Page">
               </picture>
             </div>
             <div>
               <h4>Search Results</h4>
               <picture>
-                <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_search_results_image@0.5x.png" media="(max-width:600px)">
-                <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_search_results_image@0.5x.png" media="(max-width:767px)">
-                <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_search_results_image@1x.png" media="(max-width:1139px)">
-                <img src="img/hexpert/mid_fid/mid-fi_wireframes_search_results_image@1x.png" alt="Search Results">
+                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_search_results_image@0.5x.png" media="(max-width:600px)">
+                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_search_results_image@0.5x.png" media="(max-width:767px)">
+                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_search_results_image@1x.png" media="(max-width:1139px)">
+                <img src="img/hexpert/high_fid/Hi-fid_wireframes_search_results_image@1x.png" alt="Search Results">
               </picture>
             </div>
-          </div>
-          <div>
             <div>
               <h4>Expert Profile Page</h4>
               <picture>
-                <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_expert_image@0.5x.png" media="(max-width:600px)">
-                <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_expert_image@0.5x.png" media="(max-width:767px)">
-                <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_expert_image@1x.png" media="(max-width:1139px)">
-                <img src="img/hexpert/mid_fid/mid-fi_wireframes_expert_image@1x.png" alt="Expert Profile Page">
+                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_expert_image@0.5x.png" media="(max-width:600px)">
+                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_expert_image@0.5x.png" media="(max-width:767px)">
+                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_expert_image@1x.png" media="(max-width:1139px)">
+                <img src="img/hexpert/high_fid/Hi-fid_wireframes_expert_image@1x.png" alt="Expert Profile Page">
               </picture>
             </div>
             <div>
               <h4>Question Form</h4>
               <picture>
-                <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_question_image@0.5x.png" media="(max-width:600px)">
-                <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_question_image@0.5x.png" media="(max-width:767px)">
-                <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_question_image@1x.png" media="(max-width:1139px)">
-                <img src="img/hexpert/mid_fid/mid-fi_wireframes_question_image@1x.png" alt="Question Form">
+                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_question_image@0.5x.png" media="(max-width:600px)">
+                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_question_image@0.5x.png" media="(max-width:767px)">
+                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_question_image@1x.png" media="(max-width:1139px)">
+                <img src="img/hexpert/high_fid/Hi-fid_wireframes_question_image@1x.png" alt="Question Form">
               </picture>
             </div>
-          </div>
-          <div>
             <div>
               <h4>Message</h4>
               <picture>
-                <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_messaging_image@0.5x.png" media="(max-width:600px)">
-                <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_messaging_image@0.5x.png" media="(max-width:767px)">
-                <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_messaging_image@1x.png" media="(max-width:1139px)">
-                <img src="img/hexpert/mid_fid/mid-fi_wireframes_messaging_image@1x.png" alt="Message">
+                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_messaging_image@0.5x.png" media="(max-width:600px)">
+                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_messaging_image@0.5x.png" media="(max-width:767px)">
+                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_messaging_image@1x.png" media="(max-width:1139px)">
+                <img src="img/hexpert/high_fid/Hi-fid_wireframes_messaging_image@1x.png" alt="Message">
               </picture>
             </div>
             <div>
               <h4>Scheduling</h4>
               <picture>
-                <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_scheduling_image@0.5x.png" media="(max-width:600px)">
-                <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_scheduling_image@0.5x.png" media="(max-width:767px)">
-                <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_scheduling_image@1x.png" media="(max-width:1139px)">
-                <img src="img/hexpert/mid_fid/mid-fi_wireframes_scheduling_image@1x.png" alt="Scheduling">
+                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_scheduling_image@0.5x.png" media="(max-width:600px)">
+                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_scheduling_image@0.5x.png" media="(max-width:767px)">
+                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_scheduling_image@1x.png" media="(max-width:1139px)">
+                <img src="img/hexpert/high_fid/Hi-fid_wireframes_scheduling_image@1x.png" alt="Scheduling">
               </picture>
             </div>
-          </div>
-          <div>
+            <div>
+              <h4>Confirmation</h4>
+              <picture>
+                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_scheduling_confirmation_image@0.5x.png" media="(max-width:600px)">
+                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_scheduling_confirmation_image@0.5x.png" media="(max-width:767px)">
+                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_scheduling_confirmation_image@1x.png" media="(max-width:1139px)">
+                <img src="img/hexpert/high_fid/Hi-fid_wireframes_scheduling_confirmation_image@1x.png" alt="Confirmation">
+              </picture>
+            </div>
             <div>
               <h4>Payment</h4>
               <picture>
-                <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_payment_gateway_image@0.5x.png" media="(max-width:600px)">
-                <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_payment_gateway_image@0.5x.png" media="(max-width:767px)">
-                <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_payment_gateway_image@1x.png" media="(max-width:1139px)">
-                <img src="img/hexpert/mid_fid/mid-fi_wireframes_payment_gateway_image@1x.png" alt="Payment">
+                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_payment_gateway_image@0.5x.png" media="(max-width:600px)">
+                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_payment_gateway_image@0.5x.png" media="(max-width:767px)">
+                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_payment_gateway_image@1x.png" media="(max-width:1139px)">
+                <img src="img/hexpert/high_fid/Hi-fid_wireframes_payment_gateway_image@1x.png" alt="Payment">
               </picture>
             </div>
             <div>
               <h4>Video Chat</h4>
               <picture>
-                <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_video_call_image@0.5x.png" media="(max-width:600px)">
-                <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_video_call_image@0.5x.png" media="(max-width:767px)">
-                <source srcset="img/hexpert/mid_fid/mid-fi_wireframes_video_call_image@1x.png" media="(max-width:1139px)">
-                <img src="img/hexpert/mid_fid/mid-fi_wireframes_video_call_image@1x.png" alt="Video Chat">
+                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_video_messaging_image@0.5x.png" media="(max-width:600px)">
+                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_video_messaging_image@0.5x.png" media="(max-width:767px)">
+                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_video_messaging_image@1x.png" media="(max-width:1139px)">
+                <img src="img/hexpert/high_fid/Hi-fid_wireframes_video_messaging_image@1x.png" alt="Video Chat">
               </picture>
             </div>
           </div>
         </div>
-      </div>
 
-      <div>
-        <div>
-          <h4>High-Fidelity Wireframes</h4>
-          <p>High-fidelity wireframes refine the design further by adding copy and spacing to give screens context. With copy added, issues with spacing and element sizing become more noticeable. </p>
-          <p>While content added context to the structure and layout, I noticed myself fitting content to the existing structure rather than shaping the structure around the needs of the content, and the needs of the user.</p>
-          <p>High-fidelity wireframes remain greyscale (no colouring) as this can help to focus feedback on the features and user journey instead of polished visuals.</p>
-        </div>
-        <div>
-          <div>
-            <h4>Landing Page</h4>
-            <picture>
-              <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_landing_page_image@0.5x.png" media="(max-width:600px)">
-              <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_landing_page_image@0.5x.png" media="(max-width:767px)">
-              <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_landing_page_image@1x.png" media="(max-width:1139px)">
-              <img src="img/hexpert/high_fid/Hi-fid_wireframes_landing_page_image@1x.png" alt="Landing Page">
-            </picture>
-          </div>
-          <div>
-            <h4>Search Results</h4>
-            <picture>
-              <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_search_results_image@0.5x.png" media="(max-width:600px)">
-              <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_search_results_image@0.5x.png" media="(max-width:767px)">
-              <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_search_results_image@1x.png" media="(max-width:1139px)">
-              <img src="img/hexpert/high_fid/Hi-fid_wireframes_search_results_image@1x.png" alt="Search Results">
-            </picture>
-          </div>
-          <div>
-            <h4>Expert Profile Page</h4>
-            <picture>
-              <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_expert_image@0.5x.png" media="(max-width:600px)">
-              <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_expert_image@0.5x.png" media="(max-width:767px)">
-              <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_expert_image@1x.png" media="(max-width:1139px)">
-              <img src="img/hexpert/high_fid/Hi-fid_wireframes_expert_image@1x.png" alt="Expert Profile Page">
-            </picture>
-          </div>
-          <div>
-            <h4>Question Form</h4>
-            <picture>
-              <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_question_image@0.5x.png" media="(max-width:600px)">
-              <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_question_image@0.5x.png" media="(max-width:767px)">
-              <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_question_image@1x.png" media="(max-width:1139px)">
-              <img src="img/hexpert/high_fid/Hi-fid_wireframes_question_image@1x.png" alt="Question Form">
-            </picture>
-          </div>
-          <div>
-            <h4>Message</h4>
-            <picture>
-              <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_messaging_image@0.5x.png" media="(max-width:600px)">
-              <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_messaging_image@0.5x.png" media="(max-width:767px)">
-              <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_messaging_image@1x.png" media="(max-width:1139px)">
-              <img src="img/hexpert/high_fid/Hi-fid_wireframes_messaging_image@1x.png" alt="Message">
-            </picture>
-          </div>
-          <div>
-            <h4>Scheduling</h4>
-            <picture>
-              <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_scheduling_image@0.5x.png" media="(max-width:600px)">
-              <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_scheduling_image@0.5x.png" media="(max-width:767px)">
-              <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_scheduling_image@1x.png" media="(max-width:1139px)">
-              <img src="img/hexpert/high_fid/Hi-fid_wireframes_scheduling_image@1x.png" alt="Scheduling">
-            </picture>
-          </div>
-          <div>
-            <h4>Confirmation</h4>
-            <picture>
-              <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_scheduling_confirmation_image@0.5x.png" media="(max-width:600px)">
-              <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_scheduling_confirmation_image@0.5x.png" media="(max-width:767px)">
-              <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_scheduling_confirmation_image@1x.png" media="(max-width:1139px)">
-              <img src="img/hexpert/high_fid/Hi-fid_wireframes_scheduling_confirmation_image@1x.png" alt="Confirmation">
-            </picture>
-          </div>
-          <div>
-            <h4>Payment</h4>
-            <picture>
-              <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_payment_gateway_image@0.5x.png" media="(max-width:600px)">
-              <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_payment_gateway_image@0.5x.png" media="(max-width:767px)">
-              <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_payment_gateway_image@1x.png" media="(max-width:1139px)">
-              <img src="img/hexpert/high_fid/Hi-fid_wireframes_payment_gateway_image@1x.png" alt="Payment">
-            </picture>
-          </div>
-          <div>
-            <h4>Video Chat</h4>
-            <picture>
-              <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_video_messaging_image@0.5x.png" media="(max-width:600px)">
-              <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_video_messaging_image@0.5x.png" media="(max-width:767px)">
-              <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_video_messaging_image@1x.png" media="(max-width:1139px)">
-              <img src="img/hexpert/high_fid/Hi-fid_wireframes_video_messaging_image@1x.png" alt="Video Chat">
-            </picture>
-          </div>
-        </div>
-      </div>
-
-      <!--Testing-->
-      <div #Testing id= "testing">
-        <div>
-          <div>
-            <h3>Usability Testing</h3>
-            <p>High fidelity wireframes allowed me to put together a basic clickable prototype, which I used to conduct a remote moderated usability test. Key findings from this round of testing bolstered insights from the user interviews and highlighted
-              a critical issue with application:</p>
-          </div>
-        </div>
-        <div>
+        <!--Testing-->
+        <div #Testing id= "testing">
           <div>
             <div>
-              <h4>Communication</h4>
-            </div>
-            <div>
-              <p>The core features of the app have behavioural patterns present in almost every application or web page that the target demographic would have experience with:</p>
-            </div>
-            <div>
-              <p>Where people had trouble with the app was in their own expectations for it, as the landing page did not properly communicate the role of experts or the complete steps to take to achieve their goals. Multiple participants commented that
-                there was information they wish they had been told on the landing page.</p>
+              <h3>Usability Testing</h3>
+              <p>High fidelity wireframes allowed me to put together a basic clickable prototype, which I used to conduct a remote moderated usability test. Key findings from this round of testing bolstered insights from the user interviews and highlighted
+                a critical issue with application:</p>
             </div>
           </div>
           <div>
             <div>
-              <h4>Search functionality</h4>
-              <p>e.g. Ebay or Amazon.</p>
+              <div>
+                <h4>Communication</h4>
+              </div>
+              <div>
+                <p>The core features of the app have behavioural patterns present in almost every application or web page that the target demographic would have experience with:</p>
+              </div>
+              <div>
+                <p>Where people had trouble with the app was in their own expectations for it, as the landing page did not properly communicate the role of experts or the complete steps to take to achieve their goals. Multiple participants commented that
+                  there was information they wish they had been told on the landing page.</p>
+              </div>
             </div>
             <div>
-              <h4>Video Chat functionality</h4>
-              <p>e.g. Zoom, Skype, or Discord.</p>
-            </div>
-            <div>
-              <h4>Messaging Functionality</h4>
-              <p>e.g. Facebook or Whatsapp</p>
-            </div>
-          </div>
-        </div>
-        <div>
-          <p>With this feedback I created some solutions to act as the blueprints for the final mock-up stage:</p>
-        </div>
-        <div>
-          <div>
-            <div>
-              <!--landing page.1 -->
-              <picture>
-                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_landing_page_image@0.5x.png" media="(max-width:600px)">
-                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_landing_page_image@0.5x.png" media="(max-width:767px)">
-                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_landing_page_image@1x.png" media="(max-width:1139px)">
-                <img src="img/hexpert/high_fid/Hi-fid_wireframes_landing_page_image@1x.png" alt="Original">
-              </picture>
-            </div>
-            <div>
-              <picture>
-                <source srcset="img/hexpert/usability_changes/usability_wireframes_landing_page_image@0.5x.png" media="(max-width:600px)">
-                <source srcset="img/hexpert/usability_changes/usability_wireframes_landing_page_image@0.5x.png" media="(max-width:767px)">
-                <source srcset="img/hexpert/usability_changes/usability_wireframes_landing_page_image@1x.png" media="(max-width:1139px)">
-                <img src="img/hexpert/usability_changes/usability_wireframes_landing_page_image@1x.png" alt="Updated">
-              </picture>
+              <div>
+                <h4>Search functionality</h4>
+                <p>e.g. Ebay or Amazon.</p>
+              </div>
+              <div>
+                <h4>Video Chat functionality</h4>
+                <p>e.g. Zoom, Skype, or Discord.</p>
+              </div>
+              <div>
+                <h4>Messaging Functionality</h4>
+                <p>e.g. Facebook or Whatsapp</p>
+              </div>
             </div>
           </div>
           <div>
+            <p>With this feedback I created some solutions to act as the blueprints for the final mock-up stage:</p>
+          </div>
+          <div>
             <div>
-              <!--landing page.2-->
-              <picture>
-                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_landing_page_howitworks_image@0.5x.png" media="(max-width:600px)">
-                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_landing_page_howitworks_image@0.5x.png" media="(max-width:767px)">
-                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_landing_page_howitworks_image@1x.png" media="(max-width:1139px)">
-                <img src="img/hexpert/high_fid/Hi-fid_wireframes_landing_page_howitworks_image@1x.png" alt="Original">
-              </picture>
+              <div>
+                <!--landing page.1 -->
+                <picture>
+                  <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_landing_page_image@0.5x.png" media="(max-width:600px)">
+                  <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_landing_page_image@0.5x.png" media="(max-width:767px)">
+                  <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_landing_page_image@1x.png" media="(max-width:1139px)">
+                  <img src="img/hexpert/high_fid/Hi-fid_wireframes_landing_page_image@1x.png" alt="Original">
+                </picture>
+              </div>
+              <div>
+                <picture>
+                  <source srcset="img/hexpert/usability_changes/usability_wireframes_landing_page_image@0.5x.png" media="(max-width:600px)">
+                  <source srcset="img/hexpert/usability_changes/usability_wireframes_landing_page_image@0.5x.png" media="(max-width:767px)">
+                  <source srcset="img/hexpert/usability_changes/usability_wireframes_landing_page_image@1x.png" media="(max-width:1139px)">
+                  <img src="img/hexpert/usability_changes/usability_wireframes_landing_page_image@1x.png" alt="Updated">
+                </picture>
+              </div>
             </div>
             <div>
-              <picture>
-                <source srcset="img/hexpert/usability_changes/usability_wireframes_landing_page_howitworks_image@0.5x.png" media="(max-width:600px)">
-                <source srcset="img/hexpert/usability_changes/usability_wireframes_landing_page_howitworks_image@0.5x.png" media="(max-width:767px)">
-                <source srcset="img/hexpert/usability_changes/usability_wireframes_landing_page_howitworks_image@1x.png" media="(max-width:1139px)">
-                <img src="img/hexpert/usability_changes/usability_wireframes_landing_page_howitworks_image@1x.png" alt="Updated">
-              </picture>
+              <div>
+                <!--landing page.2-->
+                <picture>
+                  <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_landing_page_howitworks_image@0.5x.png" media="(max-width:600px)">
+                  <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_landing_page_howitworks_image@0.5x.png" media="(max-width:767px)">
+                  <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_landing_page_howitworks_image@1x.png" media="(max-width:1139px)">
+                  <img src="img/hexpert/high_fid/Hi-fid_wireframes_landing_page_howitworks_image@1x.png" alt="Original">
+                </picture>
+              </div>
+              <div>
+                <picture>
+                  <source srcset="img/hexpert/usability_changes/usability_wireframes_landing_page_howitworks_image@0.5x.png" media="(max-width:600px)">
+                  <source srcset="img/hexpert/usability_changes/usability_wireframes_landing_page_howitworks_image@0.5x.png" media="(max-width:767px)">
+                  <source srcset="img/hexpert/usability_changes/usability_wireframes_landing_page_howitworks_image@1x.png" media="(max-width:1139px)">
+                  <img src="img/hexpert/usability_changes/usability_wireframes_landing_page_howitworks_image@1x.png" alt="Updated">
+                </picture>
+              </div>
+            </div>
+            <div>
+              <p>The landing page was criticised by most participants for not explaining the app well, and feeling forced to go straight into searching for an expert. The updated hero image and introduction give the user a better grasp of the concept, and
+                further reading below in the How Does It Work section can be easily found.</p>
             </div>
           </div>
           <div>
-            <p>The landing page was criticised by most participants for not explaining the app well, and feeling forced to go straight into searching for an expert. The updated hero image and introduction give the user a better grasp of the concept, and
-              further reading below in the How Does It Work section can be easily found.</p>
+            <div>
+              <div>
+                <!--expert profile-->
+                <picture>
+                  <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_expert_image@0.5x.png" media="(max-width:600px)">
+                  <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_expert_image@0.5x.png" media="(max-width:767px)">
+                  <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_expert_image@1x.png" media="(max-width:1139px)">
+                  <img src="img/hexpert/high_fid/Hi-fid_wireframes_expert_image@1x.png" alt="Original">
+                </picture>
+              </div>
+              <div>
+                <picture>
+                  <source srcset="img/hexpert/usability_changes/usability_wireframes_expert_image@0.5x.png" media="(max-width:600px)">
+                  <source srcset="img/hexpert/usability_changes/usability_wireframes_expert_image@0.5x.png" media="(max-width:767px)">
+                  <source srcset="img/hexpert/usability_changes/usability_wireframes_expert_image@1x.png" media="(max-width:1139px)">
+                  <img src="img/hexpert/usability_changes/usability_wireframes_expert_image@1x.png" alt="Updated">
+                </picture>
+              </div>
+            </div>
+            <div>
+              <div>
+                <!--question-->
+                <picture>
+                  <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_question_image@0.5x.png" media="(max-width:600px)">
+                  <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_question_image@0.5x.png" media="(max-width:767px)">
+                  <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_question_image@1x.png" media="(max-width:1139px)">
+                  <img src="img/hexpert/high_fid/Hi-fid_wireframes_question_image@1x.png" alt="Original">
+                </picture>
+              </div>
+              <div>
+                <picture>
+                  <source srcset="img/hexpert/usability_changes/usability_wireframes_question_image@0.5x.png" media="(max-width:600px)">
+                  <source srcset="img/hexpert/usability_changes/usability_wireframes_question_image@0.5x.png" media="(max-width:767px)">
+                  <source srcset="img/hexpert/usability_changes/usability_wireframes_question_image@1x.png" media="(max-width:1139px)">
+                  <img src="img/hexpert/usability_changes/usability_wireframes_question_image@1x.png" alt="Updated">
+                </picture>
+              </div>
+            </div>
+            <div>
+              <p>Participants felt that they were missing pricing information and easy access to the expert’s schedule. They also thought that the question section wasn’t important as it was a pop-up section. New screens include payment details,
+                availability and sections for education and experience below. The question pop-up became its own separate page to maintain focus and prevent mistakes, such as losing inputs by exiting the pop up.</p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div>
+                <!--scheduling-->
+                <picture>
+                  <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_scheduling_image@0.5x.png" media="(max-width:600px)">
+                  <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_scheduling_image@0.5x.png" media="(max-width:767px)">
+                  <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_scheduling_image@1x.png" media="(max-width:1139px)">
+                  <img src="img/hexpert/high_fid/Hi-fid_wireframes_scheduling_image@1x.png" alt="Original">
+                </picture>
+              </div>
+              <div>
+                <picture>
+                  <source srcset="img/hexpert/usability_changes/usability_wireframes_scheduling_confirmation_image@0.5x.png" media="(max-width:600px)">
+                  <source srcset="img/hexpert/usability_changes/usability_wireframes_scheduling_confirmation_image@0.5x.png" media="(max-width:767px)">
+                  <source srcset="img/hexpert/usability_changes/usability_wireframes_scheduling_confirmation_image@1x.png" media="(max-width:1139px)">
+                  <img src="img/hexpert/usability_changes/usability_wireframes_scheduling_confirmation_image@1x.png" alt="Updated">
+                </picture>
+              </div>
+            </div>
+            <div>
+              <div>
+                <!--payment-->
+                <picture>
+                  <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_payment_gateway_image@0.5x.png" media="(max-width:600px)">
+                  <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_payment_gateway_image@0.5x.png" media="(max-width:767px)">
+                  <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_payment_gateway_image@1x.png" media="(max-width:1139px)">
+                  <img src="img/hexpert/high_fid/Hi-fid_wireframes_payment_gateway_image@1x.png" alt="Original">
+                </picture>
+              </div>
+              <div>
+                <picture>
+                  <source srcset="img/hexpert/usability_changes/usability_wireframes_payment_gateway_image@0.5x.png" media="(max-width:600px)">
+                  <source srcset="img/hexpert/usability_changes/usability_wireframes_payment_gateway_image@0.5x.png" media="(max-width:767px)">
+                  <source srcset="img/hexpert/usability_changes/usability_wireframes_payment_gateway_image@1x.png" media="(max-width:1139px)">
+                  <img src="img/hexpert/usability_changes/usability_wireframes_payment_gateway_image@1x.png" alt="Updated">
+                </picture>
+              </div>
+            </div>
+            <div>
+              <p>Participants were frustrated when they could not see the cost of the call they were booking. Also, they did not like a payment gateway right before their call, as it could result in being late if there were payment issues. Updated screens
+                include payment information during the scheduling flow, and instead of before the call payment is now taken during the scheduling process.</p>
+            </div>
           </div>
         </div>
+        <!--Mock Ups-->
         <div>
           <div>
-            <div>
-              <!--expert profile-->
-              <picture>
-                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_expert_image@0.5x.png" media="(max-width:600px)">
-                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_expert_image@0.5x.png" media="(max-width:767px)">
-                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_expert_image@1x.png" media="(max-width:1139px)">
-                <img src="img/hexpert/high_fid/Hi-fid_wireframes_expert_image@1x.png" alt="Original">
-              </picture>
-            </div>
-            <div>
-              <picture>
-                <source srcset="img/hexpert/usability_changes/usability_wireframes_expert_image@0.5x.png" media="(max-width:600px)">
-                <source srcset="img/hexpert/usability_changes/usability_wireframes_expert_image@0.5x.png" media="(max-width:767px)">
-                <source srcset="img/hexpert/usability_changes/usability_wireframes_expert_image@1x.png" media="(max-width:1139px)">
-                <img src="img/hexpert/usability_changes/usability_wireframes_expert_image@1x.png" alt="Updated">
-              </picture>
-            </div>
+            <h3>Final Mock-ups</h3>
+          </div>
+          <div>
+            <p>Final mock-ups focused on revamping the presentation of the app itself, as well as the visuals. Creating copy that showed the user what we are all about, where to go and what to do.</p>
+            <p>While this app is aimed squarely at a gamer audience, the aesthetics often used by gaming brands in the space reflect a quite aggressive style and dark colour palette. Instead, I decided to create a lighter, retro feel, using a bright
+              inquisitive orange and dark chocolate browns to bring a warm, comfortable and confident tone. I felt this would also inspire trust in the experts.</p>
+            <p>The voice of Hexpert itself is illustrated by our robot mascot, acting in place of the app as an assistant who can help arrange your calls and provide assistance with any questions you have.</p>
           </div>
           <div>
             <div>
-              <!--question-->
               <picture>
-                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_question_image@0.5x.png" media="(max-width:600px)">
-                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_question_image@0.5x.png" media="(max-width:767px)">
-                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_question_image@1x.png" media="(max-width:1139px)">
-                <img src="img/hexpert/high_fid/Hi-fid_wireframes_question_image@1x.png" alt="Original">
+                <source srcset="img/hexpert/mock_ups/landing_page_image@0.5x.png" media="(max-width:600px)">
+                <source srcset="img/hexpert/mock_ups/landing_page_image@0.5x.png" media="(max-width:767px)">
+                <source srcset="img/hexpert/mock_ups/landing_page_image@0.75x.png" media="(max-width:1139px)">
+                <img src="img/hexpert/mock_ups/landing_page_image@1x.png" alt="Landing Page">
               </picture>
             </div>
             <div>
               <picture>
-                <source srcset="img/hexpert/usability_changes/usability_wireframes_question_image@0.5x.png" media="(max-width:600px)">
-                <source srcset="img/hexpert/usability_changes/usability_wireframes_question_image@0.5x.png" media="(max-width:767px)">
-                <source srcset="img/hexpert/usability_changes/usability_wireframes_question_image@1x.png" media="(max-width:1139px)">
-                <img src="img/hexpert/usability_changes/usability_wireframes_question_image@1x.png" alt="Updated">
+                <source srcset="img/hexpert/mock_ups/search_results_image@0.5x.png" media="(max-width:600px)">
+                <source srcset="img/hexpert/mock_ups/search_results_image@0.5x.png" media="(max-width:767px)">
+                <source srcset="img/hexpert/mock_ups/search_results_image@0.75x.png" media="(max-width:1139px)">
+                <img src="img/hexpert/mock_ups/search_results_image@1x.png" alt="Search Results">
               </picture>
             </div>
-          </div>
-          <div>
-            <p>Participants felt that they were missing pricing information and easy access to the expert’s schedule. They also thought that the question section wasn’t important as it was a pop-up section. New screens include payment details,
-              availability and sections for education and experience below. The question pop-up became its own separate page to maintain focus and prevent mistakes, such as losing inputs by exiting the pop up.</p>
+            <div>
+              <picture>
+                <source srcset="img/hexpert/mock_ups/expert_profile_image@0.5x.png" media="(max-width:600px)">
+                <source srcset="img/hexpert/mock_ups/expert_profile_image@0.5x.png" media="(max-width:767px)">
+                <source srcset="img/hexpert/mock_ups/expert_profile_image@0.75x.png" media="(max-width:1139px)">
+                <img src="img/hexpert/mock_ups/expert_profile_image@1x.png" alt="Expert Profile Page">
+              </picture>
+            </div>
+            <div>
+              <picture>
+                <source srcset="img/hexpert/mock_ups/expert_snackbar_image@0.5x.png" media="(max-width:600px)">
+                <source srcset="img/hexpert/mock_ups/expert_snackbar_image@0.5x.png" media="(max-width:767px)">
+                <source srcset="img/hexpert/mock_ups/expert_snackbar_image@0.75x.png" media="(max-width:1139px)">
+                <img src="img/hexpert/mock_ups/expert_snackbar_image@1x.png" alt="Expert Profile Snackbar">
+              </picture>
+            </div>
+            <div>
+              <picture>
+                <source srcset="img/hexpert/mock_ups/sign-up_image@0.5x.png" media="(max-width:600px)">
+                <source srcset="img/hexpert/mock_ups/sign-up_image@0.5x.png" media="(max-width:767px)">
+                <source srcset="img/hexpert/mock_ups/sign-up_image@0.75x.png" media="(max-width:1139px)">
+                <img src="img/hexpert/mock_ups/sign-up_image@1x.png" alt="Login">
+              </picture>
+            </div>
+            <div>
+              <picture>
+                <source srcset="img/hexpert/mock_ups/question_image@0.5x.png" media="(max-width:600px)">
+                <source srcset="img/hexpert/mock_ups/question_image@0.5x.png" media="(max-width:767px)">
+                <source srcset="img/hexpert/mock_ups/question_image@0.75x.png" media="(max-width:1139px)">
+                <img src="img/hexpert/mock_ups/question_image@1x.png" alt="Question Form">
+              </picture>
+            </div>
+            <div>
+              <picture>
+                <source srcset="img/hexpert/mock_ups/onboarding_image@0.5x.png" media="(max-width:600px)">
+                <source srcset="img/hexpert/mock_ups/onboarding_image@0.5x.png" media="(max-width:767px)">
+                <source srcset="img/hexpert/mock_ups/onboarding_image@0.75x.png" media="(max-width:1139px)">
+                <img src="img/hexpert/mock_ups/onboarding_image@1x.png" alt="Onboarding">
+              </picture>
+            </div>
+            <div>
+              <picture>
+                <source srcset="img/hexpert/mock_ups/scheduling_image@0.5x.png" media="(max-width:600px)">
+                <source srcset="img/hexpert/mock_ups/scheduling_image@0.5x.png" media="(max-width:767px)">
+                <source srcset="img/hexpert/mock_ups/scheduling_image@0.75x.png" media="(max-width:1139px)">
+                <img src="img/hexpert/mock_ups/scheduling_image@1x.png" alt="Scheduling">
+              </picture>
+            </div>
+            <div>
+              <picture>
+                <source srcset="img/hexpert/mock_ups/messaging_image@0.5x.png" media="(max-width:600px)">
+                <source srcset="img/hexpert/mock_ups/messaging_image@0.5x.png" media="(max-width:767px)">
+                <source srcset="img/hexpert/mock_ups/messaging_image@0.75x.png" media="(max-width:1139px)">
+                <img src="img/hexpert/mock_ups/messaging_image@1x.png" alt="Message">
+              </picture>
+            </div>
+            <div>
+              <picture>
+                <source srcset="img/hexpert/mock_ups/video_chat_image@0.5x.png" media="(max-width:600px)">
+                <source srcset="img/hexpert/mock_ups/video_chat_image@0.5x.png" media="(max-width:767px)">
+                <source srcset="img/hexpert/mock_ups/video_chat_image@0.75x.png" media="(max-width:1139px)">
+                <img src="img/hexpert/mock_ups/video_chat_image@1x.png" alt="Video Chat">
+              </picture>
+            </div>
           </div>
         </div>
-        <div>
-          <div>
-            <div>
-              <!--scheduling-->
-              <picture>
-                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_scheduling_image@0.5x.png" media="(max-width:600px)">
-                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_scheduling_image@0.5x.png" media="(max-width:767px)">
-                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_scheduling_image@1x.png" media="(max-width:1139px)">
-                <img src="img/hexpert/high_fid/Hi-fid_wireframes_scheduling_image@1x.png" alt="Original">
-              </picture>
-            </div>
-            <div>
-              <picture>
-                <source srcset="img/hexpert/usability_changes/usability_wireframes_scheduling_confirmation_image@0.5x.png" media="(max-width:600px)">
-                <source srcset="img/hexpert/usability_changes/usability_wireframes_scheduling_confirmation_image@0.5x.png" media="(max-width:767px)">
-                <source srcset="img/hexpert/usability_changes/usability_wireframes_scheduling_confirmation_image@1x.png" media="(max-width:1139px)">
-                <img src="img/hexpert/usability_changes/usability_wireframes_scheduling_confirmation_image@1x.png" alt="Updated">
-              </picture>
-            </div>
-          </div>
-          <div>
-            <div>
-              <!--payment-->
-              <picture>
-                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_payment_gateway_image@0.5x.png" media="(max-width:600px)">
-                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_payment_gateway_image@0.5x.png" media="(max-width:767px)">
-                <source srcset="img/hexpert/high_fid/Hi-fid_wireframes_payment_gateway_image@1x.png" media="(max-width:1139px)">
-                <img src="img/hexpert/high_fid/Hi-fid_wireframes_payment_gateway_image@1x.png" alt="Original">
-              </picture>
-            </div>
-            <div>
-              <picture>
-                <source srcset="img/hexpert/usability_changes/usability_wireframes_payment_gateway_image@0.5x.png" media="(max-width:600px)">
-                <source srcset="img/hexpert/usability_changes/usability_wireframes_payment_gateway_image@0.5x.png" media="(max-width:767px)">
-                <source srcset="img/hexpert/usability_changes/usability_wireframes_payment_gateway_image@1x.png" media="(max-width:1139px)">
-                <img src="img/hexpert/usability_changes/usability_wireframes_payment_gateway_image@1x.png" alt="Updated">
-              </picture>
-            </div>
-          </div>
-          <div>
-            <p>Participants were frustrated when they could not see the cost of the call they were booking. Also, they did not like a payment gateway right before their call, as it could result in being late if there were payment issues. Updated screens
-              include payment information during the scheduling flow, and instead of before the call payment is now taken during the scheduling process.</p>
-          </div>
+        <div class= "outline">
+          <h3>Prototype</h3>
+          <!--<p>Check out the clickable prototype here:</p>-->
+          <a href="https://www.figma.com/proto/dJa0a2LNyqg3FbXt2CBAdb/Hexpert-Clickable-Prototype?node-id=0%3A1&viewport=241%2C48%2C0.07&scaling=scale-down&starting-point-node-id=2%3A4927" class= "button project">
+            Try the clickable prototype!
+          </a>
         </div>
-      </div>
-      <!--Mock Ups-->
-      <div>
-        <div>
-          <h3>Final Mock-ups</h3>
-        </div>
-        <div>
-          <p>Final mock-ups focused on revamping the presentation of the app itself, as well as the visuals. Creating copy that showed the user what we are all about, where to go and what to do.</p>
-          <p>While this app is aimed squarely at a gamer audience, the aesthetics often used by gaming brands in the space reflect a quite aggressive style and dark colour palette. Instead, I decided to create a lighter, retro feel, using a bright
-            inquisitive orange and dark chocolate browns to bring a warm, comfortable and confident tone. I felt this would also inspire trust in the experts.</p>
-          <p>The voice of Hexpert itself is illustrated by our robot mascot, acting in place of the app as an assistant who can help arrange your calls and provide assistance with any questions you have.</p>
-        </div>
-        <div>
-          <div>
-            <picture>
-              <source srcset="img/hexpert/mock_ups/landing_page_image@0.5x.png" media="(max-width:600px)">
-              <source srcset="img/hexpert/mock_ups/landing_page_image@0.5x.png" media="(max-width:767px)">
-              <source srcset="img/hexpert/mock_ups/landing_page_image@0.75x.png" media="(max-width:1139px)">
-              <img src="img/hexpert/mock_ups/landing_page_image@1x.png" alt="Landing Page">
-            </picture>
-          </div>
-          <div>
-            <picture>
-              <source srcset="img/hexpert/mock_ups/search_results_image@0.5x.png" media="(max-width:600px)">
-              <source srcset="img/hexpert/mock_ups/search_results_image@0.5x.png" media="(max-width:767px)">
-              <source srcset="img/hexpert/mock_ups/search_results_image@0.75x.png" media="(max-width:1139px)">
-              <img src="img/hexpert/mock_ups/search_results_image@1x.png" alt="Search Results">
-            </picture>
-          </div>
-          <div>
-            <picture>
-              <source srcset="img/hexpert/mock_ups/expert_profile_image@0.5x.png" media="(max-width:600px)">
-              <source srcset="img/hexpert/mock_ups/expert_profile_image@0.5x.png" media="(max-width:767px)">
-              <source srcset="img/hexpert/mock_ups/expert_profile_image@0.75x.png" media="(max-width:1139px)">
-              <img src="img/hexpert/mock_ups/expert_profile_image@1x.png" alt="Expert Profile Page">
-            </picture>
-          </div>
-          <div>
-            <picture>
-              <source srcset="img/hexpert/mock_ups/expert_snackbar_image@0.5x.png" media="(max-width:600px)">
-              <source srcset="img/hexpert/mock_ups/expert_snackbar_image@0.5x.png" media="(max-width:767px)">
-              <source srcset="img/hexpert/mock_ups/expert_snackbar_image@0.75x.png" media="(max-width:1139px)">
-              <img src="img/hexpert/mock_ups/expert_snackbar_image@1x.png" alt="Expert Profile Snackbar">
-            </picture>
-          </div>
-          <div>
-            <picture>
-              <source srcset="img/hexpert/mock_ups/sign-up_image@0.5x.png" media="(max-width:600px)">
-              <source srcset="img/hexpert/mock_ups/sign-up_image@0.5x.png" media="(max-width:767px)">
-              <source srcset="img/hexpert/mock_ups/sign-up_image@0.75x.png" media="(max-width:1139px)">
-              <img src="img/hexpert/mock_ups/sign-up_image@1x.png" alt="Login">
-            </picture>
-          </div>
-          <div>
-            <picture>
-              <source srcset="img/hexpert/mock_ups/question_image@0.5x.png" media="(max-width:600px)">
-              <source srcset="img/hexpert/mock_ups/question_image@0.5x.png" media="(max-width:767px)">
-              <source srcset="img/hexpert/mock_ups/question_image@0.75x.png" media="(max-width:1139px)">
-              <img src="img/hexpert/mock_ups/question_image@1x.png" alt="Question Form">
-            </picture>
-          </div>
-          <div>
-            <picture>
-              <source srcset="img/hexpert/mock_ups/onboarding_image@0.5x.png" media="(max-width:600px)">
-              <source srcset="img/hexpert/mock_ups/onboarding_image@0.5x.png" media="(max-width:767px)">
-              <source srcset="img/hexpert/mock_ups/onboarding_image@0.75x.png" media="(max-width:1139px)">
-              <img src="img/hexpert/mock_ups/onboarding_image@1x.png" alt="Onboarding">
-            </picture>
-          </div>
-          <div>
-            <picture>
-              <source srcset="img/hexpert/mock_ups/scheduling_image@0.5x.png" media="(max-width:600px)">
-              <source srcset="img/hexpert/mock_ups/scheduling_image@0.5x.png" media="(max-width:767px)">
-              <source srcset="img/hexpert/mock_ups/scheduling_image@0.75x.png" media="(max-width:1139px)">
-              <img src="img/hexpert/mock_ups/scheduling_image@1x.png" alt="Scheduling">
-            </picture>
-          </div>
-          <div>
-            <picture>
-              <source srcset="img/hexpert/mock_ups/messaging_image@0.5x.png" media="(max-width:600px)">
-              <source srcset="img/hexpert/mock_ups/messaging_image@0.5x.png" media="(max-width:767px)">
-              <source srcset="img/hexpert/mock_ups/messaging_image@0.75x.png" media="(max-width:1139px)">
-              <img src="img/hexpert/mock_ups/messaging_image@1x.png" alt="Message">
-            </picture>
-          </div>
-          <div>
-            <picture>
-              <source srcset="img/hexpert/mock_ups/video_chat_image@0.5x.png" media="(max-width:600px)">
-              <source srcset="img/hexpert/mock_ups/video_chat_image@0.5x.png" media="(max-width:767px)">
-              <source srcset="img/hexpert/mock_ups/video_chat_image@0.75x.png" media="(max-width:1139px)">
-              <img src="img/hexpert/mock_ups/video_chat_image@1x.png" alt="Video Chat">
-            </picture>
-          </div>
-        </div>
-      </div>
-      <div>
-        <h3>Prototype</h3>
-        <p>Check out the clickable prototype here:</p>
-        <a href="https://www.figma.com/proto/dJa0a2LNyqg3FbXt2CBAdb/Hexpert-Clickable-Prototype?node-id=0%3A1&viewport=241%2C48%2C0.07&scaling=scale-down&starting-point-node-id=2%3A4927">Click Here</a>
       </div>
     </div>
-  </div>
-
+  </main>
 
   <!-- For the footer  -->
-  <footer id="contact" class= "container">
-    <div>
+  <footer id="contact">
+    <div class= "container">
       <h2>Get in Touch</h2>
       <p>Contact me via email below, or using one of my social accounts!
         <br>You can also send me a message on <a href="skype:SeanOConnor">Skype</a>
       </p>
-      <!--email cta-->
       <div>
         <a href="mailto:aoconnorsean312@gmail.com" class="button contact" target="_blank">
-          <svg height="612" id="svg1392" version="1.0" width="612" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg">
+          <svg
+            viewbox= "0, 0, 612, 612"
+            height="48"
+            id="svg1392"
+            version="1.0"
+            width="48"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:cc="http://creativecommons.org/ns#"
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+            xmlns:svg="http://www.w3.org/2000/svg">
             <defs id="defs1394">
-              <marker id="ArrowEnd" markerHeight="3" markerUnits="strokeWidth" markerWidth="4" orient="auto" refX="0" refY="5" viewBox="0 0 10 10">
-                <path d="M 0,0 L 10,5 L 0,10 L 0,0 z" id="path1397" />
-              </marker>
-              <marker id="ArrowStart" markerHeight="3" markerUnits="strokeWidth" markerWidth="4" orient="auto" refX="10" refY="5" viewBox="0 0 10 10">
-                <path d="M 10,0 L 0,5 L 10,10 L 10,0 z" id="path1400" />
-              </marker>
+              <marker id="ArrowEnd" markerHeight="3" markerUnits="strokeWidth" markerWidth="4" orient="auto" refX="0" refY="5" viewBox="0 0 10 10"><path d="M 0,0 L 10,5 L 0,10 L 0,0 z" id="path1397"/></marker>
+              <marker id="ArrowStart" markerHeight="3" markerUnits="strokeWidth" markerWidth="4" orient="auto" refX="10" refY="5" viewBox="0 0 10 10"><path d="M 10,0 L 0,5 L 10,10 L 10,0 z" id="path1400"/></marker>
             </defs>
             <g id="g8564" transform="translate(-58.515,-15.604444)">
-              <g id="g1402">
-                <path
-                  d="M 140.865,32.943 C 99.53,32.943 76.294,54.314 76.294,97.979 L 76.294,548.101 C 76.294,588.944 97.185,610.329 138.486,610.329 L 590.51,610.329 C 631.813,610.329 652.736,590.009 652.736,548.101 L 652.736,97.979 C 652.736,55.379 631.813,32.943 589.213,32.943 C 589.213,32.943 140.722,32.801 140.865,32.943 z"
-                  id="path1404" style="fill:#000000;stroke:#ffffff;stroke-width:3.40799999" />
-              </g>
+              <g id="g1402"><path
+                d="M 140.865,32.943 C 99.53,32.943 76.294,54.314 76.294,97.979 L 76.294,548.101 C 76.294,588.944 97.185,610.329 138.486,610.329 L 590.51,610.329 C 631.813,610.329 652.736,590.009 652.736,548.101 L 652.736,97.979 C 652.736,55.379 631.813,32.943 589.213,32.943 C 589.213,32.943 140.722,32.801 140.865,32.943 z"
+                id="path1404"
+                style="fill:#000000;stroke:#ffffff;stroke-width:3.40799999"/></g>
               <g id="g1406">
-                <path d="M 569.372,461.472 L 569.372,160.658 L 160.658,160.658 L 160.658,461.472 L 569.372,461.472 z" id="path1408" style="fill:none;stroke:#ffffff;stroke-width:30.65500069" />
-                <path id="path1410" style="fill:none;stroke:#ffffff;stroke-width:30.65500069" />
-                <path d="M 164.46,164.49 L 340.78,343.158 C 353.849,356.328 377.628,356.172 390.421,343.278 L 566.62,165.928" id="path1412" style="fill:none;stroke:#ffffff;stroke-width:30.65500069" />
-                <path d="M 170.514,451.566 L 305.609,313.46" id="path1414" style="fill:none;stroke:#ffffff;stroke-width:30.65500069" />
-                <path d="M 557.966,449.974 L 426.514,315.375" id="path1416" style="fill:none;stroke:#ffffff;stroke-width:30.65500069" />
+                <path d="M 569.372,461.472 L 569.372,160.658 L 160.658,160.658 L 160.658,461.472 L 569.372,461.472 z" id="path1408" style="fill:none;stroke:#ffffff;stroke-width:30.65500069"/>
+                <path id="path1410" style="fill:none;stroke:#ffffff;stroke-width:30.65500069"/>
+                <path d="M 164.46,164.49 L 340.78,343.158 C 353.849,356.328 377.628,356.172 390.421,343.278 L 566.62,165.928" id="path1412" style="fill:none;stroke:#ffffff;stroke-width:30.65500069"/>
+                <path d="M 170.514,451.566 L 305.609,313.46" id="path1414" style="fill:none;stroke:#ffffff;stroke-width:30.65500069"/><path d="M 557.966,449.974 L 426.514,315.375" id="path1416" style="fill:none;stroke:#ffffff;stroke-width:30.65500069"/>
               </g>
             </g>
           </svg>
           Email Me
         </a>
       </div>
-      <!--social links -->
-      <div>
+      <div class= "social">
         <a href="https://www.linkedin.com/in/se%C3%A1n-o-connor-1700011aa/" target="_blank">
-          <svg enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <g>
-              <path d="M30.071,27.101v-0.077c-0.016,0.026-0.033,0.052-0.05,0.077H30.071z" />
-              <path
-                d="M49.265,4.667H7.145c-2.016,0-3.651,1.596-3.651,3.563v42.613c0,1.966,1.635,3.562,3.651,3.562h42.12   c2.019,0,3.654-1.597,3.654-3.562V8.23C52.919,6.262,51.283,4.667,49.265,4.667z M18.475,46.304h-7.465V23.845h7.465V46.304z    M14.743,20.777h-0.05c-2.504,0-4.124-1.725-4.124-3.88c0-2.203,1.67-3.88,4.223-3.88c2.554,0,4.125,1.677,4.175,3.88   C18.967,19.052,17.345,20.777,14.743,20.777z M45.394,46.304h-7.465V34.286c0-3.018-1.08-5.078-3.781-5.078   c-2.062,0-3.29,1.389-3.831,2.731c-0.197,0.479-0.245,1.149-0.245,1.821v12.543h-7.465c0,0,0.098-20.354,0-22.459h7.465v3.179   c0.992-1.53,2.766-3.709,6.729-3.709c4.911,0,8.594,3.211,8.594,10.11V46.304z" />
-            </g>
+          <svg
+            enable-background="new 0 0 56.693 56.693"
+            height="48px"
+            id="Layer_1"
+            version="1.1"
+            viewBox="0 0 56.693 56.693"
+            width="48px"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g><path d="M30.071,27.101v-0.077c-0.016,0.026-0.033,0.052-0.05,0.077H30.071z"/><path
+              d="M49.265,4.667H7.145c-2.016,0-3.651,1.596-3.651,3.563v42.613c0,1.966,1.635,3.562,3.651,3.562h42.12   c2.019,0,3.654-1.597,3.654-3.562V8.23C52.919,6.262,51.283,4.667,49.265,4.667z M18.475,46.304h-7.465V23.845h7.465V46.304z    M14.743,20.777h-0.05c-2.504,0-4.124-1.725-4.124-3.88c0-2.203,1.67-3.88,4.223-3.88c2.554,0,4.125,1.677,4.175,3.88   C18.967,19.052,17.345,20.777,14.743,20.777z M45.394,46.304h-7.465V34.286c0-3.018-1.08-5.078-3.781-5.078   c-2.062,0-3.29,1.389-3.831,2.731c-0.197,0.479-0.245,1.149-0.245,1.821v12.543h-7.465c0,0,0.098-20.354,0-22.459h7.465v3.179   c0.992-1.53,2.766-3.709,6.729-3.709c4.911,0,8.594,3.211,8.594,10.11V46.304z"/></g>
           </svg>
 
         </a>
         <a href="#" target="_blank">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 56.7 56.7" enable-background="new 0 0 56.7 56.7" xml:space="preserve">
-            <g>
-              <path d="M28.2,16.7c-7,0-12.8,5.7-12.8,12.8s5.7,12.8,12.8,12.8S41,36.5,41,29.5S35.2,16.7,28.2,16.7z M28.2,37.7
-            		c-4.5,0-8.2-3.7-8.2-8.2s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2S32.7,37.7,28.2,37.7z" />
-              <circle cx="41.5" cy="16.4" r="2.9" />
-              <path d="M49,8.9c-2.6-2.7-6.3-4.1-10.5-4.1H17.9c-8.7,0-14.5,5.8-14.5,14.5v20.5c0,4.3,1.4,8,4.2,10.7c2.7,2.6,6.3,3.9,10.4,3.9
-            		h20.4c4.3,0,7.9-1.4,10.5-3.9c2.7-2.6,4.1-6.3,4.1-10.6V19.3C53,15.1,51.6,11.5,49,8.9z M48.6,39.9c0,3.1-1.1,5.6-2.9,7.3
-            		s-4.3,2.6-7.3,2.6H18c-3,0-5.5-0.9-7.3-2.6C8.9,45.4,8,42.9,8,39.8V19.3c0-3,0.9-5.5,2.7-7.3c1.7-1.7,4.3-2.6,7.3-2.6h20.6
-            		c3,0,5.5,0.9,7.3,2.7c1.7,1.8,2.7,4.3,2.7,7.2V39.9L48.6,39.9z" />
-            </g>
+          <svg
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            height="48px"
+            width="48px"
+            x="0px"
+            y="0px"
+            viewBox="0 0 56.7 56.7"
+            enable-background="new 0 0 56.7 56.7"
+            xml:space="preserve">
+          	<g>
+          		<path d="M28.2,16.7c-7,0-12.8,5.7-12.8,12.8s5.7,12.8,12.8,12.8S41,36.5,41,29.5S35.2,16.7,28.2,16.7z M28.2,37.7
+          		c-4.5,0-8.2-3.7-8.2-8.2s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2S32.7,37.7,28.2,37.7z"/>
+          		<circle cx="41.5" cy="16.4" r="2.9"/>
+          		<path
+          			d="M49,8.9c-2.6-2.7-6.3-4.1-10.5-4.1H17.9c-8.7,0-14.5,5.8-14.5,14.5v20.5c0,4.3,1.4,8,4.2,10.7c2.7,2.6,6.3,3.9,10.4,3.9
+          		h20.4c4.3,0,7.9-1.4,10.5-3.9c2.7-2.6,4.1-6.3,4.1-10.6V19.3C53,15.1,51.6,11.5,49,8.9z M48.6,39.9c0,3.1-1.1,5.6-2.9,7.3
+          		s-4.3,2.6-7.3,2.6H18c-3,0-5.5-0.9-7.3-2.6C8.9,45.4,8,42.9,8,39.8V19.3c0-3,0.9-5.5,2.7-7.3c1.7-1.7,4.3-2.6,7.3-2.6h20.6
+          		c3,0,5.5,0.9,7.3,2.7c1.7,1.8,2.7,4.3,2.7,7.2V39.9L48.6,39.9z"/>
+          	</g>
           </svg>
         </a>
         <a href="https://www.behance.net/seanoconnor13" target="_blank">
-          <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-            xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <path
-              d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm6.245,330.656c0.918,-13.824 -0.208,-27.022 -3.408,-39.661c-3.229,-12.658 -8.408,-23.944 -15.66,-33.809c-7.262,-9.885 -16.512,-17.781 -27.778,-23.613c-11.324,-5.908 -24.513,-8.805 -39.585,-8.805c-13.653,0 -25.98,2.424 -37.161,7.243c-11.172,4.847 -20.763,11.475 -28.858,19.873c-8.076,8.35 -14.23,18.31 -18.661,29.852c-4.355,11.503 -6.58,23.944 -6.58,37.265c0,13.775 2.14,26.491 6.391,37.975c4.298,11.541 10.329,21.369 18.093,29.681c7.972,8.285 17.439,14.628 28.772,19.163c11.343,4.469 23.973,6.741 38.004,6.741c20.138,0 37.407,-4.611 51.58,-13.861c14.344,-9.221 24.844,-24.531 31.774,-45.975l-43.097,0c-1.667,5.51 -5.984,10.822 -13.075,15.792c-7.158,4.98 -15.679,7.47 -25.544,7.47c-13.729,0 -24.323,-3.597 -31.66,-10.755c-7.347,-7.158 -12.1,-20.488 -12.1,-34.576l128.553,0Zm-280.454,77.294c11.04,0 21.805,-1.391 32.171,-4.137c10.491,-2.755 19.835,-6.997 27.987,-12.763c8.086,-5.718 14.647,-13.131 19.466,-22.277c4.781,-9.042 7.167,-19.778 7.167,-32.257c0,-15.394 -3.664,-28.517 -11.134,-39.49c-7.432,-10.897 -18.661,-18.557 -33.781,-22.912c11.106,-5.264 19.428,-12.033 25.089,-20.289c5.634,-8.275 8.436,-18.623 8.436,-31.007c0,-11.447 -1.884,-21.132 -5.624,-28.867c-3.844,-7.849 -9.212,-14.079 -16.066,-18.766c-6.969,-4.686 -15.196,-8.104 -24.853,-10.149c-9.705,-2.111 -20.328,-3.124 -32.096,-3.124l-115.999,0l0,246.038l119.237,0Zm-6.173,-109.655c11.655,0 21.132,2.679 28.252,8.076c7.091,5.463 10.67,14.476 10.67,27.153c0,6.467 -1.051,11.826 -3.238,15.954c-2.178,4.146 -5.188,7.422 -8.805,9.808c-3.636,2.481 -7.925,4.166 -12.772,5.217c-4.772,1.07 -9.847,1.543 -15.177,1.543l-57.829,0l0,-67.751l58.899,0Zm226.403,-26.671c-5.823,-6.428 -15.66,-9.913 -27.675,-9.913c-7.82,0 -14.287,1.316 -19.475,3.996c-5.075,2.651 -9.221,5.936 -12.393,9.818c-3.162,3.938 -5.302,8.104 -6.561,12.554c-1.25,4.336 -2.007,8.265 -2.225,11.74l79.605,0c-1.165,-12.478 -5.435,-21.709 -11.276,-28.195Zm-234.612,-67.799c4.801,0.001 9.469,0.341 13.937,1.212c4.535,0.786 8.455,2.225 11.92,4.318c3.484,2.016 6.258,4.885 8.35,8.559c2.017,3.673 3.011,8.407 3.011,14.125c0,10.32 -3.011,17.828 -9.24,22.382c-6.296,4.62 -14.249,6.893 -23.84,6.893l-54.828,0l0,-57.489l50.69,0Zm255.999,-1.126l0,-24.276l-99.733,0l0,24.276l99.733,0Z" />
+          <svg
+            height="48px"
+            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+            version="1.1"
+            viewBox="0 0 512 512"
+            width="48px"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:serif="http://www.serif.com/"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm6.245,330.656c0.918,-13.824 -0.208,-27.022 -3.408,-39.661c-3.229,-12.658 -8.408,-23.944 -15.66,-33.809c-7.262,-9.885 -16.512,-17.781 -27.778,-23.613c-11.324,-5.908 -24.513,-8.805 -39.585,-8.805c-13.653,0 -25.98,2.424 -37.161,7.243c-11.172,4.847 -20.763,11.475 -28.858,19.873c-8.076,8.35 -14.23,18.31 -18.661,29.852c-4.355,11.503 -6.58,23.944 -6.58,37.265c0,13.775 2.14,26.491 6.391,37.975c4.298,11.541 10.329,21.369 18.093,29.681c7.972,8.285 17.439,14.628 28.772,19.163c11.343,4.469 23.973,6.741 38.004,6.741c20.138,0 37.407,-4.611 51.58,-13.861c14.344,-9.221 24.844,-24.531 31.774,-45.975l-43.097,0c-1.667,5.51 -5.984,10.822 -13.075,15.792c-7.158,4.98 -15.679,7.47 -25.544,7.47c-13.729,0 -24.323,-3.597 -31.66,-10.755c-7.347,-7.158 -12.1,-20.488 -12.1,-34.576l128.553,0Zm-280.454,77.294c11.04,0 21.805,-1.391 32.171,-4.137c10.491,-2.755 19.835,-6.997 27.987,-12.763c8.086,-5.718 14.647,-13.131 19.466,-22.277c4.781,-9.042 7.167,-19.778 7.167,-32.257c0,-15.394 -3.664,-28.517 -11.134,-39.49c-7.432,-10.897 -18.661,-18.557 -33.781,-22.912c11.106,-5.264 19.428,-12.033 25.089,-20.289c5.634,-8.275 8.436,-18.623 8.436,-31.007c0,-11.447 -1.884,-21.132 -5.624,-28.867c-3.844,-7.849 -9.212,-14.079 -16.066,-18.766c-6.969,-4.686 -15.196,-8.104 -24.853,-10.149c-9.705,-2.111 -20.328,-3.124 -32.096,-3.124l-115.999,0l0,246.038l119.237,0Zm-6.173,-109.655c11.655,0 21.132,2.679 28.252,8.076c7.091,5.463 10.67,14.476 10.67,27.153c0,6.467 -1.051,11.826 -3.238,15.954c-2.178,4.146 -5.188,7.422 -8.805,9.808c-3.636,2.481 -7.925,4.166 -12.772,5.217c-4.772,1.07 -9.847,1.543 -15.177,1.543l-57.829,0l0,-67.751l58.899,0Zm226.403,-26.671c-5.823,-6.428 -15.66,-9.913 -27.675,-9.913c-7.82,0 -14.287,1.316 -19.475,3.996c-5.075,2.651 -9.221,5.936 -12.393,9.818c-3.162,3.938 -5.302,8.104 -6.561,12.554c-1.25,4.336 -2.007,8.265 -2.225,11.74l79.605,0c-1.165,-12.478 -5.435,-21.709 -11.276,-28.195Zm-234.612,-67.799c4.801,0.001 9.469,0.341 13.937,1.212c4.535,0.786 8.455,2.225 11.92,4.318c3.484,2.016 6.258,4.885 8.35,8.559c2.017,3.673 3.011,8.407 3.011,14.125c0,10.32 -3.011,17.828 -9.24,22.382c-6.296,4.62 -14.249,6.893 -23.84,6.893l-54.828,0l0,-57.489l50.69,0Zm255.999,-1.126l0,-24.276l-99.733,0l0,24.276l99.733,0Z"/>
           </svg>
         </a>
       </div>
