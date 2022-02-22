@@ -5,6 +5,10 @@ Primary Color (Dark Brown): #241200;
 Secondary Color (Orange): #FFECD8;
 Tertiary Color (Blue): #85D3C4;
 */
+* {
+  box-sizing: border-box;
+}
+
 body {
 background-color: #241200;
 font-family: 'Roboto', sans-serif;
@@ -19,6 +23,7 @@ header {
   font-family: "Roboto Mono", monospace;
   font-size: 20px;
   font-weight: 400;
+  padding: 16px
 }
 
 h1, h2, h3, h4 {
@@ -93,14 +98,20 @@ a:active { /* selected link */
   background-color: #FF901F;
   color: #241200;
 }
-.navigation {
+/*.navigation {
   display: inline-block;
-  color: #ffffff; /* needed to override the default link color */
+  color: #ffffff;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
   transition: 0.2s opacity;
 }
+
 .navigation.project {
   color: #241200;
+}*/
+
+/*Layout styling*/
+.container {
+  padding: 0 16px;
 }
