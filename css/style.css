@@ -10,12 +10,12 @@ Tertiary Color (Blue): #85D3C4;
 }
 
 body {
-background-color: #241200;
+background-color: #FFECD8;
 font-family: 'Roboto', sans-serif;
 font-size: 16px; /* Sets the font size to 16px */
 font-weight: 300; /* Sets the font weight to 300 */
 line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-color: #FF901F;
+color: #241200;
 }
 
 header {
@@ -26,14 +26,38 @@ header {
   font-size: 20px;
   font-weight: 400;
   text-align: center;
-  padding: 16px
+  padding: 8px;
   -webkit-box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.7);
   -moz-box-shadow:    0px 4px 6px 0px rgba(50, 50, 50, 0.7);
   box-shadow:         0px 4px 6px 0px rgba(50, 50, 50, 0.7);
 }
 main {
-  padding-top: 144px;
+  padding-top: 160px;
 }
+
+footer {
+  background-color: #241200;
+  color: #FF901F;
+  padding: 8px;
+  text-align: center;
+}
+
+/*Links*/
+a {
+  color: #FF901F;
+  text-decoration: none; /* No underlining */
+}
+a:visited { /* visited link */
+  color: #FF901F;
+}
+a:hover {
+  /*color: #85D3C4;*/
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:active { /* selected link */
+  color: #FFECD8;
+}
+
 nav > ul {
   list-style-type: none;
   padding: 0;
@@ -42,9 +66,10 @@ nav > ul > li {
   display: inline-block;
 }
 nav > ul > li > a {
-  padding: 0 15px;
+  padding: 0 16px;
   text-transform: uppercase;
   font-weight: 700;
+  border-radius: 8px;
   color: #241200;
 }
 nav {
@@ -77,21 +102,24 @@ h4 {
 #hero {
   background-color: #FF901F;
   color: #241200;
-  padding: 20px 0;
+  padding: 20px 16px;
   display: inline-block;
   width: 100%;
 }
 #hero h1, #hero p {
   text-align: center; /* Centers text */
 }
-
+/*
 #contact h2, #contact p {
-  text-align: center; /* Centers text */
+  text-align: center; Centers text */
 
 }
 /*Images*/
 img {
   width: 100%;
+}
+.img-large {
+  width: 200px;
 }
 svg {
   color: #FF901F;
@@ -100,20 +128,7 @@ svg {
 }
 
 /*Links*/
-a {
-  color: #FF901F;
-  text-decoration: none; /* No underlining */
-}
-a:visited { /* visited link */
-  color: #FF901F;
-}
-a:hover {
-  /*color: #85D3C4;*/
-  text-decoration: underline; /* Underlining when hovering over a link */
-}
-a:active { /* selected link */
-  color: #FFECD8;
-}
+
 
 /*Buttons*/
 .button {
@@ -121,27 +136,35 @@ a:active { /* selected link */
   background-color: #FF901F;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
-  padding: 10px;
+  padding: 8px;
   border-radius: 8px;
   /*border-bottom: 2px solid #241200; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
+/*
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8; /* Reduces the opacity of the button to 80%
   text-decoration: none;
 }
+*/
 .button.project {
   color: #241200;
+}
+.button.project:hover {
+  background-color: #241200;
+  color: #FF901F;
+  text-decoration: none;
 }
 .button.contact {
   background-color: transparent;
   color: #FF901F;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   border: 2px solid #FF901F;
 }
 .button.contact:hover {
   background-color: #FF901F;
   color: #241200;
+  text-decoration: none;
 }
 /*.navigation {
   display: inline-block;
@@ -152,9 +175,6 @@ a:active { /* selected link */
   transition: 0.2s opacity;
 }*/
 
-.navigation.project {
-  color: #241200;
-}
 
 /*Layout styling*/
 .container {
@@ -166,10 +186,16 @@ a:active { /* selected link */
 }
 
 .logo {
-  max-width: 64px;
+  max-width: 48px;
 }
 .icon {
+  height: 48px;
+  width: 48px;
+}
+.icon-mail {
   stroke: #FF901F;
+  fill:none;
+  stroke-width:30.65500069;
 }
 
 .social {
@@ -181,4 +207,34 @@ a:active { /* selected link */
   padding: 16px;
   border-radius: 8px;
   border: 2px solid #FF901F;
+}
+
+.navigation.project {
+  color: #241200;
+}
+.navigation.project:hover {
+  padding: 8px 16px;
+  background-color: #241200;
+  color: #FF901F;
+  text-decoration: none;
+}
+/*viewport sizing*/
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 24px 0 16px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
+}
+
+@media only screen and (min-width: 1440px) {
+
 }
