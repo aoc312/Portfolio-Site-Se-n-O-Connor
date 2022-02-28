@@ -31,8 +31,9 @@ header {
   -moz-box-shadow:    0px 4px 6px 0px rgba(50, 50, 50, 0.7);
   box-shadow:         0px 4px 6px 0px rgba(50, 50, 50, 0.7);
 }
+
 main {
-  padding-top: 160px;
+  padding-top: 144px;
 }
 
 footer {
@@ -81,21 +82,21 @@ h1, h2, h3, h4 {
   line-height: 1.4;
 }
 h1 {
-  font-size: 2.75em;
+  font-size: 1.5em;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 1.35em;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: 1.25em;
   font-weight: 400;
 }
 h4 {
-  font-size: 1.35em;
+  font-size: 1.15em;
   font-weight: 400;
 }
 
@@ -109,19 +110,20 @@ h4 {
 #hero h1, #hero p {
   text-align: center; /* Centers text */
 }
+#hero span {
+  display: block;
+}
 /*
 #contact h2, #contact p {
   text-align: center; Centers text */
 
-}
+
 /*Images*/
 img {
   width: 100%;
 }
-.img-large {
-  width: 200px;
-}
-svg {
+
+svg.icon {
   color: #FF901F;
   stroke: #FF901F;
   fill: #FF901F;
@@ -139,7 +141,7 @@ svg {
   padding: 8px;
   border-radius: 8px;
   /*border-bottom: 2px solid #241200; /* width of the border, type, color */
-  transition: 0.2s opacity;
+  transition: 0.4s color;
 }
 /*
 .button:hover {
@@ -182,11 +184,19 @@ svg {
 }
 
 .row {
-  margin: 24px 0; /* 25px top and bottom, 0 left and right */
+  margin: 24px 0; /* 24px top and bottom, 0 left and right */
+}
+#work .row {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #241200;
 }
 
 .logo {
   max-width: 48px;
+}
+.hurl {
+  display: inline-block;
+  padding: 0px 0;
 }
 .icon {
   height: 48px;
@@ -211,28 +221,160 @@ svg {
 
 .navigation.project {
   color: #241200;
+  transition: 0.4s color;
 }
-.navigation.project:hover {
+.navigation.project.state:hover {
   padding: 8px 16px;
   background-color: #241200;
   color: #FF901F;
   text-decoration: none;
 }
+.berlin-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.sun {
+  /*animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;*/
+  animation: 4s color-change infinite alternate linear;
+}
+.cloud-front {
+  /*animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;*/
+  animation: 30s cloud-move infinite alternate linear;
+}
+.cloud-back {
+  /*animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;*/
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
 /*viewport sizing*/
+
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
-    padding: 24px 0 16px;
+    padding: 16px 0 16px;
   }
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
+/*    margin-top: 4px;*/
+  }
+  main {
+    padding-top: 104px;
+  }
+  h1 {
+    font-size: 2.25em;
+  }
+  h2 {
+    font-size: 1.75em;
+  }
+  h3 {
+    font-size: 1.35em;
+  }
+  h4 {
+    font-size: 1.15em;
+  }
+  .projects {
+    margin: 0px;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 0 16px;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
   }
 }
 
+@media only screen and (max-width: 408px) {
+  nav {
+    font-size: 16px;
+  }
+  nav > ul > li > a {
+    padding: 0 8px;
+    font-size: 16px;
+  }
+  main {
+    padding-top: 129.59px;
+  }
+}
 @media only screen and (min-width: 1024px) {
-
+  header {
+    text-align: unset;
+    padding: 16px 0 16px;
+  }
+  nav {
+    width: auto;
+    float: right;
+/*    margin-top: 4px;*/
+  }
+  main {
+    padding-top: 104px;
+  }
+  h1 {
+    font-size: 2.75em;
+  }
+  h2 {
+    font-size: 2.25em;
+  }
+  h3 {
+    font-size: 1.75em;
+  }
+  h4 {
+    font-size: 1.35em;
+  }
+  .projects {
+    margin: 0px;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 0 16px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
