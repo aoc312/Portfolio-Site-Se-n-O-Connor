@@ -187,7 +187,6 @@ svg.icon {
 .container {
   padding: 0 16px;
 }
-
 .row {
   margin: 24px 0; /* 24px top and bottom, 0 left and right */
 }
@@ -198,6 +197,7 @@ svg.icon {
 
 .logo {
   max-width: 48px;
+  vertical-align: middle;
 }
 .hurl {
   display: inline-block;
@@ -254,7 +254,7 @@ img.author-img {
   max-width: 600px;
 }
 */
-.frame {
+.align {
   text-align: center;
 }
 .crop {
