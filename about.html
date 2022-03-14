@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
+  <script src="https://kit.fontawesome.com/546e3c554d.js" crossorigin="anonymous"></script>
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
@@ -23,17 +24,19 @@
   <header>
     <!-- For the navigation -->
     <div class= "container">
-      <a href="index.html" class= "navigation project">
-        <img src="img/hexpert/logos/soc_logo_icon.svg" alt="Sean O Connor" class="logo">
-        Seán O Connor
-      </a>
-      <nav>
-        <ul>
-          <li><a href="index.html" class= "navigation project state">Projects</a></li>
-          <li><a href="about.html"class= "navigation project state">About</a></li>
-          <li><a href="#contact"class= "navigation project state">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html" class= "navigation project">
+          <img src="img/hexpert/logos/soc_logo_icon.svg" alt="Sean O Connor" class="logo">
+        </a>
+        <nav>
+          <ul>
+            <li><a href="index.html" class= "navigation project state">Projects</a></li>
+            <li><a href="about.html" class= "navigation project state">About</a></li>
+            <li><a href="#contact" class= "navigation project state" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <main>
@@ -120,7 +123,7 @@
       <div>
         <a href="mailto:aoconnorsean312@gmail.com" class="button contact" target="_blank">
           <svg
-            class="icon"
+            class="icons"
             viewbox= "0, 0, 612, 612"
             id="svg1392"
             version="1.0"
@@ -154,7 +157,7 @@
       <div class= "social">
         <a href="https://www.linkedin.com/in/se%C3%A1n-o-connor-1700011aa/" target="_blank">
           <svg
-            class="icon"
+            class="icons"
             enable-background="new 0 0 56.693 56.693"
             id="Layer_1"
             version="1.1"
@@ -169,7 +172,7 @@
         </a>
         <a href="#" target="_blank">
           <svg
-            class="icon"
+            class="icons"
             version="1.1"
             id="Layer_1"
             xmlns="http://www.w3.org/2000/svg"
@@ -193,7 +196,7 @@
         </a>
         <a href="https://www.behance.net/seanoconnor13" target="_blank">
           <svg
-            class="icon"
+            class="icons"
             style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
             version="1.1"
             viewBox="0 0 512 512"
