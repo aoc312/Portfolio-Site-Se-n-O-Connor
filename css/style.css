@@ -257,6 +257,23 @@ img.low-fi {
         width: 20em;
         overflow: hidden;
       }
+
+.sec-project {
+  background-color: #241200;
+  color: #FF901F;
+  border-radius: 2vw;
+  padding: 16px;
+}
+.prim-project {
+  background-color: #FF901F;
+  color: #241200;
+  border-radius: 2vw;
+  padding-bottom: 16px;
+}
+
+h3.cont-project {
+  margin-top: 16px;
+}
 /*
 img.author-img {
   max-width: 600px;
