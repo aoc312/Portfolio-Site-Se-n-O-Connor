@@ -259,7 +259,7 @@ svg.icons {
   width: 288px;
   height: 432px;
   box-shadow: 0 5px 15px;
-  background: url("../img/hexpert/hero_image/portfolio_card@1x.png");
+  background-image: url("../img/hexpert/hero_image/portfolio_card@1x.png");
   display: flex;
   flex-direction: column-reverse;
 }
