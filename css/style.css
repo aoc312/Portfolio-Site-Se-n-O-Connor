@@ -255,6 +255,37 @@ svg.icons {
   stroke-width: 30.65500069;
 }
 
+.card {
+  width: 288px;
+  height: 432px;
+  box-shadow: 0 5px 15px;
+  background: url("../img/hexpert/hero_image/portfolio_card@1x.png");
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.content {
+  padding: 64px 16px 8px;
+}
+
+.card .content {
+  display: none;
+  background-image: linear-gradient(0deg, #000, transparent);
+  color: #fff;
+}
+
+.h4-marg {
+  margin: 0;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card:hover .content {
+  display: block;
+}
+
 .social {
   display: inline-block;
   padding-top: 16px;
