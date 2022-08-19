@@ -220,6 +220,9 @@ svg.icons {
 }
 
 .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 24px 0;
 
   /* 24px top and bottom, 0 left and right */
@@ -256,12 +259,25 @@ svg.icons {
 }
 
 .card {
+  position: relative;
   width: 288px;
   height: 432px;
   box-shadow: 0 5px 15px;
-  background-image: url("../img/hexpert/hero_image/portfolio_card@1x.png");
+  background-image: url("../img/coming_soon/coming_soon_alt@1x.png");
   display: flex;
   flex-direction: column-reverse;
+}
+
+#hexpert.card {
+  background-image: url("../img/hexpert/hero_image/portfolio_card@1x.png");
+}
+
+#wedpun.card {
+  background-image: url("../img/lethal_wedpun/hero_image/lethal_wedpun_hero@1x.png");
+}
+
+.card-marg {
+  margin: 0 16px;
 }
 
 .content {
