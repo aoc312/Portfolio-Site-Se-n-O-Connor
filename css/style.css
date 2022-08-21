@@ -1,9 +1,9 @@
 /*
 Colors used:
-Primary Color (Orange): #FF901F;
-Primary Color (Dark Brown): #241200;
-Secondary Color (Orange): #FFECD8;
-Tertiary Color (Blue): #85D3C4;
+Primary Color (Orange): #ff901f;
+Primary Color (Black): #000;
+Secondary Color (Orange): #ffecd8;
+Tertiary Color (Blue): #85d3c4;
 */
 * {
   box-sizing: border-box;
@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background-color: #ffecd8;
+  background-color: #000;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 
@@ -25,20 +25,17 @@ body {
   line-height: 1.6;
 
   /* Sets the line-height to 1.6 * the font-size */
-  color: #241200;
+  color: #ff901f;
 }
 
 header {
   position: fixed;
   width: 100%;
-  background-color: #ff901f;
+  background-color: #000;
   font-family: "Roboto Mono", monospace;
   font-size: 20px;
   font-weight: 400;
   padding: 8px 0;
-  -webkit-box-shadow: 0 4px 6px 0 rgba(50, 50, 50, 0.7);
-  -moz-box-shadow: 0 4px 6px 0 rgba(50, 50, 50, 0.7);
-  box-shadow: 0 4px 6px 0 rgba(50, 50, 50, 0.7);
 }
 
 main {
@@ -90,10 +87,12 @@ a {
   /* No underlining */
 }
 
+/*
 a:visited {
-  /* visited link */
+  /* visited link
   color: #ff901f;
 }
+*/
 
 a:hover {
   /* color: #85D3C4; */
@@ -114,29 +113,42 @@ nav > ul {
 }
 
 nav > ul > li > a {
+  position: relative;
+  top: 0;
+  left: 0;
+  text-shadow: none;
   padding: 0 16px;
   text-transform: uppercase;
   font-weight: 700;
-  border-radius: 8px;
-  color: #241200;
+  border-radius: 0px;
+  color: #ff901f;
+  transition: top ease 1s;
+  transition: left ease 1s;
 }
-
+/*
+nav > ul > li > a:hover {
+  top: -2px;
+  left: -2px;
+  text-shadow: 4px 4px #85d3c4;
+  text-decoration: none;
+}
+*/
 #hero {
-  background-color: #ff901f;
-  color: #241200;
+  background-color: #000;
+  color: #ff901f;
   padding: 20px 16px;
   display: inline-block;
   width: 100%;
 }
 
-#hero h1, #hero p {
+#hero h2, #hero p {
   text-align: center;
 
   /* Centers text */
 }
 
 #hero span {
-  display: block;
+  color: #85d3c4;
 }
 
 /*
@@ -161,17 +173,24 @@ svg.icons {
   display: inline-block;
 
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #ff901f;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
 
   /* needed to override the default link color */
   font-weight: 400;
   padding: 8px 16px;
   margin-right: 16px;
-  border-radius: 8px;
+  border-radius: 0px;
 
   /* border-bottom: 2px solid #241200; /* width of the border, type, color */
   transition: 0.4s color;
+}
+
+.button-card {
+  background-color: #ff901f;
+  color: #000;
+  font-weight: 400;
+  text-decoration: none;
 }
 
 /*
@@ -181,12 +200,12 @@ svg.icons {
 }
 */
 .button.project {
-  color: #241200;
+  color: #ff901f;
 }
 
 .button.project:hover {
-  background-color: #241200;
-  color: #ff901f;
+  background-color: #ff901f;
+  color: #000;
   text-decoration: none;
 }
 
@@ -220,19 +239,22 @@ svg.icons {
 }
 
 .row {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 288px);
+  grid-gap: 24px;
+  justify-content: space-between;
   align-items: center;
   margin: 24px 0;
 
   /* 24px top and bottom, 0 left and right */
 }
 
+/*
 #work .row {
   padding-bottom: 24px;
   border-bottom: 1px solid #241200;
 }
-
+*/
 .logo {
   max-width: 24px;
   vertical-align: middle;
@@ -240,6 +262,7 @@ svg.icons {
 
 .svg-logo {
   stroke-width: 8;
+  stroke: #ff901f;
 }
 
 .hurl {
@@ -262,7 +285,6 @@ svg.icons {
   position: relative;
   width: 288px;
   height: 432px;
-  box-shadow: 0 5px 15px;
   background-image: url("../img/coming_soon/coming_soon_alt@1x.png");
   display: flex;
   flex-direction: column-reverse;
@@ -276,9 +298,11 @@ svg.icons {
   background-image: url("../img/lethal_wedpun/hero_image/lethal_wedpun_hero@1x.png");
 }
 
+/*
 .card-marg {
   margin: 0 16px;
 }
+*/
 
 .content {
   padding: 64px 16px 8px;
@@ -294,8 +318,13 @@ svg.icons {
   margin: 0;
 }
 
+.rec-proj-space {
+  padding: 0 32px;
+}
+
 .card:hover {
   cursor: pointer;
+  box-shadow: 0 8px 12px #ff901f;
 }
 
 .card:hover .content {
@@ -323,17 +352,17 @@ svg.icons {
 }
 
 .navigation.project {
-  color: #241200;
+  color: #ff901f;
   transition: 0.4s color;
 }
-
+/*
 .navigation.project.state:hover {
   padding: 8px 16px;
-  background-color: #241200;
-  color: #ff901f;
+  background-color: #ff901f;
+  color: #000;
   text-decoration: none;
 }
-
+*/
 .berlin-illustration {
   width: 100%;
   max-width: 100%;
@@ -569,11 +598,13 @@ img.author-img {
     width: calc(100% / 3);
   }
 
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+  /*
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  */
 
   .navtoggle li:not(:last-child) {
     display: inline-block;
@@ -626,11 +657,13 @@ img.author-img {
     padding: 0 16px;
   }
 
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+  /*
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  */
 
   .col-lg-7 {
     width: 58.33%;
