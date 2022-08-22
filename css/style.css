@@ -114,17 +114,17 @@ nav > ul {
 
 nav > ul > li > a {
   position: relative;
-  top: 0;
-  left: 0;
-  text-shadow: none;
   padding: 0 16px;
   text-transform: uppercase;
   font-weight: 700;
-  border-radius: 0px;
-  color: #ff901f;
-  transition: top ease 1s;
-  transition: left ease 1s;
 }
+
+nav > ul > li > a:hover {
+  text-decoration: none;
+  color: #85d3c4;
+}
+
+
 /*
 nav > ul > li > a:hover {
   top: -2px;
@@ -133,6 +133,11 @@ nav > ul > li > a:hover {
   text-decoration: none;
 }
 */
+
+#nav {
+  z-index: 100;
+}
+
 #hero {
   background-color: #000;
   color: #ff901f;
@@ -149,6 +154,36 @@ nav > ul > li > a:hover {
 
 #hero span {
   color: #85d3c4;
+}
+
+#resume {
+  border-color: #ff901f;
+  border: 2px solid #ff901f;
+  border-radius: 100px;
+  padding: 6px 14px;
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity ease 0.4s;
+}
+
+#resume:hover, #button-outline:hover {
+  border-color: #85d3c4;
+  color: #85d3c4;
+  text-decoration: none;
+}
+
+#contact {
+  background-color: #ff901f;
+  padding: 8px 16px;
+  color: #000;
+  border-radius: 100px;
+  text-decoration: none;
+  opacity: 1;
+  transition: background-color ease 0.4s;
+}
+
+#contact:hover {
+  background-color: #85d3c4;
 }
 
 /*
@@ -187,8 +222,10 @@ svg.icons {
 }
 
 .button-card {
-  background-color: #ff901f;
-  color: #000;
+  border: 2px solid #ff901f;
+  border-radius: 100px;
+  padding: 8px 16px;
+  color: #ff901f;
   font-weight: 400;
   text-decoration: none;
 }
@@ -209,21 +246,6 @@ svg.icons {
   text-decoration: none;
 }
 
-.button.contact {
-  background-color: transparent;
-  color: #ff901f;
-
-  /* text-transform: uppercase; */
-  border: 2px solid #ff901f;
-  margin: 0;
-}
-
-.button.contact:hover {
-  background-color: #ff901f;
-  color: #241200;
-  text-decoration: none;
-}
-
 /* .navigation {
   display: inline-block;
   color: #ffffff;
@@ -241,7 +263,7 @@ svg.icons {
 .row {
   display: grid;
   grid-template-columns: repeat(auto-fill, 288px);
-  grid-gap: 24px;
+  grid-gap: 36px;
   justify-content: space-between;
   align-items: center;
   margin: 24px 0;
@@ -283,11 +305,14 @@ svg.icons {
 
 .card {
   position: relative;
+  top: 0;
+  left: 0;
   width: 288px;
   height: 432px;
   background-image: url("../img/coming_soon/coming_soon_alt@1x.png");
   display: flex;
   flex-direction: column-reverse;
+  transition: box-shadow ease 0.2s, top ease 0.2s, left ease 0.2s;
 }
 
 #hexpert.card {
@@ -305,7 +330,7 @@ svg.icons {
 */
 
 .content {
-  padding: 64px 16px 8px;
+  padding: 64px 16px 24px;
 }
 
 .card .content {
@@ -324,7 +349,10 @@ svg.icons {
 
 .card:hover {
   cursor: pointer;
-  box-shadow: 0 8px 12px #ff901f;
+  top: -4px;
+  left: -4px;
+  box-shadow: 8px 8px #85d3c4;
+
 }
 
 .card:hover .content {
@@ -350,12 +378,12 @@ svg.icons {
   border-radius: 8px;
   border: 2px solid #ff901f;
 }
-
+/*
 .navigation.project {
   color: #ff901f;
   transition: 0.4s color;
 }
-/*
+
 .navigation.project.state:hover {
   padding: 8px 16px;
   background-color: #ff901f;
