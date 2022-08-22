@@ -7,3 +7,12 @@ function menuToggle() {
     x.className = 'navtoggle'
   }
 }
+
+function contactToggle() {
+  var x = document.getElementById('mycontacttoggle')
+  if (x.className === 'contacttoggle') {
+    x.className += ' responsive'
+  } else {
+    x.className = 'contacttoggle'
+  }
+}
