@@ -124,16 +124,6 @@ nav > ul > li > a:hover {
   color: #85d3c4;
 }
 
-
-/*
-nav > ul > li > a:hover {
-  top: -2px;
-  left: -2px;
-  text-shadow: 4px 4px #85d3c4;
-  text-decoration: none;
-}
-*/
-
 #nav {
   z-index: 100;
 }
@@ -449,11 +439,6 @@ h2.cont-project {
   margin-top: 16px;
 }
 
-/*
-img.author-img {
-  max-width: 600px;
-}
-*/
 .crop {
   width: 300px;
   height: 300px;
@@ -465,67 +450,6 @@ img.author-img {
 
 .align {
   text-align: center;
-}
-
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-
-.sun {
-  /* animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear; */
-  animation: 4s color-change infinite alternate linear;
-}
-
-.cloud-front {
-  /* animation-duration: 30s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear; */
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-.cloud-back {
-  /* animation-duration: 30s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear; */
-  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 .navtoggle li:not(:last-child) {
