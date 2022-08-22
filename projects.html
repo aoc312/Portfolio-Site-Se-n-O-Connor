@@ -21,8 +21,8 @@
 </head>
 
 
-<body id="home">
-  <header>
+<body id="projects">
+  <header id="nav">
     <!-- For the navigation -->
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
@@ -47,29 +47,19 @@
             <li><a href="index.html" class="navigation project state">Home</a></li>
             <li><a href="projects.html" class="navigation project state">Projects</a></li>
             <li><a href="about.html" class="navigation project state">About</a></li>
+            <li><a href="#" class="navigation project state" id="resume">Resumé</a></li>
+            <li><a href="#" class="navigation project state" id="contact">Contact</a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
       </div>
     </div>
   </header>
-  </header>
   <main>
-    <!-- For the hero section -->
-    <div id="hero">
-      <div class="container">
-        <h1>Hello, my name is Seán O Connor.
-          <span>I am a UX designer from Dublin.</span>
-        </h1>
-        <p>I focus on the choices people make, and the pain points they want to avoid, to create enjoyable and useful experiences.
-        </p>
-      </div>
-    </div>
-
     <!-- For my work/projects -->
-    <div id="work">
+    <div>
       <div class="container">
-        <h2>Recent Projects</h2>
+        <h3>My Projects</h3>
         <div class="row rec-proj-space">
           <div id="hexpert" class="card card-marg">
             <div class="content">
@@ -77,9 +67,9 @@
               <p>
                 I took Hexpert from early research stages to high fidelity wireframes and polished mock ups. I conducted user interviews, usability tests and preference tests, and polished UI to create a final clickable prototype.
               </p>
-              <button>
+              <a class="button" href="https://www.figma.com/proto/dJa0a2LNyqg3FbXt2CBAdb/Hexpert-Clickable-Prototype?node-id=0%3A1&viewport=831%2C316%2C0.08&scaling=scale-down&starting-point-node-id=2%3A4927">
                 Try it!
-              </button>
+              </a>
             </div>
           </div>
           <div id="wedpun" class="card card-marg">
@@ -88,9 +78,9 @@
               <p>
                 With a small team, I developed the UX designs for the website for my wedding.I designed the layout and structure of the site, and organised the necessary features and content.
               </p>
-              <button>
+              <a class="button" href="#">
                 Try it!
-              </button>
+              </a>
             </div>
           </div>
           <div id="portfolio" class="card card-marg">
@@ -99,11 +89,23 @@
               <p>
                 More information coming soon!
               </p>
-              <button>
+              <a class="button" href="#">
                 Try it!
-              </button>
+              </a>
             </div>
           </div>
+          <div id="untitled" class="card card-marg">
+            <div class="content">
+              <h4 class= "h4-marg">Untitled Project</h4>
+              <p>
+                More information coming soon!
+              </p>
+              <a class="button" href="#">
+                Try it!
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
