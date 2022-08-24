@@ -297,12 +297,31 @@ svg.icons {
   position: relative;
   top: 0;
   left: 0;
+  background-image: url("../img/coming_soon/coming_soon_alt@1x.png");
+  transition: box-shadow ease 0.2s, top ease 0.2s, left ease 0.2s;
+}
+
+/*
+.card {
+  position: relative;
+  top: 0;
+  left: 0;
   width: 288px;
   height: 432px;
   background-image: url("../img/coming_soon/coming_soon_alt@1x.png");
   display: flex;
   flex-direction: column-reverse;
   transition: box-shadow ease 0.2s, top ease 0.2s, left ease 0.2s;
+}
+*/
+
+.card-dims {
+  width: 288px;
+  height: 432px;
+}
+
+.card-display {
+  display: block;
 }
 
 #hexpert.card {
@@ -313,11 +332,9 @@ svg.icons {
   background-image: url("../img/lethal_wedpun/hero_image/lethal_wedpun_hero@1x.png");
 }
 
-/*
-.card-marg {
-  margin: 0 16px;
+.b-click {
+  pointer-events: auto;
 }
-*/
 
 .content {
   padding: 64px 16px 24px;
@@ -325,9 +342,21 @@ svg.icons {
 
 .card .content {
   display: none;
+  pointer-events: none;
+  width: 288px;
+  height: 320px;
   background-image: linear-gradient(0deg, #000, transparent);
   color: #fff;
+}
+
+.t-shadow {
   text-shadow: 0px 2px 8px #000;
+}
+
+.content-flex {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 100%;
 }
 
 .h4-marg {
@@ -346,7 +375,14 @@ svg.icons {
 
 .card:hover .content {
   display: block;
+  position: relative;
+  top: -320px;
 }
+
+#unused {
+  display: none;
+}
+
 
 .social {
   display: inline-block;
@@ -367,19 +403,7 @@ svg.icons {
   border-radius: 8px;
   border: 2px solid #ff901f;
 }
-/*
-.navigation.project {
-  color: #ff901f;
-  transition: 0.4s color;
-}
 
-.navigation.project.state:hover {
-  padding: 8px 16px;
-  background-color: #ff901f;
-  color: #000;
-  text-decoration: none;
-}
-*/
 .berlin-illustration {
   width: 100%;
   max-width: 100%;
