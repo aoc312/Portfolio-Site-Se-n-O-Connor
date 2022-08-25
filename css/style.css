@@ -185,6 +185,11 @@ img {
   width: 100%;
 }
 
+img.author-img {
+  width: 100%;
+  height: 100%;
+}
+
 svg.icons {
   color: #ff901f;
   stroke: #ff901f;
@@ -251,14 +256,55 @@ svg.icons {
 }
 
 .row {
+  margin: 24px 0;
+}
+
+.row-card {
   display: grid;
   grid-template-columns: repeat(auto-fill, 288px);
   grid-gap: 36px;
   justify-content: space-between;
   align-items: center;
   margin: 24px 0;
+}
 
-  /* 24px top and bottom, 0 left and right */
+.flex-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.flex-style {
+  border: 4px solid #ff901f;
+  border-radius: 24px;
+}
+
+.section-style {
+  background-color: #ff901f;
+  color: #000;
+  font-weight: 400;
+}
+
+.grid-about {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 288px);
+  grid-gap: 36px;
+  justify-content: space-between;
+  align-items: top;
+}
+
+.bot-marg {
+  margin-bottom: 48px;
+}
+
+#about h2.st-marg {
+  margin-bottom: 0;
+}
+
+#about h2.mt-marg {
+  margin-top: 0;
 }
 
 /*
@@ -414,14 +460,12 @@ img.low-fi {
   border-radius: 2vw;
 }
 
-.circle {
-  border-color: #ff901f;
-  border-image: none;
-  border-radius: 50%;
-  border-style: solid;
-  border-width: 8px;
-  height: 20em;
-  width: 20em;
+.profile-image {
+  display: block;
+  border-radius: 24px;
+  border: 4px solid #ff901f;
+  height: 384px;
+  width: 288px;
   overflow: hidden;
 }
 
@@ -462,19 +506,6 @@ h2.cont-project {
   margin-top: 16px;
 }
 
-.crop {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  object-position: 50% 50%;
-  border-radius: 50%;
-  border: 4px solid #ff901f;
-}
-
-.align {
-  text-align: center;
-}
-
 .navtoggle li:not(:last-child) {
   display: none;
 }
@@ -505,7 +536,7 @@ h2.cont-project {
 }
 
 /* viewport sizing */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 650px) {
   header {
     text-align: unset;
     padding: 16px 0;
@@ -514,8 +545,6 @@ h2.cont-project {
   nav {
     width: auto;
     float: right;
-
-    /* margin-top: 4px; */
   }
 
   nav > ul {
@@ -550,11 +579,6 @@ h2.cont-project {
     margin: 0;
   }
 
-  .crop {
-    width: 600px;
-    height: 600px;
-  }
-
   .logo {
     max-width: 48px;
     margin-top: 12px;
@@ -571,6 +595,11 @@ h2.cont-project {
 
   .col-md-4 {
     width: calc(100% / 3);
+  }
+
+  .flex-about {
+    padding: 16px;
+    flex-direction: row;
   }
 
   /*
@@ -647,6 +676,13 @@ h2.cont-project {
   .col-lg-5 {
     width: 41.66%;
   }
+
+  .flex-about {
+    padding: 24px;
+    flex-direction: row;
+    align-items: center;
+  }
+
 
   .container {
     max-width: 1200px;
