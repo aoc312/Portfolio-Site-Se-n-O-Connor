@@ -606,13 +606,13 @@ h2.cont-project {
     display: none;
   }
 
-  /*
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-  */
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 
   .navtoggle li:not(:last-child) {
     display: inline-block;
@@ -665,13 +665,12 @@ h2.cont-project {
     padding: 0 16px;
   }
 
-  /*
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-  */
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
   .col-lg-7 {
     width: 58.33%;
