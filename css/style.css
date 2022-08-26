@@ -146,6 +146,10 @@ nav > ul > li > a:hover {
   color: #85d3c4;
 }
 
+.hero-project {
+  width: 100%;
+}
+
 #resume {
   border-color: #ff901f;
   border: 2px solid #ff901f;
