@@ -387,7 +387,7 @@ svg.icons {
 }
 
 .card .content {
-  display: none;
+  display: block;
   position: relative;
   top: -320px;
   pointer-events: none;
@@ -602,6 +602,10 @@ h2.cont-project {
     flex-direction: row;
   }
 
+  .card .content {
+    display: none;
+  }
+
   /*
     .row::after {
       content: "";
@@ -681,6 +685,10 @@ h2.cont-project {
     padding: 24px;
     flex-direction: row;
     align-items: center;
+  }
+
+  .card .content {
+    display: none;
   }
 
 
