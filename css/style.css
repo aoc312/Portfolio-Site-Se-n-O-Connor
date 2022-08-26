@@ -291,7 +291,7 @@ svg.icons {
   display: grid;
   grid-template-columns: repeat(auto-fill, 288px);
   grid-gap: 36px;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: top;
 }
 
@@ -602,6 +602,10 @@ h2.cont-project {
     flex-direction: row;
   }
 
+  .row-card {
+    justify-content: space-between;
+  }
+
   /*
     .row::after {
       content: "";
@@ -683,6 +687,10 @@ h2.cont-project {
     align-items: center;
   }
 
+
+  .row-card {
+    justify-content: space-between;
+  }
 
   .container {
     max-width: 1200px;
