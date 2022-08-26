@@ -388,6 +388,8 @@ svg.icons {
 
 .card .content {
   display: none;
+  position: relative;
+  top: -320px;
   pointer-events: none;
   width: 288px;
   height: 320px;
@@ -421,8 +423,6 @@ svg.icons {
 
 .card:hover .content {
   display: block;
-  position: relative;
-  top: -320px;
 }
 
 #unused {
