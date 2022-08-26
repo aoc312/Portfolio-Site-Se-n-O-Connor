@@ -263,7 +263,7 @@ svg.icons {
   display: grid;
   grid-template-columns: repeat(auto-fill, 288px);
   grid-gap: 36px;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin: 24px 0;
 }
@@ -291,7 +291,7 @@ svg.icons {
   display: grid;
   grid-template-columns: repeat(auto-fill, 288px);
   grid-gap: 36px;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: top;
 }
 
