@@ -602,10 +602,6 @@ h2.cont-project {
     flex-direction: row;
   }
 
-  .row-card {
-    justify-content: space-between;
-  }
-
   /*
     .row::after {
       content: "";
