@@ -536,7 +536,7 @@ h2.cont-project {
 }
 
 /* viewport sizing */
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 710px) {
   header {
     text-align: unset;
     padding: 16px 0;
