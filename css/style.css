@@ -148,6 +148,7 @@ nav > ul > li > a:hover {
 
 .hero-project {
   width: 100%;
+  margin: 24px 0;
 }
 
 #resume {
@@ -413,6 +414,10 @@ svg.icons {
 
 .h4-marg {
   margin: 0;
+}
+
+.p-marg {
+  margin-bottom: 0;
 }
 
 .rec-proj-space {
