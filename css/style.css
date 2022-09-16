@@ -109,16 +109,35 @@ a:active {
 
 nav > ul {
   list-style-type: none;
+  display: flex;
+  align-items: center;
   padding: 0;
   margin: 0;
+}
+
+nav > ul > li {
+  margin-right: 16px;
 }
 
 nav > ul > li > a {
   padding: 0 16px;
   text-transform: uppercase;
   font-weight: 700;
+<<<<<<< Updated upstream
   border-radius: 8px;
   color: #241200;
+=======
+  transition: color ease 0.4s;
+}
+
+nav > ul > li > a:hover {
+  text-decoration: none;
+  color: #85d3c4;
+}
+
+#nav {
+  z-index: 100;
+>>>>>>> Stashed changes
 }
 
 #hero {
@@ -136,7 +155,46 @@ nav > ul > li > a {
 }
 
 #hero span {
+<<<<<<< Updated upstream
   display: block;
+=======
+  color: #85d3c4;
+}
+
+.hero-project {
+  width: 100%;
+  margin: 24px 0;
+}
+
+#resume {
+  border-color: #ff901f;
+  border: 2px solid #ff901f;
+  border-radius: 100px;
+  padding: 6px 14px;
+  text-decoration: none;
+  opacity: 1;
+  transition: border-color ease 0.4s, color ease 0.4s;
+}
+
+#resume:hover, #button-outline:hover {
+  border-color: #85d3c4;
+  color: #85d3c4;
+  text-decoration: none;
+}
+
+#contact {
+  background-color: #ff901f;
+  padding: 8px 16px;
+  color: #000;
+  border-radius: 100px;
+  text-decoration: none;
+  opacity: 1;
+  transition: background-color ease 0.4s;
+}
+
+#contact:hover {
+  background-color: #85d3c4;
+>>>>>>> Stashed changes
 }
 
 /*
@@ -148,6 +206,13 @@ img {
   width: 100%;
 }
 
+<<<<<<< Updated upstream
+=======
+img.author-img {
+  width: 100%;
+}
+
+>>>>>>> Stashed changes
 svg.icons {
   color: #ff901f;
   stroke: #ff901f;
@@ -174,6 +239,7 @@ svg.icons {
   transition: 0.4s color;
 }
 
+<<<<<<< Updated upstream
 /*
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80%
@@ -202,17 +268,43 @@ svg.icons {
 .button.contact:hover {
   background-color: #ff901f;
   color: #241200;
+=======
+.button-card {
+  border: 2px solid #ff901f;
+  border-radius: 100px;
+  padding: 8px 16px;
+  color: #ff901f;
+  font-weight: 400;
   text-decoration: none;
 }
 
-/* .navigation {
-  display: inline-block;
-  color: #ffffff;
+.button-project {
+  border: 2px solid #ff901f;
+  border-radius: 100px;
+  padding: 8px 16px;
+  color: #ff901f;
   font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  transition: 0.2s opacity;
-} */
+  text-decoration: none;
+}
+
+#button-project:hover {
+>>>>>>> Stashed changes
+  text-decoration: none;
+  color: #85d3c4;
+  border-color: #85d3c4;
+}
+
+.align {
+  display: inline-block;
+  position: relative;
+  height: 18px;
+  margin-right: 12px;
+}
+
+.project-button-text {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+}
 
 /* Layout styling */
 .container {
@@ -221,8 +313,69 @@ svg.icons {
 
 .row {
   margin: 24px 0;
+<<<<<<< Updated upstream
 
   /* 24px top and bottom, 0 left and right */
+=======
+}
+
+.row-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 288px);
+  grid-gap: 36px;
+  justify-content: space-around;
+  align-items: center;
+  margin: 24px 0;
+}
+
+.flex-about {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.flex-project-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.flex-project-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-style {
+  border: 4px solid #ff901f;
+  border-radius: 0px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+
+.section-style {
+  background-color: #ff901f;
+  color: #000;
+  font-weight: 400;
+}
+
+.grid-about {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 288px);
+  grid-gap: 36px;
+  justify-content: space-between;
+  align-items: top;
+>>>>>>> Stashed changes
 }
 
 #work .row {
@@ -255,6 +408,107 @@ svg.icons {
   stroke-width: 30.65500069;
 }
 
+<<<<<<< Updated upstream
+=======
+.card {
+  position: relative;
+  top: 0;
+  left: 0;
+  background-image: url("../img/coming_soon/coming_soon_alt@1x.png");
+  transition: box-shadow ease 0.2s, top ease 0.2s, left ease 0.2s;
+}
+
+/*
+.card {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 288px;
+  height: 432px;
+  background-image: url("../img/coming_soon/coming_soon_alt@1x.png");
+  display: flex;
+  flex-direction: column-reverse;
+  transition: box-shadow ease 0.2s, top ease 0.2s, left ease 0.2s;
+}
+*/
+
+.card-dims {
+  width: 288px;
+  height: 432px;
+}
+
+.card-display {
+  display: block;
+}
+
+#hexpert.card {
+  background-image: url("../img/hexpert/hero_image/portfolio_card@1x.png");
+}
+
+#wedpun.card {
+  background-image: url("../img/lethal_wedpun/hero_image/lethal_wedpun_hero@1x.png");
+}
+
+.b-click {
+  pointer-events: auto;
+}
+
+.content {
+  padding: 64px 16px 24px;
+}
+
+.card .content {
+  display: block;
+  position: relative;
+  top: -320px;
+  pointer-events: none;
+  width: 288px;
+  height: 320px;
+  background-image: linear-gradient(0deg, #000, transparent);
+  color: #fff;
+}
+
+.t-shadow {
+  text-shadow: 0px 2px 8px #000;
+}
+
+.content-flex {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 100%;
+}
+
+.h4-marg {
+  margin: 0;
+}
+
+.p-marg {
+  margin-bottom: 0;
+}
+
+.rec-proj-space {
+  padding: 0 32px;
+}
+
+.card:hover {
+  top: -4px;
+  left: -4px;
+  box-shadow: 8px 8px #85d3c4;
+}
+
+.card:hover .content {
+  display: block;
+}
+
+#unused {
+  display: none;
+}
+
+.in-progress {
+  pointer-events: none;
+}
+
+>>>>>>> Stashed changes
 .social {
   display: inline-block;
   padding-top: 16px;
@@ -297,6 +551,7 @@ img.low-fi {
   border-radius: 2vw;
 }
 
+<<<<<<< Updated upstream
 .circle {
   border-color: #ff901f;
   border-image: none;
@@ -305,7 +560,20 @@ img.low-fi {
   border-width: 8px;
   height: 20em;
   width: 20em;
+=======
+.profile-image {
+  display: block;
+  border-radius: 0px;
+  border: 4px solid #ff901f;
+  aspect-ratio: 1/1;
+  margin-bottom: 24px;
+>>>>>>> Stashed changes
   overflow: hidden;
+}
+
+.profile-position {
+  position: relative;
+  top: -20%;
 }
 
 .line-project {
@@ -453,8 +721,79 @@ img.author-img {
   padding-right: 0;
 }
 
+.dropdown {
+  overflow: hidden;
+  padding: 6px 0;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: inherit;
+  background-color: inherit;
+  font-family: inherit;
+  font-weight: 700;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 72px;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  display: flex;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-weight: 700;
+  text-align: left;
+  background-color: #ff901f;
+  line-height: 1.3;
+  margin-bottom: 8px;
+  border-radius: 24px;
+  text-transform: uppercase;
+  transition: background-color ease 0.4s;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+.dropdown-content a:hover {
+  background-color: #85d3c4;
+}
+
+.show {
+  display: block;
+}
+
 /* viewport sizing */
+<<<<<<< Updated upstream
 @media only screen and (min-width: 640px) {
+=======
+
+@media only screen and (max-width: 710px) {
+  nav > ul {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .dropdown-content {
+    position: relative;
+    top: 8px;
+  }
+
+  .dropbtn {
+    float: right;
+    line-height: 1.3;
+  }
+}
+
+@media only screen and (min-width: 710px) {
+>>>>>>> Stashed changes
   header {
     text-align: unset;
     padding: 16px 0;
@@ -476,7 +815,7 @@ img.author-img {
   }
 
   main {
-    padding-top: 104px;
+    padding-top: 116px;
   }
 
   h1 {
@@ -551,7 +890,7 @@ img.author-img {
   }
 
   main {
-    padding-top: 104px;
+    padding-top: 116px;
   }
 
   h1 {
@@ -593,6 +932,23 @@ img.author-img {
     width: 41.66%;
   }
 
+<<<<<<< Updated upstream
+=======
+  .flex-about {
+    padding: 24px;
+    flex-direction: row;
+  }
+
+  .card .content {
+    display: none;
+  }
+
+
+  .row-card {
+    justify-content: space-between;
+  }
+
+>>>>>>> Stashed changes
   .container {
     max-width: 1200px;
     margin-left: auto;

@@ -32,7 +32,16 @@
           <ul>
             <li><a href="index.html" class="navigation project state">Projects</a></li>
             <li><a href="about.html" class="navigation project state">About</a></li>
-            <li><a href="#contact" class="navigation project state">Contact</a></li>
+            <li><a href="files/Sean_O_Connor_Resume.pdf" target="_blank" class="navigation project state" id="resume">Resumé</a></li>
+            <li>
+              <div class="dropdown">
+                <a class="navigation project state dropbtn" id="contact" onclick="myFunction()">Contact Me</a>
+                <div class="dropdown-content" id="myDropdown">
+                  <a href="https://www.linkedin.com/in/se%C3%A1n-ao-connor/" target="_blank">LinkedIn</a>
+                  <a href="mailto:aoconnorsean312@gmail.com?subject=RE:%20Career%20Opportunities" target="_blank">Email Me</a>
+                </div>
+              </div>
+            </li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
@@ -42,16 +51,23 @@
   <main>
     <!-- For my story -->
     <div class="container">
-      <div>
-        <h1>About Me</h1>
-      </div>
-    </div>
-    <div>
-      <div class="container">
-        <div class="align circle">
-          <picture>
-            <img src="img/hexpert/author_images/sean_profile_pic.jpg" alt="Hexpert" class="author-img">
-          </picture>
+      <div class="flex-about">
+        <div class="col-lg-5 col-md-6">
+          <div class="profile-image">
+            <picture>
+              <img src="img/hexpert/author_images/sean_profile_pic.jpg" alt="Hexpert" class="author-img profile-position">
+            </picture>
+          </div>
+        </div>
+        <div class="flex-col col-md-6 col-lg-7">
+          <div class="section-style flex-style">
+            <h2 class="mt-marg">About Me</h2>
+            <p>I started out waiting tables and pulling pints in a busy bar in Dublin. By the time I realised that UX design was my real interest, I was staring at an Assistant Manager position in a city centre restaurant. I love creating experiences for people, but not just in the serving of delicious food (and a smile and a wink). I wanted to make and improve things that people use in their daily life, so I took a course in UX design. </p>
+            <p>I pull from my service background, and personal love of optimising everything I can get my hands on, to create efficient and enjoyable user-centred designs.</p>
+          </div>
+          <div class="section-style flex-style">
+            <p>I am based in Dublin, but I hail from the windy west coast, in a small village in Sligo. Living in two different worlds, meeting people from all walks of life, has given me an appreciation for the diversity of human experiences.</p>
+          </div>
         </div>
         <div class="row">
           <div class="column col-md-6 col-lg-7">
