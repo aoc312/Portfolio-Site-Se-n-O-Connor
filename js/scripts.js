@@ -1,4 +1,5 @@
 
+
 function menuToggle() {
   var x = document.getElementById('myNavtoggle')
   if (x.className === 'navtoggle') {
@@ -7,8 +8,6 @@ function menuToggle() {
     x.className = 'navtoggle'
   }
 }
-<<<<<<< Updated upstream
-=======
 
 function contactToggle() {
   var x = document.getElementById('mycontacttoggle')
@@ -31,4 +30,3 @@ window.onclick = function(e) {
     }
   }
 }
->>>>>>> Stashed changes
