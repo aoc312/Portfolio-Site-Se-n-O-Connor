@@ -232,25 +232,6 @@ svg.icons {
   padding: 8px 16px;
   color: #ff901f;
   font-weight: 400;
-<<<<<<< HEAD
-=======
-  text-decoration: none;
-}
-
-/*
-.button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80%
-  text-decoration: none;
-}
-*/
-.button.project {
-  color: #ff901f;
-}
-
-.button.project:hover {
-  background-color: #ff901f;
-  color: #000;
->>>>>>> master
   text-decoration: none;
 }
 
@@ -288,67 +269,6 @@ svg.icons {
 
 .row {
   margin: 24px 0;
-<<<<<<< HEAD
-}
-
-.row-card {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 288px);
-  grid-gap: 36px;
-  justify-content: space-around;
-  align-items: center;
-  margin: 24px 0;
-}
-
-.flex-about {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: space-between;
-  padding: 16px;
-}
-
-.flex-project-head {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px;
-}
-
-.flex-project-button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.flex-style {
-  border: 4px solid #ff901f;
-  border-radius: 0px;
-  padding: 16px;
-  margin-bottom: 24px;
-}
-
-.flex-col {
-  flex-direction: column;
-}
-
-
-.section-style {
-  background-color: #ff901f;
-  color: #000;
-  font-weight: 400;
-}
-
-.grid-about {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 288px);
-  grid-gap: 36px;
-  justify-content: space-between;
-  align-items: top;
-=======
->>>>>>> master
 }
 
 .row-card {
@@ -460,25 +380,9 @@ svg.icons {
   transition: box-shadow ease 0.2s, top ease 0.2s, left ease 0.2s;
 }
 
-<<<<<<< HEAD
-/*
-.card {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 288px;
-  height: 432px;
-  background-image: url("../img/coming_soon/coming_soon_alt@1x.png");
-  display: flex;
-  flex-direction: column-reverse;
-  transition: box-shadow ease 0.2s, top ease 0.2s, left ease 0.2s;
-}
-*/
-=======
 .card.in-progress {
   transition: none;
 }
->>>>>>> master
 
 .card-dims {
   width: 288px;
@@ -497,13 +401,6 @@ svg.icons {
   background-image: url("../img/lethal_wedpun/hero_image/lethal_wedpun_hero@1x.png");
 }
 
-<<<<<<< HEAD
-.b-click {
-  pointer-events: auto;
-}
-
-=======
->>>>>>> master
 .content {
   padding: 64px 16px 24px;
 }
@@ -720,11 +617,7 @@ h2.cont-project {
 
 /* viewport sizing */
 
-<<<<<<< HEAD
-@media only screen and (max-width: 710px) {
-=======
 @media only screen and (max-width: 719px) {
->>>>>>> master
   nav > ul {
     flex-direction: column;
     align-items: flex-end;
@@ -741,11 +634,7 @@ h2.cont-project {
   }
 }
 
-<<<<<<< HEAD
-@media only screen and (min-width: 710px) {
-=======
 @media only screen and (min-width: 720px) {
->>>>>>> master
   header {
     text-align: unset;
     padding: 16px 0;
