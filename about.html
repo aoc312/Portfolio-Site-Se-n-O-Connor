@@ -47,7 +47,15 @@
             <li><a href="projects.html" class="navigation project state">Projects</a></li>
             <li><a href="about.html" class="navigation project state">About</a></li>
             <li><a href="files/Sean_O_Connor_Resume.pdf" target="_blank" class="navigation project state" id="resume">Resumé</a></li>
-            <li><a href="#" class="navigation project state" id="contact">Contact Me</a></li>
+            <li>
+              <div class="dropdown">
+                <a class="navigation project state dropbtn" id="contact" onclick="myFunction()">Contact Me</a>
+                <div class="dropdown-content" id="myDropdown">
+                  <a href="https://www.linkedin.com/in/se%C3%A1n-ao-connor/" target="_blank">LinkedIn</a>
+                  <a href="mailto:aoconnorsean312@gmail.com?subject=RE:%20Career%20Opportunities" target="_blank">Email Me</a>
+                </div>
+              </div>
+            </li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
@@ -62,26 +70,23 @@
       </div>
     </div>
     <div class="container">
-      <div class="section-style flex-about flex-style">
-        <div class="col-lg-5">
+      <div class="flex-about">
+        <div class="col-lg-5 col-md-6">
           <div class="profile-image">
             <picture>
-              <img src="img/hexpert/author_images/sean_profile_pic.jpg" alt="Hexpert" class="author-img">
+              <img src="img/hexpert/author_images/sean_profile_pic.jpg" alt="Hexpert" class="author-img profile-position">
             </picture>
           </div>
         </div>
-        <div class="col-md-6 col-lg-7">
-          <h2 class="mt-marg">My Story</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis mattis metus eu pharetra. Phasellus id pulvinar lorem, nec scelerisque nulla. Nunc vitae tortor nulla. Vestibulum mauris eros, pretium vel libero eget, malesuada sollicitudin odio. Phasellus nec mollis diam, id aliquam purus. Integer mattis libero sit amet congue cursus. Aliquam sollicitudin, ipsum in pulvinar pretium, nibh est viverra eros, et malesuada nunc lacus eu enim. Donec varius aliquam lacus, efficitur convallis eros tincidunt at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-          <p>Nunc tempor in nunc et lacinia. Vestibulum et porttitor mauris. Mauris non accumsan est. Donec at est non mauris sodales commodo in at leo. Proin blandit finibus elementum. Maecenas vehicula erat vel consectetur feugiat. Donec euismod in tellus a euismod.</p>
-          <p>Maecenas sagittis justo neque, ut dignissim ex ultrices a. Nulla vel suscipit mauris. Proin in mi magna. Pellentesque auctor ex non nisi condimentum.</p>
-<!--
-          <div>
-            <a href="files/Seán_O_Connor_Resume.pdf" class="button project" download>Download My Resume</a>
-            <a href="files/Seán_O_Connor_Resume.pdf" class="button project" target="_blank">View My Resume</a>
+        <div class="flex-col col-md-6 col-lg-7">
+          <div class="section-style flex-style">
+            <h2 class="mt-marg">About Me</h2>
+            <p>I started out waiting tables and pulling pints in a busy bar in Dublin. By the time I realised that UX design was my real interest, I was staring at an Assistant Manager position in a city centre restaurant. I love creating experiences for people, but not just in the serving of delicious food (and a smile and a wink). I wanted to make and improve things that people use in their daily life, so I took a course in UX design. </p>
+            <p>I pull from my service background, and personal love of optimising everything I can get my hands on, to create efficient and enjoyable user-centred designs.</p>
           </div>
-        -->
-
+          <div class="section-style flex-style">
+            <p>I am based in Dublin, but I hail from the windy west coast, in a small village in Sligo. Living in two different worlds, meeting people from all walks of life, has given me an appreciation for the diversity of human experiences.</p>
+          </div>
         </div>
       </div>
         <div class="bot-marg">
