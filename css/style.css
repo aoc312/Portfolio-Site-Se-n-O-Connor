@@ -1,9 +1,9 @@
 /*
 Colors used:
-Primary Color (Orange): #FF901F;
-Primary Color (Dark Brown): #241200;
-Secondary Color (Orange): #FFECD8;
-Tertiary Color (Blue): #85D3C4;
+Primary Color (Orange): #ff901f;
+Primary Color (Black): #000;
+Secondary Color (Orange): #ffecd8;
+Tertiary Color (Blue): #85d3c4;
 */
 * {
   box-sizing: border-box;
@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background-color: #ffecd8;
+  background-color: #000;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 
@@ -25,20 +25,17 @@ body {
   line-height: 1.6;
 
   /* Sets the line-height to 1.6 * the font-size */
-  color: #241200;
+  color: #ff901f;
 }
 
 header {
   position: fixed;
   width: 100%;
-  background-color: #ff901f;
+  background-color: #000;
   font-family: "Roboto Mono", monospace;
   font-size: 20px;
   font-weight: 400;
   padding: 8px 0;
-  -webkit-box-shadow: 0 4px 6px 0 rgba(50, 50, 50, 0.7);
-  -moz-box-shadow: 0 4px 6px 0 rgba(50, 50, 50, 0.7);
-  box-shadow: 0 4px 6px 0 rgba(50, 50, 50, 0.7);
 }
 
 main {
@@ -90,10 +87,12 @@ a {
   /* No underlining */
 }
 
+/*
 a:visited {
-  /* visited link */
+  /* visited link
   color: #ff901f;
 }
+*/
 
 a:hover {
   /* color: #85D3C4; */
@@ -136,14 +135,14 @@ nav > ul > li > a:hover {
 }
 
 #hero {
-  background-color: #ff901f;
-  color: #241200;
+  background-color: #000;
+  color: #ff901f;
   padding: 20px 16px;
   display: inline-block;
   width: 100%;
 }
 
-#hero h1, #hero p {
+#hero h2, #hero p {
   text-align: center;
 
   /* Centers text */
@@ -214,14 +213,14 @@ svg.icons {
   display: inline-block;
 
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #ff901f;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
 
   /* needed to override the default link color */
   font-weight: 400;
   padding: 8px 16px;
   margin-right: 16px;
-  border-radius: 8px;
+  border-radius: 0px;
 
   /* border-bottom: 2px solid #241200; /* width of the border, type, color */
   transition: 0.4s color;
@@ -233,6 +232,25 @@ svg.icons {
   padding: 8px 16px;
   color: #ff901f;
   font-weight: 400;
+<<<<<<< HEAD
+=======
+  text-decoration: none;
+}
+
+/*
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80%
+  text-decoration: none;
+}
+*/
+.button.project {
+  color: #ff901f;
+}
+
+.button.project:hover {
+  background-color: #ff901f;
+  color: #000;
+>>>>>>> master
   text-decoration: none;
 }
 
@@ -270,6 +288,7 @@ svg.icons {
 
 .row {
   margin: 24px 0;
+<<<<<<< HEAD
 }
 
 .row-card {
@@ -328,13 +347,85 @@ svg.icons {
   grid-gap: 36px;
   justify-content: space-between;
   align-items: top;
+=======
+>>>>>>> master
 }
 
+.row-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 288px);
+  grid-gap: 36px;
+  justify-content: space-around;
+  align-items: center;
+  margin: 24px 0;
+}
+
+.flex-about {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.flex-project-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.flex-project-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-style {
+  border: 4px solid #ff901f;
+  border-radius: 0px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.section-style {
+  background-color: #ff901f;
+  color: #000;
+  font-weight: 400;
+}
+
+.grid-about {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 288px);
+  grid-gap: 36px;
+  justify-content: space-between;
+  align-items: top;
+}
+
+.bot-marg {
+  margin-bottom: 48px;
+}
+
+#about h2.st-marg {
+  margin-bottom: 0;
+}
+
+#about h2.mt-marg {
+  margin-top: 0;
+}
+
+/*
 #work .row {
   padding-bottom: 24px;
   border-bottom: 1px solid #241200;
 }
-
+*/
 .logo {
   max-width: 24px;
   vertical-align: middle;
@@ -342,6 +433,7 @@ svg.icons {
 
 .svg-logo {
   stroke-width: 8;
+  stroke: #ff901f;
 }
 
 .hurl {
@@ -368,6 +460,7 @@ svg.icons {
   transition: box-shadow ease 0.2s, top ease 0.2s, left ease 0.2s;
 }
 
+<<<<<<< HEAD
 /*
 .card {
   position: relative;
@@ -381,6 +474,11 @@ svg.icons {
   transition: box-shadow ease 0.2s, top ease 0.2s, left ease 0.2s;
 }
 */
+=======
+.card.in-progress {
+  transition: none;
+}
+>>>>>>> master
 
 .card-dims {
   width: 288px;
@@ -399,10 +497,13 @@ svg.icons {
   background-image: url("../img/lethal_wedpun/hero_image/lethal_wedpun_hero@1x.png");
 }
 
+<<<<<<< HEAD
 .b-click {
   pointer-events: auto;
 }
 
+=======
+>>>>>>> master
 .content {
   padding: 64px 16px 24px;
 }
@@ -478,18 +579,6 @@ svg.icons {
   border: 2px solid #ff901f;
 }
 
-.navigation.project {
-  color: #241200;
-  transition: 0.4s color;
-}
-
-.navigation.project.state:hover {
-  padding: 8px 16px;
-  background-color: #241200;
-  color: #ff901f;
-  text-decoration: none;
-}
-
 .berlin-illustration {
   width: 100%;
   max-width: 100%;
@@ -549,85 +638,6 @@ h3.cont-project {
 
 h2.cont-project {
   margin-top: 16px;
-}
-
-/*
-img.author-img {
-  max-width: 600px;
-}
-*/
-.crop {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  object-position: 50% 50%;
-  border-radius: 50%;
-  border: 4px solid #ff901f;
-}
-
-.align {
-  text-align: center;
-}
-
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(200px, 50px);
-  }
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-
-.sun {
-  /* animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear; */
-  animation: 4s color-change infinite alternate linear;
-}
-
-.cloud-front {
-  /* animation-duration: 30s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear; */
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-.cloud-back {
-  /* animation-duration: 30s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear; */
-  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 .navtoggle li:not(:last-child) {
@@ -710,7 +720,11 @@ img.author-img {
 
 /* viewport sizing */
 
+<<<<<<< HEAD
 @media only screen and (max-width: 710px) {
+=======
+@media only screen and (max-width: 719px) {
+>>>>>>> master
   nav > ul {
     flex-direction: column;
     align-items: flex-end;
@@ -727,7 +741,11 @@ img.author-img {
   }
 }
 
+<<<<<<< HEAD
 @media only screen and (min-width: 710px) {
+=======
+@media only screen and (min-width: 720px) {
+>>>>>>> master
   header {
     text-align: unset;
     padding: 16px 0;
@@ -736,8 +754,6 @@ img.author-img {
   nav {
     width: auto;
     float: right;
-
-    /* margin-top: 4px; */
   }
 
   nav > ul {
@@ -772,11 +788,6 @@ img.author-img {
     margin: 0;
   }
 
-  .crop {
-    width: 600px;
-    height: 600px;
-  }
-
   .logo {
     max-width: 48px;
     margin-top: 12px;
@@ -795,11 +806,22 @@ img.author-img {
     width: calc(100% / 3);
   }
 
+  .flex-about {
+    padding: 16px;
+    flex-direction: row;
+  }
+
+  .card .content {
+    display: none;
+  }
+
+
   .row::after {
     content: "";
     clear: both;
     display: table;
   }
+
 
   .navtoggle li:not(:last-child) {
     display: inline-block;
@@ -851,6 +873,7 @@ img.author-img {
     float: left;
     padding: 0 16px;
   }
+
 
   .row::after {
     content: "";

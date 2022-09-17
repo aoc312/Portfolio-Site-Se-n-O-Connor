@@ -21,7 +21,7 @@
 </head>
 
 <body id="home">
-  <header>
+  <header id="nav">
     <!-- For the navigation -->
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
@@ -43,7 +43,8 @@
         </a>
         <nav>
           <ul>
-            <li><a href="index.html" class="navigation project state">Projects</a></li>
+            <li><a href="index.html" class="navigation project state">Home</a></li>
+            <li><a href="projects.html" class="navigation project state">Projects</a></li>
             <li><a href="about.html" class="navigation project state">About</a></li>
             <li><a href="files/Sean_O_Connor_Resume.pdf" target="_blank" class="navigation project state" id="resume">Resumé</a></li>
             <li>
@@ -65,10 +66,11 @@
     <!-- For the hero section -->
     <div id="hero">
       <div class="container">
-        <h1>Hello, my name is Seán O Connor.
-          <span>I am a UX designer from Dublin.</span>
-        </h1>
-        <p>I focus on the choices people make, and the pain points they want to avoid, to create enjoyable and useful experiences.
+        <h2>
+          My name is Seán O Connor and I am a <span>UX designer</span>.
+        </h2>
+        <p>
+          I want to improve the experiences that people have, because <span>less friction = less frustration</span>.
         </p>
       </div>
     </div>
@@ -76,17 +78,21 @@
     <!-- For my work/projects -->
     <div id="work">
       <div class="container">
-        <h2>Projects</h2>
-        <div class="row">
-          <div class="column col-md-6 col-lg-7">
-            <a href="project_hexpert.html">
-              <picture>
-                <source srcset="img/hexpert/hero_image/portfolio_hero@0.5x.jpg" media="(max-width:640px)">
-                <source srcset="img/hexpert/hero_image/portfolio_hero@0.5x.jpg" media="(max-width:767px)">
-                <source srcset="img/hexpert/hero_image/portfolio_hero@0.5x.jpg" media="(max-width:1139px)">
-                <img src="img/hexpert/hero_image/portfolio_hero@0.5x.jpg" alt="Hexpert">
-              </picture>
+        <h3>Recent Projects</h3>
+        <div class="row-card rec-proj-space">
+          <div id="hexpert" class="card card-dims card-marg card-display">
+            <a class="card-dims card-display" href="project_hexpert.html">
             </a>
+            <div class="content">
+              <div class="content-flex">
+                <div>
+                  <h4 class= "h4-marg t-shadow">Hexpert</h4>
+                  <p class= "t-shadow p-marg">
+                    A mobile-first responsive website where people can learn about building computers from experts. I took this project from initial research to a final prototype, handling UX and UI design.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
           <div id="wedpun" class="card card-dims card-marg card-display">
             <a class="card-dims card-display in-progress" href="#">
@@ -101,6 +107,7 @@
                 </div>
               </div>
             </div>
+<<<<<<< HEAD
           </div>
           <div id="portfolio" class="card card-dims card-marg card-display">
             <a class="card-dims card-display in-progress" href="#">
@@ -118,35 +125,28 @@
           </div>
         </div>
 
+=======
+          </div>
+          <div id="portfolio" class="card card-dims card-marg card-display">
+            <a class="card-dims card-display in-progress" href="#">
+            </a>
+            <div class="content">
+              <div class="content-flex">
+                <div>
+                  <h4 class= "h4-marg t-shadow">Portfolio Website</h4>
+                  <p class= "t-shadow p-marg">
+                    More information coming soon!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+>>>>>>> master
       </div>
     </div>
   </main>
-  <!-- For the footer  -->
-  <footer id="contact">
-    <div class="container">
-      <h2>Get in Touch</h2>
-      <p>Contact me via email below, or using one of my social accounts!
-      </p>
-      <div>
-        <a href="mailto:aoconnorsean312@gmail.com" class="button contact" target="_blank">
-          <i class="fa-solid fa-envelope fa-2x"></i>
-          Email Me
-        </a>
-      </div>
-      <div class="social">
-        <a href="https://www.linkedin.com/in/se%C3%A1n-o-connor-1700011aa/" target="_blank">
-          <i class="fa-brands fa-linkedin fa-3x"></i>
-        </a>
-        <a href="#" target="_blank">
-          <i class="fa-brands fa-instagram-square fa-3x"></i>
-        </a>
-        <a href="https://www.behance.net/seanoconnor13" target="_blank">
-          <i class="fa-brands fa-behance-square fa-3x"></i>
-        </a>
-      </div>
-      <p>copyright Sean O Connor 2022-2023</p>
-    </div>
-  </footer>
+
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>
