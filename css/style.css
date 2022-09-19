@@ -258,6 +258,7 @@ svg.icons {
   color: #ff901f;
   font-weight: 400;
   text-decoration: none;
+  transition: border-color ease 0.4s, color ease 0.4s;
 }
 
 #button-project:hover {
@@ -396,10 +397,6 @@ svg.icons {
   transition: box-shadow ease 0.2s, top ease 0.2s, left ease 0.2s;
 }
 
-.card.in-progress {
-  transition: none;
-}
-
 .card-dims {
   width: 288px;
   height: 432px;
@@ -468,8 +465,15 @@ svg.icons {
   display: none;
 }
 
-.in-progress {
+a.in-progress {
   pointer-events: none;
+}
+
+.card:hover.in-progress {
+  transition: none;
+  top: 0;
+  left: 0;
+  box-shadow: none;
 }
 
 .social {
@@ -517,33 +521,34 @@ img.low-fi {
 }
 
 .line-project {
-  background-color: #241200;
+  background-color: #000;
   color: #ff901f;
-  border-radius: 2vw;
   border: 4px solid #ff901f;
   padding: 16px;
 }
 
 .tert-project {
-  background-color: #85d3c4;
-  color: #241200;
-  border-radius: 2vw;
+  background-color: #000;
+  color: #ff901f;
   padding: 16px;
 }
 
 .sec-project {
-  background-color: #241200;
-  color: #ff901f;
-  border-radius: 2vw;
+  background-color: #85d3c4;
+  color: #000;
   padding: 16px;
 }
 
 .prim-project {
   background-color: #ff901f;
-  color: #241200;
-  border-radius: 2vw;
+  color: #000;
   padding: 16px;
 }
+
+.prim-project p, .prim-project li {
+  font-weight: 400;
+}
+
 
 h3.cont-project {
   margin-top: 16px;
@@ -620,7 +625,6 @@ h2.cont-project {
   text-transform: uppercase;
   transition: background-color ease 0.4s;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-
 }
 
 .dropdown-content a:hover {
@@ -629,6 +633,10 @@ h2.cont-project {
 
 .show {
   display: block;
+}
+
+#home .home, #about .about, #contact .contact, #projects .projects, #hexpert-projects .projects {
+  color: #85d3c4;
 }
 
 /* viewport sizing */
