@@ -271,7 +271,7 @@ svg.icons {
   display: inline-block;
   position: relative;
   height: 18px;
-  margin-right: 12px;
+  margin-right: 11px;
 }
 
 .project-button-text {
@@ -305,18 +305,41 @@ svg.icons {
   padding: 16px;
 }
 
-.flex-project-head {
+.flex-row {
   display: flex;
   flex-direction: row;
+}
+
+.project-head {
   align-items: center;
   justify-content: space-between;
   padding: 16px;
+}
+
+.project-title {
+  align-items: baseline;
+}
+.project-marg {
+  margin-bottom: 48px;
+}
+
+.title-marg {
+  margin: 0;
+  margin-right: 0.5em;
 }
 
 .flex-project-button {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+}
+
+.flex-project {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -440,6 +463,14 @@ svg.icons {
 }
 
 .h4-marg {
+  margin: 0;
+}
+
+.h1-marg {
+  margin: 0;
+}
+
+.h3-marg {
   margin: 0;
 }
 
