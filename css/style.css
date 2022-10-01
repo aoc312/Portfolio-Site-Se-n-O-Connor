@@ -235,22 +235,6 @@ svg.icons {
   text-decoration: none;
 }
 
-/*
-.button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80%
-  text-decoration: none;
-}
-*/
-.button.project {
-  color: #ff901f;
-}
-
-.button.project:hover {
-  background-color: #ff901f;
-  color: #000;
-  text-decoration: none;
-}
-
 .button-project {
   border: 2px solid #ff901f;
   border-radius: 100px;
@@ -709,7 +693,7 @@ h2.cont-project {
   }
 
   main {
-    padding-top: 104px;
+    padding-top: 116px;
   }
 
   h1 {
@@ -790,7 +774,7 @@ h2.cont-project {
   }
 
   main {
-    padding-top: 104px;
+    padding-top: 116px;
   }
 
   h1 {
