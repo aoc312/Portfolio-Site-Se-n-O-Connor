@@ -651,6 +651,117 @@ h2.cont-project {
   display: block;
 }
 
+[class*="mySlides"] {
+  display: none;
+}
+
+img.slide-img-tall {
+  height: 100%;
+  width: auto;
+}
+
+.slide-height {
+  height: 100%;
+}
+
+[class*="myDots"] {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 6px;
+  background-color: #ff901f;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.2s ease, margin 0.2s ease, height 0.2s ease, width 0.2s ease;
+}
+
+.dot-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  margin-top: 16px;
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  height: 18px;
+}
+
+.active,
+[class*="myDots"]:hover {
+  height: 18px;
+  width: 18px;
+  margin: 0 3px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  height: 500px;
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-frame {
+  margin: 24px;
+}
+
+.hexpert-frame {
+  border: solid 4px #ff901f;
+}
+
+.slide-caption {
+  margin: 0;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+.flex-slide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #ff901f;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.4s ease;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+/* On hover, add a grey background color */
+.prev:hover,
+.next:hover {
+  background-color: #ff901f;
+  color: #000;
+}
+
 #home .home, #about .about, #contact .contact, #projects .projects, #hexpert-projects .projects {
   color: #85d3c4;
 }
