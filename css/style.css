@@ -380,6 +380,9 @@ svg.icons {
   stroke-width: 8;
   stroke: #ff901f;
 }
+.svg-section {
+  width: 24px;
+}
 
 .hurl {
   display: inline-block;
@@ -603,6 +606,92 @@ h2.cont-project {
   padding-right: 0;
 }
 
+/*
+.project-toggle {
+  display: none;
+  opacity: 0;
+  transition: opacity ease 0.4s;
+}
+
+.project-toggle.p-toggled {
+  display: block;
+  opacity: 1;
+}
+*/
+
+.collapsible {
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  color: inherit;
+  background-color: inherit;
+  padding: 0;
+  border: inherit;
+}
+
+.project-toggle {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.section-flex {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-button {
+  color: inherit;
+}
+
+.open-icon {
+  max-width: 48px;
+  vertical-align: middle;
+}
+
+.open-icon {
+  transform-origin: center;
+  transition: transform ease 0.2s;
+}
+
+.closed {
+  transform: rotate(90deg);
+  transform-origin: center;
+}
+
+/*
+.project-toggle div:not(:last-child) {
+  display: none;
+}
+
+.project-toggle, .project-toggle.p-toggled {
+  position: relative;
+}
+
+.project-toggle.p-toggled nav {
+  padding: 24px 0 0;
+}
+
+.project-toggle.p-toggled div {
+  display: block;
+  padding: 10px 0;
+}
+
+.project-toggle.p-toggled div:last-child {
+  padding: 0 0 10px;
+}
+
+.project-toggle div .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+*/
 .dropdown {
   overflow: hidden;
   padding: 6px 0;
@@ -760,6 +849,7 @@ img.slide-img-tall {
 .next:hover {
   background-color: #ff901f;
   color: #000;
+  text-decoration: none;
 }
 
 #home .home, #about .about, #contact .contact, #projects .projects, #hexpert-projects .projects {
@@ -831,6 +921,10 @@ img.slide-img-tall {
   .logo {
     max-width: 48px;
     margin-top: 12px;
+  }
+
+  .svg-section {
+    width: 48px;
   }
 
   [class*="col-"] {

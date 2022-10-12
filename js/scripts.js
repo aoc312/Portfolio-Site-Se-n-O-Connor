@@ -8,12 +8,39 @@ function menuToggle() {
   }
 }
 
-function contactToggle() {
-  var x = document.getElementById('mycontacttoggle')
-  if (x.className === 'contacttoggle') {
-    x.className += ' responsive'
+var coll = document.getElementsByClassName('collapsible');
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener('click', function() {
+    this.classList.toggle('open-section')
+    var content = this.nextElementSibling
+    var icon = document.getElementById('myButtonicon')
+    if (icon.className.baseVal === 'open-icon') {
+      icon.className.baseVal += ' closed'
+    } else {
+      icon.className.baseVal = 'open-icon'
+    }
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null
+    } else {
+      content.style.maxHeight = content.scrollHeight + 'px'
+    }
+  })
+}
+
+function buttonToggle() {
+  var toggle = document.getElementById('myProjtoggle')
+  var icon = document.getElementById('myButtonicon')
+  if (toggle.className === 'project-toggle') {
+    toggle.className += ' p-toggled'
   } else {
-    x.className = 'contacttoggle'
+    toggle.className = 'project-toggle'
+  }
+  if (icon.className.baseVal === 'open-icon') {
+    icon.className.baseVal += ' closed'
+  } else {
+    icon.className.baseVal = 'open-icon'
   }
 }
 
@@ -21,7 +48,7 @@ function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
-window.onclick = function(e) {
+window.onclick = function(myFunction) {
   if (!e.target.matches('.dropbtn')) {
   var myDropdown = document.getElementById("myDropdown");
     if (myDropdown.classList.contains('show')) {
