@@ -108,6 +108,7 @@
           </picture>
         </div>
       </div>
+      <!--Overview-->
       <div>
         <div id="overview" class="prim-project project-marg">
           <h3 class="cont-project">Overview</h3>
@@ -129,10 +130,6 @@
               <p>
                 As this was part of a UX bootcamp, and I was basically completely new to the field, the process involved applying new knowledge to the project as it was learned. This was great for me, as I like practical application in all things, but it also lead to redesigning elements often. While this made me appreciate quick iteration, and influenced me to become less tied down to a particular idea or feature, it did also mean that there were times I had to completely redesign whole features in order to apply new information, which was frustrating at times.
               </p>
-              <!--
-              <p>
-                While the variety of skills and tools provided by the course were extensive, they were not always relevant or specifically useful for this project. This was made clear during the course, but it still required putting time into exercises that weren’t used at all in this project.
-              </p>-->
             </div>
             <div class="column col-md-6 col-lg-6">
               <h4>The Results</h4>
@@ -152,6 +149,7 @@
 
           </div>
         </div>
+        <!--The Project-->
         <div id="the-project" class="line-project project-marg">
           <h3 class="cont-project">The Project</h3>
           <div class="row flex-project">
@@ -202,6 +200,7 @@
     </div>
 
     <div id="Myprocess" class="container">
+      <!--Background Information-->
       <div id="background-information" class="project-marg prim-project">
         <button class="collapsible">
           <div class="section-flex">
@@ -252,19 +251,21 @@
         <div>
           <h2>My Process</h2>
         </div>
+        <!--Problem Statement-->
         <div>
           <div>
-            <div class="prim-project">
-              <h3 class="cont-project">Problem Statement</h3>
-              <p>Users inexperienced in building or upgrading computers need a way to get accurate information about computer parts and their compatibility and quality because they want to build/upgrade their own computer but hardware is diverse and
-                resources online can be contradictory or inaccurate. </p>
+            <div id="ini-problem-statement" class="prim-project">
+              <h3 class="cont-project">(Initial) Problem Statement</h3>
+              <p>People inexperienced in building or upgrading computers need a way to get accurate information about computer parts and their compatibility/quality because they want to build/upgrade their own computer but hardware is diverse and some resources online can be contradictory or inaccurate.</p>
+              <p>After conducting user interviews I revisited this problem statement as there was a slight change in focus.</p>
             </div>
           </div>
         </div>
-        <div>
+        <!--Competitive Analysis-->
+        <div id="Comp-Analysis">
           <div>
             <h3>Competitive Analysis</h3>
-            <p>I conducted an in-depth analysis of two web applications:</p>
+            <p>To understand the current options available to people with this problem, I conducted an in-depth analysis of two web applications: TheOne and PCpartpicker. Here is a high-level summary of my findings:</p>
           </div>
           <div class="row">
             <div class="column col-md-6 col-lg-6">
@@ -284,11 +285,12 @@
             </div>
           </div>
         </div>
-        <div>
+        <!--User Interviews-->
+        <div id="User-Interviews">
           <div>
             <h3>User Interviews & Surveys</h3>
             <p>I conducted moderated remote user interviews and I created a survey to gather more data on the topic from a larger audience, while also using it for recruiting interview participants by including an email for interested people to use to contact me. I was unable to generate new participants via the surveys for these user interviews, so I relied on friends and acquaintances who fit my target audience.</p>
-            <p>I was less confident in my work at this point, and so I left less time to find participants and schedule the interviews. If I was to redo this project, I would have started posting surveys in a wider variety of spaces and searched for relevant participants a month beforehand, as I am more confident in my skills. While the participants I got were very helpful, having a previous relationship with them could have skewed their answers as well as how I interacted with them and vice versa. In subsequent testing sessions where I interviewed previously unknown people, there was a clear difference in atmosphere and conversation.</p>
+            <p>Here are some key points from this testing:</p>
           </div>
           <div class="row">
             <div class="row">
@@ -312,8 +314,21 @@
               </div>
             </div>
           </div>
+          <div>
+            <p>These interviews highlighted the most important problem to solve: building trust.</p>
+            <p>Trust is important for most people to feel comfortable talking to other people and taking their advice online.</p>
+            <p>In other professions or situations, people can prove they are trustworthy, respectable or have authority on a topic with their experience, educational background, or their profession itself, such as Doctors, Lawyers, or teachers. This was the first hurdle for Hexpert, as people need to build trust in these experts if they are going to pay money to receive information. Specifically, Hexpert needs to make enough people trust and respect these experts in order to make this app a viable and valuable service.</p>
+          </div>
         </div>
-        <!--Research Analysis-->
+        <!--Problem Statement-->
+        <div>
+          <div id="problem-statement" class="prim-project">
+            <h3 class="cont-project">Problem Statement</h3>
+            <p>With this user input, I decided to slightly shift the problem statement:</p>
+            <p>People inexperienced in building or upgrading computers need a way to get accurate information from sources they trust about computer building because they want to build/upgrade their own computer but hardware is diverse and some resources online can be contradictory or inaccurate.</p>
+          </div>
+        </div>
+        <!--User Personas-->
         <div class="prim-project">
           <div>
             <h3 class="cont-project">User Personas</h3>
@@ -355,8 +370,8 @@
         <div>
           <div>
             <h3>User Flows</h3>
-            <p>User flows illustrate the intended journey the user takes to completing a task or goal. Using the persona’s needs to develop intuitive user flows that show their progress from the first point of contact when completing a task to the
-              completion of their goal was essential in highlighting potential stumbling blocks and a starting point for the structure of the app.</p>
+            <p>With the personas, I assessed user stories created during the research phase and created user flows to plot out a person’s journey through performing a task.</p>
+            <p>By focusing on the core features of the app, and generating an efficient user flow for these features, I was able to create a plan for essential steps in the user journey and a sitemap to structure these steps within the whole application.</p>
           </div>
           <div class="row">
             <div class="column col-md-6 col-lg-6">
@@ -375,9 +390,29 @@
                 <img src="img/hexpert/user_flows/paying_expert_flow@1x.png" alt="Hexpert">
               </picture>
             </div>
-            <div>
-              <p>By focusing on the core features of the app, and generating an efficient user flow for these features, I was able to create a plan for essential steps in the user journey and begin wireframing ideas to visualise them.</p>
-            </div>
+          </div>
+        </div>
+        <!--Initial Solutions-->
+        <div>
+          <div>
+            <h3>Initial Solutions</h3>
+            <p>Based on the research so far, I came up with a few solutions to build trust with the user:</p>
+          </div>
+          <div>
+            <h5>Messaging</h5>
+            <p>The key feature to create trust between the user and expert was the messaging feature. The initial brief mentioned being able to contact experts in order to set up a video call, and during the user interviews multiple participants mentioned that being able to talk to someone beforehand, such as knowing someone previously or being introduced to someone, made them feel more comfortable in talking to another person about an issue they were having.</p>
+            <p>I decided to expand on this and make a direct messaging function part of the user journey. The idea was that users could chat with the expert, ask them a few questions about their experience, if they knew anything about the user’s particular problem, etc, before agreeing to a video call.</p>
+          </div>
+          <div>
+            <h5>Payment</h5>
+            <p>My initial idea for a payment system was similar to pay-as-you-go, that is users would be charged for the amount time they spent on video calls. Users would confirm their method of payment before the call, and payment would be calculated and charged automatically at the end of the call.</p>
+            <p>This was based on my early assumption that the Nathan persona would want to be able to spend the exact amount of money needed to get relevant information and meet his budget.</p>
+            <p>This assumption was challenged later during a round of usability testing.</p>
+          </div>
+          <div>
+            <h5>Search</h5>
+            <p>Hexpert is based around users finding experts who can fulfil their needs, therefore the search feature is important. The issue here is that there is a large variety of different parts for computers, as well as versions of these parts depending on the manufacturer. Rather than creating filters for every variant, I decided to create broader categories that cover types of parts and brands, and allow experts and users to tag experts with more specific labels. Users can also ask experts more specific questions through messages. </p>
+            <p>It was also clear from the user interviews that people want varied information, from the actual building of the computer to sourcing parts online and how to pick the right parts for your needs. I added filters to include different types of advice that experts could provide.</p>
           </div>
         </div>
         <!--Wireframes-->
@@ -385,7 +420,7 @@
           <div>
             <h3>Wireframes</h3>
             <p>My initial low-fidelity wireframes focused on the primary features needed to complete user flows.</p>
-            <p>I used Invision to quickly iterate upon designs without over designing them, as the hand drawn style allowed me to make screens and quickly copy and paste reused elements rather than redraw them on paper without worrying about the aesthetics.</p>
+            <p>I used Invision to quickly iterate upon designs without over designing them, as the hand drawn style allowed me to make screens and quickly copy and paste reused elements, rather than redraw them on paper, without worrying about the aesthetics.</p>
           </div>
           <div>
             <div class="slide-frame">
@@ -638,9 +673,8 @@
               </div>
             </div>
           </div>
-
         </div>
-        <!--Testing-->
+        <!--Usability Testing-->
         <div id="testing" class="prim-project">
           <div>
             <div>
@@ -652,7 +686,8 @@
           <div>
             <div>
               <h5>Landing Page</h5>
-              <p>The landing page was criticised by most participants for not explaining the app well, and one participant felt forced to go straight into searching for an expert. The updated hero image and introduction give the user a better grasp of the concept, and the “How Does It Work” section is clearly shown on the main page.</p>
+              <p>The landing page was criticised by most participants for not explaining the app and it’s use well. There wasn’t enough explanation for new users to understand the value of the apps, and one participant felt forced to go straight into searching for an expert.</p>
+              <p>I updated the hero image and introduction to give the user a better grasp of the app’s function, and a “How Does It Work” section is easy to find upon scrolling down.</p>
             </div>
             <div class="row line-project">
               <div class="row column col-md-6 col-lg-6">
@@ -697,7 +732,8 @@
           <div>
             <div>
               <h5>Expert Profile Page</h5>
-              <p>Participants couldn’t see how much a video call with an expert would cost, or their schedule. They also felt that the question section wasn’t important, and often ignored it at first, as it was a pop-up section. Updated designs include payment details, availability and sections for education and experience on the expert’s page. The question pop-up became its own separate page to maintain focus and highlight the next step in the journey.</p>
+              <p>Participants felt that the question section wasn’t important, and often ignored it at first, as it was a modal form. They also thought that there wasn’t enough information on the experts, such as experience or education.</p>
+              <p>Updated designs include the expert’s availability and sections for education and experience on the expert’s page. The question modal became its own separate page to maintain focus and highlight the next step in the journey.</p>
             </div>
             <div class="row line-project">
               <div class="row column col-md-6 col-lg-6">
@@ -743,7 +779,10 @@
             <!--scheduling-->
             <div>
               <h5>Payment</h5>
-              <p>Participants were frustrated when they could not see the cost of the call they were booking. Also, they did not like a payment gateway right before their call, as it could result in being late if there were payment issues. Updated screens include payment information during the scheduling flow, and, instead of before the call, payment is now taken during the scheduling process.</p>
+              <p>Participants were frustrated when they could not see the cost of the call they were booking, as rates were not shown during the scheduling process. Also, they did not like a payment gateway right before their call, as it could result in being late if there were payment issues. </p>
+              <p>Some participants were concerned that by allowing users to schedule a call of any length at various times, which could interfere with other calls unnecessarily.</p>
+              <p>Updated screens include payment information during the scheduling flow, and, instead of before the call, payment is taken during the scheduling process. Users can also ask to extend their call and pay within the video call, if the expert agrees and it does not overlap with subsequent calls.</p>
+              <p>Updated schedule flows have minimum and maximum time constraints for video calls, and also account for other confirmed calls.</p>
             </div>
             <div class="row line-project">
               <div class="row column col-md-6 col-lg-6">
@@ -788,7 +827,11 @@
         </div>
         <div>
           <div>
-            <h4>Design Choices</h4>
+            <h3>Design Language System</h3>
+          </div>
+          <div>
+            <h5>Colour Palette</h5>
+            <p>While this app is mostly aimed at a gamer audience, the aesthetics often used by gaming brands in the space reflect a quite aggressive style and dark colour palette. Instead, I decided to create a lighter, retro feel, using a bright inquisitive orange and dark chocolate browns to bring a warm, comfortable and confident tone. I felt this would also inspire trust in the experts.  </p>
           </div>
           <div>
             <h5>Cards</h5>
@@ -800,19 +843,6 @@
             <p>Needed a simple first step to encourage users to clearly establish their problem regardless of their literacy with computer building language. In testing with card sorts and usability testing, the biggest hurdle was using the correct language so that regardless of proficiency, anyone could navigate the website and find the appropriate knowledge. Giving users a subject category to choose related to their issue, and to add tags to their question, would allow users to give the experts more information up front and speed up conversion times. </p>
           </div>
         </div>
-        <div>
-          <div>
-            <h4>Design Language System</h4>
-          </div>
-          <div>
-            <h5>Colour Palette</h5>
-            <p>While this app is mostly aimed at a gamer audience, the aesthetics often used by gaming brands in the space reflect a quite aggressive style and dark colour palette. Instead, I decided to create a lighter, retro feel, using a bright inquisitive orange and dark chocolate browns to bring a warm, comfortable and confident tone. I felt this would also inspire trust in the experts.  </p>
-          </div>
-          <div>
-            <h5>Buttons</h5>
-            <p>Needed a simple first step to encourage users to clearly establish their problem regardless of their literacy with computer building language. In testing with card sorts and usability testing, the biggest hurdle was using the correct language so that regardless of proficiency, anyone could navigate the website and find the appropriate knowledge. Giving users a subject category to choose related to their issue, and to add tags to their question, would allow users to give the experts more information up front and speed up conversion times. </p>
-          </div>
-        </div>
 
 
 
@@ -820,102 +850,121 @@
         <!--Mock Ups-->
         <div>
           <div>
-            <h3>Final Mock-ups</h3>
+            <h3>Final Mock Ups, Prototypes & Deliverables</h3>
           </div>
           <div>
-            <p>Final mock-ups focused on revamping the presentation of the app itself, as well as the visuals. Creating copy that showed the user what we are all about, where to go and what to do.</p>
-            <p>While this app is aimed squarely at a gamer audience, the aesthetics often used by gaming brands in the space reflect a quite aggressive style and dark colour palette. Instead, I decided to create a lighter, retro feel, using a bright
-              inquisitive orange and dark chocolate browns to bring a warm, comfortable and confident tone. I felt this would also inspire trust in the experts.</p>
-            <p>The voice of Hexpert itself is illustrated by our robot mascot, acting in place of the app as an assistant who can help arrange your calls and provide assistance with any questions you have.</p>
+            <p>The deliverables for this project consisted of final mock-ups (wireframes) with polished UI designs, and relevant design documentation (such as a design language system, task analysis and user flows). </p>
+            <p>This was my first UI design project, so I kept it simple. While this app is aimed squarely at a gamer audience, the aesthetics often used by gaming brands in the space reflect a quite aggressive style and usually darker colour palette. Instead, I decided to create a lighter, retro feel, using a bright inquisitive orange and dark chocolate browns to bring a warm, comfortable and confident atmosphere.</p>
+            <p>The voice of Hexpert itself is illustrated by our robot mascot, acting as the face of the app as an assistant who can help arrange your calls and provide assistance with any questions you have.</p>
           </div>
-          <div class="row">
-            <div class="column col-md-4 col-lg-6">
-              <picture>
-                <source srcset="img/hexpert/mock_ups/landing_page_image@0.5x.png" media="(max-width:600px)">
-                <source srcset="img/hexpert/mock_ups/landing_page_image@0.5x.png" media="(max-width:767px)">
-                <source srcset="img/hexpert/mock_ups/landing_page_image@0.75x.png" media="(max-width:1139px)">
-                <img src="img/hexpert/mock_ups/landing_page_image@1x.png" alt="Landing Page">
-              </picture>
-            </div>
-            <div class="column col-md-4 col-lg-6">
-              <picture>
-                <source srcset="img/hexpert/mock_ups/search_results_image@0.5x.png" media="(max-width:600px)">
-                <source srcset="img/hexpert/mock_ups/search_results_image@0.5x.png" media="(max-width:767px)">
-                <source srcset="img/hexpert/mock_ups/search_results_image@0.75x.png" media="(max-width:1139px)">
-                <img src="img/hexpert/mock_ups/search_results_image@1x.png" alt="Search Results">
-              </picture>
+          <div>
+            <div class="slide-frame">
+              <div class="slideshow-container hexpert-frame slide-marg">
+                <div class="mySlides4 slide-height">
+                  <h5 class="slide-caption">Landing Page</h5>
+                  <picture>
+                    <source srcset="img/hexpert/mock_ups/landing_page_image@0.5x.png" media="(max-width:600px)">
+                    <source srcset="img/hexpert/mock_ups/landing_page_image@0.5x.png" media="(max-width:767px)">
+                    <source srcset="img/hexpert/mock_ups/landing_page_image@0.75x.png" media="(max-width:1139px)">
+                    <img class="slide-img-tall" src="img/hexpert/mock_ups/landing_page_image@1x.png" alt="Landing Page">
+                  </picture>
+                </div>
+
+                <div class="mySlides4 slide-height">
+                  <h5 class="slide-caption">Search Results</h5>
+                  <picture>
+                    <source srcset="img/hexpert/mock_ups/search_results_image@0.5x.png" media="(max-width:600px)">
+                    <source srcset="img/hexpert/mock_ups/search_results_image@0.5x.png" media="(max-width:767px)">
+                    <source srcset="img/hexpert/mock_ups/search_results_image@0.75x.png" media="(max-width:1139px)">
+                    <img class="slide-img-tall" src="img/hexpert/mock_ups/search_results_image@1x.png" alt="Search Results">
+                  </picture>
+                </div>
+
+                <div class="mySlides4 slide-height">
+                  <h5 class="slide-caption">Expert Profile</h5>
+                  <picture>
+                    <source srcset="img/hexpert/mock_ups/expert_profile_image@0.5x.png" media="(max-width:600px)">
+                    <source srcset="img/hexpert/mock_ups/expert_profile_image@0.5x.png" media="(max-width:767px)">
+                    <source srcset="img/hexpert/mock_ups/expert_profile_image@0.75x.png" media="(max-width:1139px)">
+                    <img class="slide-img-tall" src="img/hexpert/mock_ups/expert_profile_image@1x.png" alt="Expert Profile Page">
+                  </picture>
+                </div>
+                <div class="mySlides4 slide-height">
+                  <h5 class="slide-caption">Expert Profile Snackbar</h5>
+                  <picture>
+                    <source srcset="img/hexpert/mock_ups/expert_snackbar_image@0.5x.png" media="(max-width:600px)">
+                    <source srcset="img/hexpert/mock_ups/expert_snackbar_image@0.5x.png" media="(max-width:767px)">
+                    <source srcset="img/hexpert/mock_ups/expert_snackbar_image@0.75x.png" media="(max-width:1139px)">
+                    <img class="slide-img-tall" src="img/hexpert/mock_ups/expert_snackbar_image@1x.png" alt="Expert Profile Snackbar">
+                  </picture>
+                </div>
+
+                <div class="mySlides4 slide-height">
+                  <h5 class="slide-caption">Question Form</h5>
+                  <picture>
+                    <source srcset="img/hexpert/mock_ups/question_image@0.5x.png" media="(max-width:600px)">
+                    <source srcset="img/hexpert/mock_ups/question_image@0.5x.png" media="(max-width:767px)">
+                    <source srcset="img/hexpert/mock_ups/question_image@0.75x.png" media="(max-width:1139px)">
+                    <img class="slide-img-tall" src="img/hexpert/mock_ups/question_image@1x.png" alt="Question Form">
+                  </picture>
+                </div>
+                <div class="mySlides4 slide-height">
+                  <h5 class="slide-caption">Message</h5>
+                  <picture>
+                    <source srcset="img/hexpert/mock_ups/messaging_image@0.5x.png" media="(max-width:600px)">
+                    <source srcset="img/hexpert/mock_ups/messaging_image@0.5x.png" media="(max-width:767px)">
+                    <source srcset="img/hexpert/mock_ups/messaging_image@0.75x.png" media="(max-width:1139px)">
+                    <img class="slide-img-tall" src="img/hexpert/mock_ups/messaging_image@1x.png" alt="Message">
+                  </picture>
+                </div>
+                <div class="mySlides4 slide-height">
+                  <h5 class="slide-caption">Scheduling</h5>
+                  <picture>
+                    <source srcset="img/hexpert/mock_ups/scheduling_image@0.5x.png" media="(max-width:600px)">
+                    <source srcset="img/hexpert/mock_ups/scheduling_image@0.5x.png" media="(max-width:767px)">
+                    <source srcset="img/hexpert/mock_ups/scheduling_image@0.75x.png" media="(max-width:1139px)">
+                    <img class="slide-img-tall" src="img/hexpert/mock_ups/scheduling_image@1x.png" alt="Scheduling">
+                  </picture>
+                </div>
+                <div class="mySlides4 slide-height">
+                  <h5 class="slide-caption">Login</h5>
+                  <picture>
+                    <source srcset="img/hexpert/mock_ups/sign-up_image@0.5x.png" media="(max-width:600px)">
+                    <source srcset="img/hexpert/mock_ups/sign-up_image@0.5x.png" media="(max-width:767px)">
+                    <source srcset="img/hexpert/mock_ups/sign-up_image@0.75x.png" media="(max-width:1139px)">
+                    <img class="slide-img-tall" src="img/hexpert/mock_ups/sign-up_image@1x.png" alt="Login">
+                  </picture>
+                </div>
+                <div class="mySlides4 slide-height">
+                  <h5 class="slide-caption">Onboarding</h5>
+                  <picture>
+                    <source srcset="img/hexpert/mock_ups/onboarding_image@0.5x.png" media="(max-width:600px)">
+                    <source srcset="img/hexpert/mock_ups/onboarding_image@0.5x.png" media="(max-width:767px)">
+                    <source srcset="img/hexpert/mock_ups/onboarding_image@0.75x.png" media="(max-width:1139px)">
+                    <img class="slide-img-tall" src="img/hexpert/mock_ups/onboarding_image@1x.png" alt="Onboarding">
+                  </picture>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+              </div>
+              <div class="dot-box">
+                <div class="dots">
+                  <span class="myDots4" onclick="currentSlide(1, 3)"></span>
+                  <span class="myDots4" onclick="currentSlide(2, 3)"></span>
+                  <span class="myDots4" onclick="currentSlide(3, 3)"></span>
+                  <span class="myDots4" onclick="currentSlide(4, 3)"></span>
+                  <span class="myDots4" onclick="currentSlide(5, 3)"></span>
+                  <span class="myDots4" onclick="currentSlide(6, 3)"></span>
+                  <span class="myDots4" onclick="currentSlide(7, 3)"></span>
+                  <span class="myDots4" onclick="currentSlide(8, 3)"></span>
+                  <span class="myDots4" onclick="currentSlide(9, 3)"></span>
+
+                </div>
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="column col-md-4 col-lg-6">
-              <picture>
-                <source srcset="img/hexpert/mock_ups/expert_profile_image@0.5x.png" media="(max-width:600px)">
-                <source srcset="img/hexpert/mock_ups/expert_profile_image@0.5x.png" media="(max-width:767px)">
-                <source srcset="img/hexpert/mock_ups/expert_profile_image@0.75x.png" media="(max-width:1139px)">
-                <img src="img/hexpert/mock_ups/expert_profile_image@1x.png" alt="Expert Profile Page">
-              </picture>
-            </div>
-            <div class="column col-md-4 col-lg-6">
-              <picture>
-                <source srcset="img/hexpert/mock_ups/expert_snackbar_image@0.5x.png" media="(max-width:600px)">
-                <source srcset="img/hexpert/mock_ups/expert_snackbar_image@0.5x.png" media="(max-width:767px)">
-                <source srcset="img/hexpert/mock_ups/expert_snackbar_image@0.75x.png" media="(max-width:1139px)">
-                <img src="img/hexpert/mock_ups/expert_snackbar_image@1x.png" alt="Expert Profile Snackbar">
-              </picture>
-            </div>
-            <div class="column col-md-4 col-lg-6">
-              <picture>
-                <source srcset="img/hexpert/mock_ups/sign-up_image@0.5x.png" media="(max-width:600px)">
-                <source srcset="img/hexpert/mock_ups/sign-up_image@0.5x.png" media="(max-width:767px)">
-                <source srcset="img/hexpert/mock_ups/sign-up_image@0.75x.png" media="(max-width:1139px)">
-                <img src="img/hexpert/mock_ups/sign-up_image@1x.png" alt="Login">
-              </picture>
-            </div>
-          </div>
-          <div class="row">
-            <div class="column col-md-4 col-lg-6">
-              <picture>
-                <source srcset="img/hexpert/mock_ups/question_image@0.5x.png" media="(max-width:600px)">
-                <source srcset="img/hexpert/mock_ups/question_image@0.5x.png" media="(max-width:767px)">
-                <source srcset="img/hexpert/mock_ups/question_image@0.75x.png" media="(max-width:1139px)">
-                <img src="img/hexpert/mock_ups/question_image@1x.png" alt="Question Form">
-              </picture>
-            </div>
-            <div class="column col-md-4 col-lg-6">
-              <picture>
-                <source srcset="img/hexpert/mock_ups/onboarding_image@0.5x.png" media="(max-width:600px)">
-                <source srcset="img/hexpert/mock_ups/onboarding_image@0.5x.png" media="(max-width:767px)">
-                <source srcset="img/hexpert/mock_ups/onboarding_image@0.75x.png" media="(max-width:1139px)">
-                <img src="img/hexpert/mock_ups/onboarding_image@1x.png" alt="Onboarding">
-              </picture>
-            </div>
-            <div class="column col-md-4 col-lg-6">
-              <picture>
-                <source srcset="img/hexpert/mock_ups/scheduling_image@0.5x.png" media="(max-width:600px)">
-                <source srcset="img/hexpert/mock_ups/scheduling_image@0.5x.png" media="(max-width:767px)">
-                <source srcset="img/hexpert/mock_ups/scheduling_image@0.75x.png" media="(max-width:1139px)">
-                <img src="img/hexpert/mock_ups/scheduling_image@1x.png" alt="Scheduling">
-              </picture>
-            </div>
-          </div>
-          <div class="row">
-            <div class="column col-md-4 col-lg-6">
-              <picture>
-                <source srcset="img/hexpert/mock_ups/messaging_image@0.5x.png" media="(max-width:600px)">
-                <source srcset="img/hexpert/mock_ups/messaging_image@0.5x.png" media="(max-width:767px)">
-                <source srcset="img/hexpert/mock_ups/messaging_image@0.75x.png" media="(max-width:1139px)">
-                <img src="img/hexpert/mock_ups/messaging_image@1x.png" alt="Message">
-              </picture>
-            </div>
-            <div class="column col-md-4 col-lg-6">
-              <picture>
-                <source srcset="img/hexpert/mock_ups/video_chat_image@0.5x.png" media="(max-width:600px)">
-                <source srcset="img/hexpert/mock_ups/video_chat_image@0.5x.png" media="(max-width:767px)">
-                <source srcset="img/hexpert/mock_ups/video_chat_image@0.75x.png" media="(max-width:1139px)">
-                <img src="img/hexpert/mock_ups/video_chat_image@1x.png" alt="Video Chat">
-              </picture>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
