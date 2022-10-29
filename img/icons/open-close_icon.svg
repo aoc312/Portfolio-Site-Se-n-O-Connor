@@ -1,0 +1,6 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="open-close_icon">
+<path id="close" d="M3.5 11.5H20.5V12.5H3.5V11.5Z" stroke="black"/>
+<path id="open" d="M11.5 20.5L11.5 3.5H12.5L12.5 20.5H11.5Z" stroke="black"/>
+</g>
+</svg>
