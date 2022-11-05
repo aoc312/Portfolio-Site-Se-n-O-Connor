@@ -135,6 +135,22 @@ nav > ul > li > a:hover {
   color: #85d3c4;
 }
 
+[class*="h-light-"] {
+  font-weight: 500;
+  padding: 2px 4px;
+}
+
+.h-light-o {
+  background-color: #ff901f;
+  color: #000;
+}
+
+.h-light-b {
+  background-color: #000;
+  color: #ff901f;
+}
+
+
 #nav {
   z-index: 100;
 }
@@ -309,7 +325,7 @@ svg.icons {
   align-items: baseline;
 }
 .project-marg {
-  margin-bottom: 48px;
+  margin-bottom: 32px;
 }
 
 .title-marg {
@@ -569,6 +585,12 @@ img.low-fi {
   padding: 0;
 }
 
+.no-line-project {
+  background-color: #000;
+  color: #ff901f;
+  padding: 16px;
+}
+
 .tert-project {
   background-color: #000;
   color: #ff901f;
@@ -658,10 +680,6 @@ img.low-fi {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-
-#initial-solutions .section-flex {
-  margin-bottom: 24px;
 }
 
 .section-button {
