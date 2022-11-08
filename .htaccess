@@ -15,7 +15,9 @@ RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
 
 Options +FollowSymLinks
+
 RewriteEngine on
-RewriteCond %{THE_REQUEST} /index.html HTTP [NC]
+
+RewriteCond %{THE_REQUEST}/index.html HTTP [NC]
 
 RewriteRule (.*)index.html$ /$1 [R=301,L]
