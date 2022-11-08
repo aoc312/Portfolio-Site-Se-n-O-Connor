@@ -19,7 +19,7 @@ body {
   font-size: 16px;
 
   /* Sets the font size to 16px */
-  font-weight: 300;
+  font-weight: 400;
 
   /* Sets the font weight to 300 */
   line-height: 1.6;
@@ -135,6 +135,22 @@ nav > ul > li > a:hover {
   color: #85d3c4;
 }
 
+[class*="h-light-"] {
+  font-weight: 400;
+  padding: 2px 4px;
+}
+
+.h-light-o {
+  background-color: #ff901f;
+  color: #000;
+}
+
+.h-light-b {
+  background-color: #000;
+  color: #ff901f;
+}
+
+
 #nav {
   z-index: 100;
 }
@@ -145,16 +161,6 @@ nav > ul > li > a:hover {
   padding: 20px 16px;
   display: inline-block;
   width: 100%;
-}
-
-#hero h2, #hero p {
-  text-align: center;
-
-  /* Centers text */
-}
-
-#hero span {
-  color: #85d3c4;
 }
 
 .hero-project {
@@ -309,7 +315,7 @@ svg.icons {
   align-items: baseline;
 }
 .project-marg {
-  margin-bottom: 48px;
+  margin-bottom: 32px;
 }
 
 .title-marg {
@@ -569,6 +575,12 @@ img.low-fi {
   padding: 0;
 }
 
+.no-line-project {
+  background-color: #000;
+  color: #ff901f;
+  padding: 16px;
+}
+
 .tert-project {
   background-color: #000;
   color: #ff901f;
@@ -658,10 +670,6 @@ img.low-fi {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-
-#initial-solutions .section-flex {
-  margin-bottom: 24px;
 }
 
 .section-button {
@@ -999,6 +1007,7 @@ img.slide-img-tall {
 
   h2 {
     font-size: 2.25em;
+    line-height: 1.6;
   }
 
   h3 {
