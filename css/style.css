@@ -90,13 +90,6 @@ a {
   /* No underlining */
 }
 
-/*
-a:visited {
-  /* visited link
-  color: #ff901f;
-}
-*/
-
 a:hover {
   /* color: #85D3C4; */
   text-decoration: underline;
@@ -131,6 +124,42 @@ nav > ul > li > a {
 nav > ul > li > a:hover {
   text-decoration: none;
   color: #85d3c4;
+}
+
+fieldset {
+  padding: 0;
+  border: none;
+}
+
+label h5 {
+  margin: 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-button {
+  max-width: 240px;
+  background-color: #ff901f;
+  padding: 8px 16px;
+  color: #000;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: background-color ease 0.4s;
+  margin: 16px;
+}
+
+.contact-input {
+
 }
 
 [class*="h-light-"] {
