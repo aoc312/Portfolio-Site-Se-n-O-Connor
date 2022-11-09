@@ -6,11 +6,10 @@ if (isset($_POST['submit'])) {
 
   $email_from = 'oconnorsean312@yahoo.ie';
   $email_subject = "Website Correspondence";
-  $email_body = "You have received a new message from the user ".$name.":\n\n".$message;
+  $email_body = "You have received a new message from ".$name.":\n\n".$message;
 
   $to = "seanux@seanaoconnor.com";
-  $headers = "From: ".$email_from;
-  $headers .= "Reply-To: ".$visitor_email;
+  $headers = "From: ".$visitor_email;
 
   mail($to, $email_subject, $email_body, $headers);
   header("Location: contact_me.php?mailsend");
