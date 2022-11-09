@@ -128,7 +128,9 @@ nav > ul > li > a:hover {
 
 fieldset {
   padding: 0;
-  border: none;
+  border-style: none;
+  resize: none;
+  outline: none;
 }
 
 textarea {
