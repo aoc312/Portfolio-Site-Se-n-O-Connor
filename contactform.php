@@ -40,4 +40,3 @@
       echo "Bad email value!";
       exit;
   }
-?>
