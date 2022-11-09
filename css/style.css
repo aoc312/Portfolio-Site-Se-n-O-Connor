@@ -128,9 +128,7 @@ nav > ul > li > a:hover {
 
 fieldset {
   padding: 0;
-  border-style: none;
-  resize: none;
-  outline: none;
+  border: none;
 }
 
 textarea {
@@ -141,6 +139,12 @@ textarea {
 
 label h5 {
   margin: 0;
+}
+
+.contact-input {
+  border-style: none;
+  resize: none;
+  outline: none;
 }
 
 .contact-form {

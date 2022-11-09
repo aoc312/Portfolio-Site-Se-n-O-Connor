@@ -70,7 +70,7 @@
           <div class="column col-md-6 col-lg-6">
             <fieldset class="contact-field">
               <label for="yourName" type="label" text="Enter Name:" name="name"><h5>Enter Name:</h5></label>
-              <input class="line-project" type="text" name="yourNname" id="yourName">
+              <input class="contact-input line-project" type="text" name="yourNname" id="yourName">
             </fieldset>
           </div>
           <div class="column col-md-6 col-lg-6">
