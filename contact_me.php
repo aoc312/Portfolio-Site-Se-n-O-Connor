@@ -84,7 +84,7 @@
           <label for="yourMessage" type="label" text="Enter Name:" name="name"><h5>Enter Message:</h5></label>
           <textarea class="line-project" rows="8" cols="24" name="yourMessage" id="yourMessage" value=""></textarea>
         </fieldset>
-        <input class="contact-button" type="submit" value="Send Message">
+        <input class="contact-button" type="submit" name="submit" value="Send Message">
       </form>
     </div>
   </main>
