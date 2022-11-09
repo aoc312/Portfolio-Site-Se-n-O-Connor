@@ -126,6 +126,10 @@ nav > ul > li > a:hover {
   color: #85d3c4;
 }
 
+.test {
+  display: none;
+}
+
 fieldset {
   padding: 0;
   border-style: none;
