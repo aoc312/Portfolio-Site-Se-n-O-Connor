@@ -131,6 +131,12 @@ fieldset {
   border: none;
 }
 
+textarea {
+  border-style: none;
+  resize: none;
+  outline: none;
+}
+
 label h5 {
   margin: 0;
 }
