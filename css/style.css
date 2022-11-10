@@ -141,6 +141,13 @@ label h5 {
   margin: 0;
 }
 
+.line-contact {
+  background-color: #000;
+  color: #ff901f;
+  border: 2px solid #ff901f;
+  padding: 16px;
+}
+
 .contact-input {
   border-style: none;
   resize: none;

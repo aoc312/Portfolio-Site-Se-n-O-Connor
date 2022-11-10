@@ -65,24 +65,24 @@
 
   <main>
     <div class="container">
-      <form class="line-project contact-form" method="post" name="myemailform" action="contactform.php">
+      <form class="line-contact contact-form" method="post" name="myemailform" action="contactform.php">
         <div>
           <div class="column col-md-6 col-lg-6">
             <fieldset class="contact-field">
               <label for="yourName" type="label" text="Enter Name:" name="name"><h5>Enter Name:</h5></label>
-              <input class="contact-input line-project" type="text" name="yourNname" id="yourName">
+              <input class="contact-input line-contact" type="text" name="yourNname" id="yourName">
             </fieldset>
           </div>
           <div class="column col-md-6 col-lg-6">
             <fieldset class="contact-field">
               <label for="yourEmail" type="label" text="Enter Name:" name="name"><h5>Enter Email:</h5></label>
-              <input class="contact-input line-project" type="text" name="yourEmail">
+              <input class="contact-input line-contact" type="text" name="yourEmail">
             </fieldset>
           </div>
         </div>
         <fieldset class="contact-field col-lg">
           <label for="yourMessage" type="label" text="Enter Name:" name="name"><h5>Enter Message:</h5></label>
-          <textarea class="line-project" rows="8" cols="24" name="yourMessage" value=""></textarea>
+          <textarea class="line-contact" rows="8" cols="24" name="yourMessage" value=""></textarea>
         </fieldset>
         <input class="contact-button" type="submit" value="Send Message">
       </form>
