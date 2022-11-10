@@ -909,6 +909,10 @@ img.slide-img-tall {
   color: #85d3c4;
 }
 
+#contact-me .contact-me {
+  background-color: #85d3c4;
+}
+
 /* viewport sizing */
 
 @media only screen and (max-width: 719px) {

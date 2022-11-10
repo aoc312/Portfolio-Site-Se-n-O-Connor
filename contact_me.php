@@ -49,7 +49,7 @@
             <li><a href="files/Sean_O_Connor_Resume.pdf" target="_blank" class="navigation project state" id="resume">Resumé</a></li>
             <li>
               <div class="dropdown">
-                <a class="navigation project state dropbtn" id="contact" onclick="myFunction()">Contact Me</a>
+                <a class="contact-me navigation project state dropbtn" id="contact" onclick="myFunction()">Contact Me</a>
                 <div class="dropdown-content" id="myDropdown">
                   <a href="https://www.linkedin.com/in/se%C3%A1n-ao-connor/" target="_blank">LinkedIn</a>
                   <a href="mailto:aoconnorsean312@gmail.com?subject=RE:%20Career%20Opportunities" target="_blank">Email Me</a>
@@ -76,7 +76,7 @@
           <div class="column col-md-6 col-lg-6">
             <fieldset class="contact-field">
               <label for="yourEmail" type="label" text="Enter Name:" name="name"><h5>Enter Email:</h5></label>
-              <input class="line-project" type="text" name="yourEmail">
+              <input class="contact-input line-project" type="text" name="yourEmail">
             </fieldset>
           </div>
         </div>

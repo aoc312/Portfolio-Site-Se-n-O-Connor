@@ -4,12 +4,13 @@
   $message = $_POST['yourMessage'];
 
   $email_from = 'oconnorsean312@yahoo.ie';
-  $email_subject = "New Form submission";
+  $email_subject = "Website Form";
   $email_body = "You have received a new message from the user $name.\n". "Here is the message:\n $message".
 
-  $to = "oconnorsean312@yahoo.ie";
+  $to = "seanux@seanaoconnor.com";
   $headers = "From: $email_from \r\n";
   $headers .= "Reply-To: $visitor_email \r\n";
+
   mail($to,$email_subject,$email_body,$headers);
 
   function IsInjected($str) {
