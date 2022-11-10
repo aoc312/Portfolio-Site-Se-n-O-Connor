@@ -132,6 +132,7 @@ nav > ul > li > a:hover {
 
 fieldset {
   padding: 0;
+  margin: 0;
   border-style: none;
   resize: none;
   outline: none;
@@ -150,7 +151,7 @@ label h5 {
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 32px;
 }
 
 .contact-field {
@@ -167,7 +168,18 @@ label h5 {
   border-radius: 100px;
   text-decoration: none;
   transition: background-color ease 0.4s;
-  margin: 16px;
+  margin: auto;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Roboto Mono", monospace;
+}
+
+.line-contact {
+  background-color: #000;
+  color: #ff901f;
+  border: 2px solid #ff901f;
+  padding: 16px;
 }
 
 [class*="h-light-"] {
@@ -1034,6 +1046,10 @@ img.slide-img-tall {
 
   main {
     padding-top: 116px;
+  }
+
+  #contact-me main {
+    padding-top: 164px;
   }
 
   h1 {
