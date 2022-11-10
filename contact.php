@@ -74,21 +74,21 @@
             <div class="">
               <fieldset class="contact-field">
                 <label for="yourName" type="label" text="Enter Name:" name="name"><h5>Name:</h5></label>
-                <input class="contact-input line-contact" type="text" name="yourNname" id="yourName">
+                <input id="yourName" class="contact-input line-contact" type="text" name="yourNname">
               </fieldset>
             </div>
             <div class="">
               <fieldset class="contact-field">
                 <label for="yourEmail" type="label" text="Enter Email:" name="name"><h5>Email:</h5></label>
-                <input class="contact-input line-contact" type="text" name="yourEmail">
+                <input id="yourEmail" class="contact-input line-contact" type="text" name="yourEmail">
               </fieldset>
             </div>
           </div>
           <fieldset class="contact-field">
             <label for="yourMessage" type="label" text="Enter Message:" name="name"><h5>Your Message:</h5></label>
-            <textarea class="line-contact" rows="8" cols="24" name="yourMessage" value=""></textarea>
+            <textarea id="yourMessage" class="line-contact" rows="8" cols="24" name="yourMessage" value=""></textarea>
           </fieldset>
-          <input class="contact-button" type="submit" value="Send Message">
+          <input id="formBtn" class="contact-button" type="submit" name="formBtn" value="Send Message">
         </form>
       </div>
     </div>
