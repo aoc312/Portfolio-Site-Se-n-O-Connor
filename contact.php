@@ -47,7 +47,7 @@
             <li><a href="projects" class="navigation project state">Projects</a></li>
             <li><a href="about" class="navigation project state">About</a></li>
             <li><a href="files/Sean_O_Connor_Resume.pdf" target="_blank" class="navigation project state" id="resume">Resumé</a></li>
-            <li><a href="contact" class="navigation project state dropbtn" id="contact">Contact Me</a></li>
+            <li><a href="contact" class="contact-me navigation project state dropbtn" id="contact">Contact Me</a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
