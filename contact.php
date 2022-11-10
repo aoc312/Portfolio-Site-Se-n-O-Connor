@@ -88,7 +88,7 @@
             <label for="yourMessage" type="label" text="Enter Message:" name="name"><h5>Your Message:</h5></label>
             <textarea id="yourMessage" class="line-contact" rows="8" cols="24" name="yourMessage" value=""></textarea>
           </fieldset>
-          <input id="formBtn" class="contact-button" type="submit" name="formBtn" value="Send Message">
+          <input id="formBtn" class="contact-button" type="submit" name="formBtn" value="<?php echo $buttonStatus; ?>">
         </form>
       </div>
     </div>
