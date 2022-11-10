@@ -17,7 +17,7 @@
   <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#ff901f">
   <meta name="msapplication-TileColor" content="#ff901f">
   <meta name="theme-color" content="#ff901f">
-  <title>Sean O Connor UX Designer Dublin</title>
+  <title>Contact Me - Sean O Connor</title>
 </head>
 
 <body id="contact-me">
