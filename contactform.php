@@ -1,7 +1,6 @@
 <?php
 $buttonStatus = "Send Message";
 
-
 if (isset($_POST['formBtn'])) {
   $name = $_POST['yourName'];
   $visitor_email = $_POST['yourEmail'];
@@ -14,5 +13,5 @@ if (isset($_POST['formBtn'])) {
 
   mail($to, $email_subject, $email_body, $headers);
   header("Location: contact_me?mailsend");
-  $buttonStatus = "Sent!"
+  $buttonStatus = "Sent!";
 }
