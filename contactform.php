@@ -11,5 +11,5 @@ if (isset($_POST['formBtn'])) {
   $headers = "From: ".$visitor_email;
 
   mail($to, $email_subject, $email_body, $headers);
-  header("Location: contact_me?mailsend");
+  header("Location: contact?mailsend");
 }
