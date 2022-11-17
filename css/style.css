@@ -126,10 +126,22 @@ nav > ul > li > a:hover {
   color: #85d3c4;
 }
 
+.test {
+  display: none;
+}
+
 fieldset {
   padding: 0;
   margin: 0;
-  border: none;
+  border-style: none;
+  resize: none;
+  outline: none;
+}
+
+textarea {
+  border-style: none;
+  resize: none;
+  outline: none;
 }
 
 textarea {

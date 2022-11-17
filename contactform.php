@@ -1,43 +1,15 @@
 <?php
+
+if (isset($_POST['formBtn'])) {
   $name = $_POST['yourName'];
   $visitor_email = $_POST['yourEmail'];
   $message = $_POST['yourMessage'];
+  $email_subject = "Website Correspondence";
 
-  $email_from = 'oconnorsean312@yahoo.ie';
-  $email_subject = "Website Form";
-  $email_body = "You have received a new message from the user $name.\n". "Here is the message:\n $message".
-
+  $email_body = "You have received a new message from ".$name.":\n\n".$message;
   $to = "seanux@seanaoconnor.com";
-  $headers = "From: $email_from \r\n";
-  $headers .= "Reply-To: $visitor_email \r\n";
+  $headers = "From: ".$visitor_email;
 
-  mail($to,$email_subject,$email_body,$headers);
-
-  function IsInjected($str) {
-    $injections = array('(\n+)',
-           '(\r+)',
-           '(\t+)',
-           '(%0A+)',
-           '(%0D+)',
-           '(%08+)',
-           '(%09+)'
-           );
-
-    $inject = join('|', $injections);
-    $inject = "/$inject/i";
-
-    if(preg_match($inject,$str))
-    {
-      return true;
-    }
-    else
-    {
-      return false;
-    }
-  }
-
-  if(IsInjected($visitor_email))
-  {
-      echo "Bad email value!";
-      exit;
-  }
+  mail($to, $email_subject, $email_body, $headers);
+  header("Location: contact?mailsend");
+}

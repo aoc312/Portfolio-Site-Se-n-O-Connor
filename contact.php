@@ -47,19 +47,7 @@
             <li><a href="projects" class="navigation project state">Projects</a></li>
             <li><a href="about" class="navigation project state">About</a></li>
             <li><a href="files/Sean_O_Connor_Resume.pdf" target="_blank" class="navigation project state" id="resume">Resumé</a></li>
-<<<<<<< HEAD:contact_me.php
-            <li>
-              <div class="dropdown">
-                <a class="contact-me navigation project state dropbtn" id="contact" onclick="myFunction()">Contact Me</a>
-                <div class="dropdown-content" id="myDropdown">
-                  <a href="https://www.linkedin.com/in/se%C3%A1n-ao-connor/" target="_blank">LinkedIn</a>
-                  <a href="mailto:aoconnorsean312@gmail.com?subject=RE:%20Career%20Opportunities" target="_blank">Email Me</a>
-                </div>
-              </div>
-            </li>
-=======
             <li><a href="contact" class="contact-me navigation project state dropbtn" id="contact">Contact Me</a></li>
->>>>>>> f8f653d23196686567be6bf07d63a9c2cf2ac9a6:contact.php
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
@@ -86,35 +74,22 @@
             <div class="">
               <fieldset class="contact-field">
                 <label for="yourName" type="label" text="Enter Name:" name="name"><h5>Name:</h5></label>
-<<<<<<< HEAD:contact_me.php
-                <input class="contact-input line-contact" type="text" name="yourNname" id="yourName">
-=======
-                <input id="yourName" class="contact-input line-contact" type="text" name="yourNname">
->>>>>>> f8f653d23196686567be6bf07d63a9c2cf2ac9a6:contact.php
+                <input id="yourName" class="contact-input line-contact" type="text" name="yourN
+                ame">
               </fieldset>
             </div>
             <div class="">
               <fieldset class="contact-field">
                 <label for="yourEmail" type="label" text="Enter Email:" name="name"><h5>Email:</h5></label>
-<<<<<<< HEAD:contact_me.php
-                <input class="contact-input line-contact" type="text" name="yourEmail">
-=======
                 <input id="yourEmail" class="contact-input line-contact" type="text" name="yourEmail">
->>>>>>> f8f653d23196686567be6bf07d63a9c2cf2ac9a6:contact.php
               </fieldset>
             </div>
           </div>
           <fieldset class="contact-field">
             <label for="yourMessage" type="label" text="Enter Message:" name="name"><h5>Your Message:</h5></label>
-<<<<<<< HEAD:contact_me.php
-            <textarea class="line-contact" rows="8" cols="24" name="yourMessage" value=""></textarea>
-          </fieldset>
-          <input class="contact-button" type="submit" value="Send Message">
-=======
             <textarea id="yourMessage" class="line-contact" rows="8" cols="24" name="yourMessage" value=""></textarea>
           </fieldset>
           <input id="formBtn" class="contact-button" type="submit" name="formBtn" value="Send Message" onlick="submitToggle()">
->>>>>>> f8f653d23196686567be6bf07d63a9c2cf2ac9a6:contact.php
         </form>
       </div>
     </div>
