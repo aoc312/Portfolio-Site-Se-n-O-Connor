@@ -65,27 +65,40 @@
 
   <main>
     <div class="container">
-      <form class="line-contact contact-form" method="post" name="myemailform" action="contactform.php">
-        <div>
-          <div class="column col-md-6 col-lg-6">
-            <fieldset class="contact-field">
-              <label for="yourName" type="label" text="Enter Name:" name="name"><h5>Enter Name:</h5></label>
-              <input class="contact-input line-contact" type="text" name="yourNname" id="yourName">
-            </fieldset>
+      <div>
+        <div class="column col-md-6 col-lg-6">
+          <div class="">
+            <h3>Want to get in touch?</h3>
+            <h3>Fill out this form, or message me on LinkedIn!</h3>
           </div>
-          <div class="column col-md-6 col-lg-6">
-            <fieldset class="contact-field">
-              <label for="yourEmail" type="label" text="Enter Name:" name="name"><h5>Enter Email:</h5></label>
-              <input class="contact-input line-contact" type="text" name="yourEmail">
-            </fieldset>
+          <div class="">
+            <a href="https://www.linkedin.com/in/se%C3%A1n-ao-connor" target="_blank">
+              <i class="fa-brands fa-linkedin fa-3x"></i>
+            </a>
           </div>
         </div>
-        <fieldset class="contact-field col-lg">
-          <label for="yourMessage" type="label" text="Enter Name:" name="name"><h5>Enter Message:</h5></label>
-          <textarea class="line-contact" rows="8" cols="24" name="yourMessage" value=""></textarea>
-        </fieldset>
-        <input class="contact-button" type="submit" value="Send Message">
-      </form>
+        <form class="column col-md-6 col-lg-6 no-line-project contact-form" method="post" name="myemailform" action="contactform.php">
+          <div class="contact-field">
+            <div class="">
+              <fieldset class="contact-field">
+                <label for="yourName" type="label" text="Enter Name:" name="name"><h5>Name:</h5></label>
+                <input class="contact-input line-contact" type="text" name="yourNname" id="yourName">
+              </fieldset>
+            </div>
+            <div class="">
+              <fieldset class="contact-field">
+                <label for="yourEmail" type="label" text="Enter Email:" name="name"><h5>Email:</h5></label>
+                <input class="contact-input line-contact" type="text" name="yourEmail">
+              </fieldset>
+            </div>
+          </div>
+          <fieldset class="contact-field">
+            <label for="yourMessage" type="label" text="Enter Message:" name="name"><h5>Your Message:</h5></label>
+            <textarea class="line-contact" rows="8" cols="24" name="yourMessage" value=""></textarea>
+          </fieldset>
+          <input class="contact-button" type="submit" value="Send Message">
+        </form>
+      </div>
     </div>
   </main>
 
